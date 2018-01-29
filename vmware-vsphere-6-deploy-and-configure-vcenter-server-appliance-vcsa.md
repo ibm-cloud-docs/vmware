@@ -7,7 +7,7 @@ lastupdated: "2017-12-14"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Deploying and Configuring a vCenter Server Appliance (vCSA) with VMware vSphere 6  <!-- Deploying and Configuring should each be a separate topic-->
+# Deploying and Configuring a vCenter Server Appliance (vCSA) with VMware vSphere 6  
 
 Use the following steps to deploy a VMware vCenter Server Appliance.
 {:shortdesc}
