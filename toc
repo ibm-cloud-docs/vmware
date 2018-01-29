@@ -22,6 +22,7 @@ VMWare
         deploy-vmwaresoftlayer.md
         vmware-vsphere-6-deploy-and-configure-vcenter-server-appliance-vcsa.md
         vmware-vsphere-6-create-virtual-machine.md
+        installing-vmware-tools-linux.md
         vmware-vsphere-6-migration-and-upgrade-guidance.md
         installing-vmware-vsphere-esxi-remote-console-and-virtual-media.md
         vmware-esx-create-virtual-machine.md
