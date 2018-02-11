@@ -123,7 +123,7 @@ You can choose from several storage options.  For private storage, you can selec
 
 ## Private Storage Options
 
-There are several options for storage for connecting to VMware in a single-tenant environment: 
+There are several options for storage for connecting to VMware in a single-tenant environment:
 
 * Local
 * vSAN
@@ -136,7 +136,7 @@ There are several options for storage for connecting to VMware in a single-tenan
 ## Local Storage
 
 Order {{site.data.keyword.baremetal_short}} from the IBM Cloud customer portal with ESX and select the wanted disks [SATA, serial attached SCSI (SA SCSI), or SSD].
- 
+
 You can bring your own ESX license, but you need to open a ticket with Support to inform them of the change.
 
 * Recommended workloads: Tier 3
@@ -176,20 +176,20 @@ vSAN 6.0 is available directly from the IBM Cloud portal with CPU license billin
 
 The [OSNexus Solution Design Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wiki.osnexus.com/index.php?title=Solution_Design_Guide){: new_window} can be used to help connect VMware with QuantaStor.
 
-* Recommended workloads: Tiers 2 and 3 
+* Recommended workloads: Tiers 2 and 3
 * Performance: Variable based on the number of drives, RAID, and disk use (iSCSI or NFS)  
-* Scalability: v3 single frame supports 128TB; no scale up or scale out. 
-* Protocols: iSCSI, NFS, and SMB 
-* Cost: High for both CAPEX and OPEX 
+* Scalability: v3 single frame supports 128TB; no scale up or scale out.
+* Protocols: iSCSI, NFS, and SMB
+* Cost: High for both CAPEX and OPEX
 * HA: Not available  
-* Replication: Built-in replication features; no SRA available. Can use vSphere Replication Appliance as well 
+* Replication: Built-in replication features; no SRA available. Can use vSphere Replication Appliance as well
 * Reliability: Single point of failure for the enclosure and RAID controller.
 
 
 <a name="NetApp"></a>
 ## NetApp Data OnTap Edge
 
-You must purchase a NetApp device from NetApp or IBM. You need to instal in on a {{site.data.keyword.baremetal_short}} in your {{site.data.keyword.BluSoftlayer}} data center.
+You must purchase a NetApp device from NetApp or IBM. You need to install it on a {{site.data.keyword.baremetal_short}} in your {{site.data.keyword.BluSoftlayer}} data center.
 
 For more information about connecting VMware with NetApp, see the following links:
 * [NetApp ONTAP Select ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.netapp.com/us/products/platform-os/data-ontap-edge/index.aspx){: new_window}
@@ -209,7 +209,7 @@ For more information about connecting VMware with NetApp, see the following link
 
 You must purchase a NetApp device from NetApp or IBM. You need to install it in one of the colocation sites near your IBM Cloud data center and connect it by using Direct Link Colocation or Direct Link Cloud.
 
-For more information about connectting to VMware with NetApp, see the following links: 
+For more information about connectting to VMware with NetApp, see the following links:
 * [NetApp Private Storage for IBM Cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.netapp.com/us/solutions/cloud/private-storage-cloud/softlayer.aspx){: new_window}
 * [Solution brief: NetApp Private Storage for IBM Cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.netapp.com/us/media/ds-3619_tcm10-127472.pdf){: new_window}
 
