@@ -21,7 +21,7 @@ Deploying ESX from installation media is similar across all versions and can be 
 1. Upload the VMware ISO to the VSI that is specified in Requirements (The VSIs ought to have public web access.)
 2. Gather the IPMI address and login information from the customer portal.
 3. Select **Devices** > **Device List** > **[Server]** > and **Remote Management** tab.
-4. Remote desktop (RDP) or Remote X into to the VSI that is storing the ESXi image.
+4. Connect using remote desktop (RDP) or Remote X into to the VSI that is storing the ESXi image.
 5. Open a web browser in the RDP session and enter the IPMI address that you collected in Step 2.
 6. Log in to the IPMI console with the credentials that are also found in Step 2 (typically root).
 * Make a note of your IPMI user access level. It might be Administrator. You might experience a problem when you mount your remote storage if it is set to **Operator**. File a support ticket to elevate your IPMI credentials if you cannot mount media.
