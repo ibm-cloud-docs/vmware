@@ -162,7 +162,7 @@ You can bring your own ESX license, but you need to open a ticket with Support t
 * Replication and disaster recovery:
     1. Schedule VM back up via VMware vCenter Server
     2. Create VM snapshot
-    3. Data DE created for the VM
+    3. Create the Data DE ßfor the VM
     4. Restore the VM
  * Reliability: Tolerates up to three host failures with seven or more hosts. Failure domains were introduced in v6 of VMware.   
 
@@ -253,7 +253,7 @@ The IBM Spectrum Accelerate private storage option is not available on the IBM C
   * 6 TB disk drives
   * Storage Management Initiative Specifications (SMI-S) 1.6
   * Data at rest encryption
-  * vStorage for API Array Integration (VAAI) Licensing Now Aligned with  Virtual Volumes (VVol)
+  * vStorage for API Array Integration (VAAI) if it is aligned with Virtual Volumes (VVol)ß
   * vCenter Operations Manager (VCop)
   * For more information about IBM XIV Storage System, see [Platform and application integration for IBM XIV Storage System ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www-01.ibm.com/support/knowledgecenter/STJTAG/hsg/hsg_kcwelcomepage_xiv.html){: new_window}
 
