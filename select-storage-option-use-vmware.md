@@ -159,13 +159,7 @@ You can bring your own ESX license, but you need to open a ticket with Support t
 * Cost: Medium for both CAPEX and OPEX
 * HA: Supported for both host and disk failures. Failure domains are supported from v6 of VMware.
 * Replication: [vSphere Replication Virtual Appliance ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://pubs.vmware.com/srm-51/index.jsp?topic=%2Fcom.vmware.srm.install_config.doc%2FGUID-E654F2D8-7D56-4A81-9568-E85172A7022D.html){: new_window}
-* Replication and disaster recovery:
-    1. Schedule VM back up via VMware vCenter Server
-    2. Create VM snapshot
-    3. Create the Data DE ßfor the VM
-    4. Restore the VM
- * Reliability: Tolerates up to three host failures with seven or more hosts. Failure domains were introduced in v6 of VMware.   
-
+ç
 [1] vSan 6.2 new feature, stretched clusters, allows for hosts to be in different pods in the same data center (validation tests are in progress). <!-- Should this in progress mention be removed? -->
 
 vSAN 5.5 is only available with BYOL (Bring Your Own License). It is only supported by VMware if you use an Avago LSI MegaRAID SAS 9361-8i disk controller.
