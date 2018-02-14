@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-14"
+lastupdated: "2017-02-14"
 ---
 
 {:shortdesc: .shortdesc}
@@ -98,7 +98,7 @@ You can disable the vSphere public interfaces for security purposes if you are n
 3. Click the Configuration table and scroll down to the Network section.
 4. Select **Disconnect** for each applicable vSphere host eth1 and eth3 pairs for all hosts
 
-This can also be performed through the [{{site.data.keyword.slapi_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://sldn.softlayer.com/reference/service/SoftLayer_Hardware_Server/shutdownPublicPort){: new_window}.
+This can also be performed through the [{{site.data.keyword.slapi_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://sldn.softlayer.com/reference/services/softlayer_hardware_server/shutdownpublicport){: new_window}.
 
 ## Creating and Configuring vSphere Data Center Cluster <!-- create and configure should be separate tasks-->
 
