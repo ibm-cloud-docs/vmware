@@ -255,15 +255,13 @@ The IBM Spectrum Accelerate private storage option is not available on the IBM C
 
 ## Shared Storage Options
 
-IBM Cloud offers great {{site.data.keyword.filestorage_full}} options that you can use to connect to VMware in a multi-tenant environment.
+IBM Cloud offers great {{site.data.keyword.filestorage_short}} options that you can use to connect to VMware in a multi-tenant environment.
 
 ### {{site.data.keyword.filestorage_short}}
 
-You can order the {{site.data.keyword.baremetal_short}} from the IBM Cloud customer portal with ESX.
+You can order the {{site.data.keyword.baremetal_short}} from the IBM Cloud customer portal with ESX. In the customer portal, you can also provision {{site.data.keyword.filestorage_full}} in the same availability zone as your host. For more information about provisioning file storage, see [Ordering and Managing IBM File Storage for IBM Cloud](/docs/infrastructure/FileStorage/provisioning-file-storage.html).
 
 In VMware, three <!--**Authorize** **{{site.data.keyword.filestorage_short}} SoftLayer** --> predefined values are provided on the **Host Device Details Storage** tab – Username, Password (for CHAP authentication), and Host IQN.
-
-For more information about provisioning file storage, see [Ordering and Managing IBM File Storage for IBM Cloud](/docs/infrastructure/FileStorage/provisioning-file-storage.html).
 
 Table 2 provides the pros and cons of shared storage in a multi-tenant environment.
 
@@ -271,41 +269,41 @@ Table 2 provides the pros and cons of shared storage in a multi-tenant environme
         <colgroup>
           <col/>
           <col/>
-        </colgroup>Table 2. Pros and cons of VMware shared storage options<tbody>
+	</colgroup><tbody>
           <tr>
-            <td colspan="2" style="width: 638.0px;">
+            <td colspan="2">
               <p>
                 <strong>VMware Shared storage (multi-tenant)</strong>
               </p>
             </td>
           </tr>
           <tr>
-            <td style="width: 101.0px;">
+            <td>
               <p>
                 <strong>Key factors/ storage options</strong>
               </p>
             </td>
-            <td bgcolor="#C6D9F1" style="width: 266.0px;">
-              <p align="center">Block and File Endurance</p>
+            <td>
+              <p align="center">Block Storage - Endurance and Performance options</p>
             </td>
           </tr>
           <tr>
-            <td style="width: 101.0px;">
+            <td>
               <p>
                 <strong>Type</strong>
               </p>
             </td>
-            <td style="width: 266.0px;">
+            <td>
               <p>SDS</p>
             </td>
           </tr>
           <tr>
-            <td style="width: 101.0px;">
+            <td>
               <p>
                 <strong>Performance</strong>
               </p>
             </td>
-            <td style="width: 266.0px;">
+            <td>
               <p>Predictable storage performance parameters.</p>
               <ul>
                 <li>Endurance option: Available in 0.25, 2, 4 or 104 IOPS per GB.</li>
@@ -315,43 +313,43 @@ Table 2 provides the pros and cons of shared storage in a multi-tenant environme
             </td>
           </tr>
           <tr>
-            <td style="width: 101.0px;">
+            <td>
               <p>
                 <strong>Scalability</strong>
               </p>
             </td>
-            <td style="width: 266.0px;">
+            <td>
               <p>Volume sizes range from 20 GB to 12 TB.</p>
               <p>File Share Capacity can be expanded to 12 TB after initial provisioning in GB increments.</p>
             </td>
           </tr>
           <tr>
-            <td style="width: 101.0px;">
+            <td>
               <p>
                 <strong>Protocols</strong>
               </p>
             </td>
-            <td style="width: 266.0px;">
+            <td>
               <p>NFS</p>
             </td>
           </tr>
           <tr>
-            <td style="width: 101.0px;">
+            <td>
               <p>
                 <strong>Host Connections</strong>
               </p>
             </td>
-            <td style="width: 266.0px;">
+            <td>
               <p>Maximum of 64 for NFS.</p>
             </td>
           </tr>
           <tr>
-            <td style="width: 101.0px;">
+            <td>
               <p>
                 <strong>Use cases</strong>
               </p>
             </td>
-            <td style="width: 266.0px;">
+            <td>
               <p>Tier 1, 2, and 3 workloads:</p>
               <p style="margin-left: 9.85pt;">·   0.25 IOPS per GB: Low I/O intensity. Example applications include storing mailboxes or department-level file shares.</p>
               <p style="margin-left: 9.85pt;">·   2 IOPS per GB: General purposes. Example applications include hosting small databases backing web applications or virtual machine disk images for a hypervisor.</p>
@@ -386,16 +384,16 @@ Table 2 provides the pros and cons of shared storage in a multi-tenant environme
               </p>
             </td>
             <td>
-              <p>Snapshot and Replication provided over the IBM Cloud Private Network; also achieved using [vRealize Automation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/products/vrealize-automation){: new_window}, but no SRA.</p>
+              <p>Snapshot and Replication provided over the IBM Cloud Private Network; also achieved using [vRealize Automation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/products/vrealize-automation), but no SRA.</p>
             </td>
           </tr>
           <tr>
-            <td style="width: 101.0px;">
+            <td>
               <p>
                 <strong>Reliability</strong>
               </p>
             </td>
-            <td style="width: 266.0px;">
+            <td>
               <p>Highly redundant, MPIO connection, NFS-based file storage routed TCP/IP connections. Snapshots and Replication enabled.</p>
             </td>
           </tr>
@@ -680,7 +678,7 @@ Table 3 provides the pros and cons of private storage in a single-tenant environ
 	</tbody>
 </table>
 
-Table 2 documentation links:
+Table 3 documentation links:
 <!-- Internal link to exercise caution with QuantaStor: https://w3-connections.ibm.com/forums/html/topic?id=5c037198-96b8-43be-af21-edb47e4cf0bb#repliesPg=0-->
 * NetApp OnTap Edge: Not available on the customer portal – bring your own solution.
   * [Data ONTAP Installation and Administration Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://library.netapp.com/ecm/ecm_download_file/ECMP1200031){: new_window}
