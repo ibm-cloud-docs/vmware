@@ -133,9 +133,9 @@ There are several options for storage for connecting to VMware in a single-tenan
 * IBM Spectrum Accelerate
 
 <a name="Local"></a>
-## Local Storage
+### Local Storage
 
-Order {{site.data.keyword.baremetal_short}} from the IBM Cloud customer portal with ESX and select the wanted disks [SATA, serial attached SCSI (SA SCSI), or SSD].
+Order {{site.data.keyword.baremetal_short}} from the {{site.data.keyword.slportal}} with ESX and select the wanted disks [SATA, serial attached SCSI (SA SCSI), or SSD].
 
 You can bring your own ESX license, but you need to open a ticket with Support to inform them of the change.
 
@@ -150,7 +150,7 @@ You can bring your own ESX license, but you need to open a ticket with Support t
 
 
 ß
-## vSAN [1]
+### vSAN [1]
 
 * Recommended workloads: Tier 1
 * Performance: 90K+ IOPS per host depending on host configuration
@@ -168,7 +168,7 @@ vSAN 5.5 is only available with BYOL (Bring Your Own License). It is only suppor
 
 vSAN 6.0 is available directly from the IBM Cloud portal with CPU license billing base.
 
-## QuantaStor
+### QuantaStor
 
 The [OSNexus Solution Design Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wiki.osnexus.com/index.php?title=Solution_Design_Guide){: new_window} can be used to help connect VMware with QuantaStor.
 
@@ -183,7 +183,7 @@ The [OSNexus Solution Design Guide ![External link icon](../../icons/launch-glyp
 
 
 <a name="NetApp"></a>
-## NetApp Data OnTap Edge
+### NetApp Data OnTap Edge
 
 You must purchase a NetApp device from NetApp or IBM. You need to install it on a {{site.data.keyword.baremetal_short}} in your {{site.data.keyword.BluSoftlayer}} data center.
 
@@ -201,7 +201,7 @@ For more information about connecting VMware with NetApp, see the following link
 * Reliability: Single point of failure for the enclosure and RAID controller.
 
 <a name="NPS"></a>
-## NetApp Private Storage
+### NetApp Private Storage
 
 You must purchase a NetApp device from NetApp or IBM. You need to install it in one of the colocation sites near your IBM Cloud data center and connect it by using Direct Link Colocation or Direct Link Cloud.
 
@@ -220,9 +220,9 @@ For more information about connectting to VMware with NetApp, see the following 
 * Reliability: High redundancy and MPIO support
 
 <a name="IBM"></a>
-## IBM Spectrum Accelerate
+### IBM Spectrum Accelerate
 
-The IBM Spectrum Accelerate private storage option is not available on the IBM Cloud customer portal. <!-- Click here for the instructions on how to build the offering. *commented out because there is no link -->
+The IBM Spectrum Accelerate private storage option is not available on the {{site.data.keyword.slportal}}. <!-- Click here for the instructions on how to build the offering. *commented out because there is no link -->
 
 * Recommended workloads: Tier 1
 * Performance: Dependent upon number of disks, SSD (optional), and amount of memory that is given to each “node” VM.
@@ -253,179 +253,10 @@ The IBM Spectrum Accelerate private storage option is not available on the IBM C
   * vCenter Operations Manager (VCop)
   * For more information about IBM XIV Storage System, see [Platform and application integration for IBM XIV Storage System ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www-01.ibm.com/support/knowledgecenter/STJTAG/hsg/hsg_kcwelcomepage_xiv.html){: new_window}
 
-## Shared Storage Options
-
-IBM Cloud offers great {{site.data.keyword.filestorage_short}} options that you can use to connect to VMware in a multi-tenant environment.
-
-### {{site.data.keyword.filestorage_short}}
-
-You can order the {{site.data.keyword.baremetal_short}} from the IBM Cloud customer portal with ESX. In the customer portal, you can also provision {{site.data.keyword.filestorage_full}} in the same availability zone as your host. For more information about provisioning file storage, see [Ordering and Managing IBM File Storage for IBM Cloud](/docs/infrastructure/FileStorage/provisioning-file-storage.html).
-
-In VMware, three <!--**Authorize** **{{site.data.keyword.filestorage_short}} SoftLayer** --> predefined values are provided on the **Host Device Details Storage** tab – Username, Password (for CHAP authentication), and Host IQN.
-
-Table 2 provides the pros and cons of shared storage in a multi-tenant environment.
+Table 2 provides the pros and cons of private storage in a single-tenant environment.
 
 <table border="1" cellpadding="0" cellspacing="0">
-        <colgroup>
-          <col/>
-          <col/>
-	</colgroup><tbody>
-          <tr>
-            <td colspan="2">
-              <p>
-                <strong>VMware Shared storage (multi-tenant)</strong>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Key factors/ storage options</strong>
-              </p>
-            </td>
-            <td>
-              <p align="center">Block Storage - Endurance and Performance options</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Type</strong>
-              </p>
-            </td>
-            <td>
-              <p>SDS</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Performance</strong>
-              </p>
-            </td>
-            <td>
-              <p>Predictable storage performance parameters.</p>
-              <ul>
-                <li>Endurance option: Available in 0.25, 2, 4 or 104 IOPS per GB.</li>
-                <li>Performance option: Client provisions desired level of performance based on workload needs or price point.</li>
-              </ul>
-              <p>Multiple volumes may be striped together to achieve higher IOPS and more throughput.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Scalability</strong>
-              </p>
-            </td>
-            <td>
-              <p>Volume sizes range from 20 GB to 12 TB.</p>
-              <p>File Share Capacity can be expanded to 12 TB after initial provisioning in GB increments.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Protocols</strong>
-              </p>
-            </td>
-            <td>
-              <p>NFS</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Host Connections</strong>
-              </p>
-            </td>
-            <td>
-              <p>Maximum of 64 for NFS.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Use cases</strong>
-              </p>
-            </td>
-            <td>
-              <p>Tier 1, 2, and 3 workloads:</p>
-              <p style="margin-left: 9.85pt;">·   0.25 IOPS per GB: Low I/O intensity. Example applications include storing mailboxes or department-level file shares.</p>
-              <p style="margin-left: 9.85pt;">·   2 IOPS per GB: General purposes. Example applications include hosting small databases backing web applications or virtual machine disk images for a hypervisor.</p>
-              <p style="margin-left: 9.85pt;">·   4 IOPS per GB: High I/O intensity. Example applications include transactional and other performance-sensitive databases.</p>
-              <p style="margin-left: 9.85pt;">·   10 IOPS per GB: High I/O intensity. Example applications include analytics.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>HA</strong>
-              </p>
-            </td>
-            <td>
-              <p>Yes, dual heads and controllers.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Configurability</strong>
-              </p>
-            </td>
-            <td>
-              <p>Size and IOPS only.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Disaster recovery and replication</strong>
-              </p>
-            </td>
-            <td>
-              <p>Snapshot and Replication provided over the IBM Cloud Private Network; also achieved using [vRealize Automation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/products/vrealize-automation), but no SRA.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Reliability</strong>
-              </p>
-            </td>
-            <td>
-              <p>Highly redundant, MPIO connection, NFS-based file storage routed TCP/IP connections. Snapshots and Replication enabled.</p>
-            </td>
-          </tr>
-	  <tr>
-            <td>
-              <strong>Latency</strong>
-            </td>
-            <td>
-              <p>&lt;10 ms UP to 48,000 IOPS</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Cost</strong>
-            </td>
-            <td>
-              <p>High for both CAPEX (10x for SAN of same size) and OPEX</p>
-            </td>
-          </tr>
-        </tbody>
-</table>
-
-Table 2 documentation links:
-* [File storage](/docs/infrastructure/FileStorage/index.html)
-* [Architecture Guide for IBM File Storage for IBM Cloud with VMware](/docs/infrastructure/FileStorage/architecture-guide-file-storage-vmware.html)
-
-
-
-Table 3 provides the pros and cons of private storage in a single-tenant environment.
-
-<table border="1" cellpadding="0" cellspacing="0">
-        <caption>Table 3. Pros and cons of VMware private storage options</caption>
+        <caption>Table 2. Pros and cons of VMware private storage options</caption>
 	<tbody>
 		<tr>
 			<td colspan="7" style="width:638px;">
@@ -678,7 +509,7 @@ Table 3 provides the pros and cons of private storage in a single-tenant environ
 	</tbody>
 </table>
 
-Table 3 documentation links:
+Table 2 documentation links:
 <!-- Internal link to exercise caution with QuantaStor: https://w3-connections.ibm.com/forums/html/topic?id=5c037198-96b8-43be-af21-edb47e4cf0bb#repliesPg=0-->
 * NetApp OnTap Edge: Not available on the customer portal – bring your own solution.
   * [Data ONTAP Installation and Administration Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://library.netapp.com/ecm/ecm_download_file/ECMP1200031){: new_window}
@@ -686,5 +517,177 @@ Table 3 documentation links:
 * [NetApp Private Storage for IBM Cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.netapp.com/us/solutions/cloud/private-storage-cloud/softlayer.aspx){: new_window}
 * Spectrum Accelerate: Not available on the customer portal – bring your own solution.
   * [Working with an IBM Spectrum Accelerate system ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/STJTAG/com.ibm.help.xivgen3.doc/MT/UG/xiv_mt_deploying_spectrum_accelerate.html){: new_window}
+
+
+## Shared Storage Options
+
+IBM Cloud offers great {{site.data.keyword.filestorage_short}} options that you can use to connect to VMware in a multi-tenant environment.
+
+### {{site.data.keyword.filestorage_short}}
+
+You can order the {{site.data.keyword.baremetal_short}} from the {{site.data.keyword.slportal}} with ESX. In the customer portal, you can also provision {{site.data.keyword.filestorage_full}} in the same availability zone as your host. For more information about provisioning file storage, see [Ordering and Managing IBM File Storage for IBM Cloud](/docs/infrastructure/FileStorage/provisioning-file-storage.html).
+
+**Note**: In VMware, three predefined values are provided on the **Host Device Details Storage** tab – Username, Password (for CHAP authentication), and Host IQN.
+
+Table 3 provides the pros and cons of shared storage in a multi-tenant environment.
+
+<table border="1" cellpadding="0" cellspacing="0">
+        <colgroup>
+          <col/>
+          <col/>
+	</colgroup>
+	<caption>Table 3. Pros and cons of VMware shared storage options</caption><tbody>
+          <tr>
+            <td colspan="3">
+              <p>
+                <strong>VMware Shared storage (multi-tenant)</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <strong>Key factors/ storage options</strong>
+              </p>
+            </td>
+            <td>
+              <p align="center">File Storage - Endurance and Performance options</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <strong>Type</strong>
+              </p>
+            </td>
+            <td>
+              <p>SDS</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <strong>Performance</strong>
+              </p>
+            </td>
+            <td>
+              <p>Predictable storage performance parameters.</p>
+              <ul>
+                <li>Endurance option: Available in 0.25, 2, 4 or 104 IOPS per GB.</li>
+                <li>Performance option: Client provisions desired level of performance based on workload needs or price point.</li>
+              </ul>
+              <p>Multiple volumes may be striped together to achieve higher IOPS and more throughput.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <strong>Scalability</strong>
+              </p>
+            </td>
+            <td>
+              <p>Volume sizes range from 20 GB to 12 TB.</p>
+              <p>File Share Capacity can be expanded to 12 TB after initial provisioning in GB increments.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <strong>Protocols</strong>
+              </p>
+            </td>
+            <td>
+              <p>NFS</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <strong>Host Connections</strong>
+              </p>
+            </td>
+            <td>
+              <p>Maximum of 64 for NFS.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <strong>Use cases</strong>
+              </p>
+            </td>
+            <td>
+              <p>Tier 1, 2, and 3 workloads:</p>
+              <p style="margin-left: 9.85pt;">·   0.25 IOPS per GB: Low I/O intensity. Example applications include storing mailboxes or department-level file shares.</p>
+              <p style="margin-left: 9.85pt;">·   2 IOPS per GB: General purposes. Example applications include hosting small databases backing web applications or virtual machine disk images for a hypervisor.</p>
+              <p style="margin-left: 9.85pt;">·   4 IOPS per GB: High I/O intensity. Example applications include transactional and other performance-sensitive databases.</p>
+              <p style="margin-left: 9.85pt;">·   10 IOPS per GB: High I/O intensity. Example applications include analytics.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <strong>HA</strong>
+              </p>
+            </td>
+            <td>
+              <p>Yes, dual heads and controllers.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <strong>Configurability</strong>
+              </p>
+            </td>
+            <td>
+              <p>Size and IOPS only.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <strong>Disaster recovery and replication</strong>
+              </p>
+            </td>
+            <td>
+              <p>Snapshot and Replication provided over the IBM Cloud Private Network; also achieved using [vRealize Automation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/products/vrealize-automation), but no SRA.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <strong>Reliability</strong>
+              </p>
+            </td>
+            <td>
+              <p>Highly redundant, MPIO connection, NFS-based file storage routed TCP/IP connections. Snapshots and Replication enabled.</p>
+            </td>
+          </tr>
+	  <tr>
+            <td>
+              <strong>Latency</strong>
+            </td>
+            <td>
+              <p>&lt;10 ms UP to 48,000 IOPS</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Cost</strong>
+            </td>
+            <td>
+              <p>High for both CAPEX (10x for SAN of same size) and OPEX</p>
+            </td>
+          </tr>
+        </tbody>
+</table>
+
+Table 3 documentation links:
+* [File storage](/docs/infrastructure/FileStorage/index.html)
+* [Architecture Guide for IBM File Storage for IBM Cloud with VMware](/docs/infrastructure/FileStorage/architecture-guide-file-storage-vmware.html)
+
+
+
 
 
