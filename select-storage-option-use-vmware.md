@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-20"
+  years: 1994, 2018
+lastupdated: "2018-02-20"
 ---
 
 {:shortdesc: .shortdesc}
@@ -255,36 +255,179 @@ The IBM Spectrum Accelerate private storage option is not available on the IBM C
 
 ## Shared Storage Options
 
-There are two storage options that you can use to connect to VMware in a multi-tenant environment: Block Storage and File Storage.
+IBM Cloud offers great {{site.data.keyword.filestorage_full}} options that you can use to connect to VMware in a multi-tenant environment.
 
-### Block and File Storage
+### {{site.data.keyword.filestorage_short}}
 
-Order the {{site.data.keyword.baremetal_short}} from the IBM Cloud customer portal with ESX.
+You can order the {{site.data.keyword.baremetal_short}} from the IBM Cloud customer portal with ESX.
 
-In VMware, three <!--**Authorize** (**Block** or **File**) **Storage SoftLayer** --> predefined values are provided on the **Host Device Details Storage** tab – Username, Password (for CHAP authentication), and Host IQN.
+In VMware, three <!--**Authorize** **{{site.data.keyword.filestorage_short}} SoftLayer** --> predefined values are provided on the **Host Device Details Storage** tab – Username, Password (for CHAP authentication), and Host IQN.
 
-For more information about provision block storage, see [Provisioning and managing block storage](/docs/infrastructure/BlockStorage/provisioning-block_storage.html).
+For more information about provisioning file storage, see [Ordering and Managing IBM File Storage for IBM Cloud](/docs/infrastructure/FileStorage/provisioning-file-storage.html).
 
-For more information about provision file storage, see [Provisioning and Managing IBM File Storage for IBM Cloud](/docs/infrastructure/FileStorage/provisioning-file-storage.html).
-
-* Recommended workloads:     Tiers 1, 2, and 3
-* Two ways to provision performance:
-    1. Endurance IOPS tiers: Available in 0.25, 2, 4 or 104 IOPS per GB
-    2. Performance Allocated IOPS: Specify IOPS independent of capacity. Recommended for workloads with well defined performance requirements.
-    * Predictable storage performance parameters
-    * Multiple volumes can be striped together to achieve higher IOPS and more throughput
-* Latency <10 ms UP to 48,000 IOPS
-* Scalability: Order from 20 GB to 12 TB. You cannot resize the volume after it is ordered.
-* Protocols: iSCSI and NFS
-* Cost: High for both CAPEX (10x for SAN of same size) and OPEX
-* HA: Dual heads and controllers
-* Replication: Snapshot and Replication provided over the IBM Cloud Private Network; also achieved using [vRealize Automation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/products/vrealize-automation){: new_window}, but no SRA.
-* Reliability: High redundancy; iSCSI uses an MPIO connection; NFS-based storage is routed over TCP/IP connections. Snapshot and Replication enabled.
-
-Table 2 provides the pros and cons of private storage in a single-tenant environment.
+Table 2 provides the pros and cons of shared storage in a multi-tenant environment.
 
 <table border="1" cellpadding="0" cellspacing="0">
-        <caption>Table 2. Pros and cons of VMware private storage options</caption>
+        <colgroup>
+          <col/>
+          <col/>
+        </colgroup>Table 2. Pros and cons of VMware shared storage options<tbody>
+          <tr>
+            <td colspan="2" style="width: 638.0px;">
+              <p>
+                <strong>VMware Shared storage (multi-tenant)</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 101.0px;">
+              <p>
+                <strong>Key factors/ storage options</strong>
+              </p>
+            </td>
+            <td bgcolor="#C6D9F1" style="width: 266.0px;">
+              <p align="center">Block and File Endurance</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 101.0px;">
+              <p>
+                <strong>Type</strong>
+              </p>
+            </td>
+            <td style="width: 266.0px;">
+              <p>SDS</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 101.0px;">
+              <p>
+                <strong>Performance</strong>
+              </p>
+            </td>
+            <td style="width: 266.0px;">
+              <p>Predictable storage performance parameters.</p>
+              <ul>
+                <li>Endurance option: Available in 0.25, 2, 4 or 104 IOPS per GB.</li>
+                <li>Performance option: Client provisions desired level of performance based on workload needs or price point.</li>
+              </ul>
+              <p>Multiple volumes may be striped together to achieve higher IOPS and more throughput.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 101.0px;">
+              <p>
+                <strong>Scalability</strong>
+              </p>
+            </td>
+            <td style="width: 266.0px;">
+              <p>Volume sizes range from 20 GB to 12 TB.</p>
+              <p>File Share Capacity can be expanded to 12 TB after initial provisioning in GB increments.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 101.0px;">
+              <p>
+                <strong>Protocols</strong>
+              </p>
+            </td>
+            <td style="width: 266.0px;">
+              <p>NFS</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 101.0px;">
+              <p>
+                <strong>Host Connections</strong>
+              </p>
+            </td>
+            <td style="width: 266.0px;">
+              <p>Maximum of 64 for NFS.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 101.0px;">
+              <p>
+                <strong>Use cases</strong>
+              </p>
+            </td>
+            <td style="width: 266.0px;">
+              <p>Tier 1, 2, and 3 workloads:</p>
+              <p style="margin-left: 9.85pt;">·   0.25 IOPS per GB: Low I/O intensity. Example applications include storing mailboxes or department-level file shares.</p>
+              <p style="margin-left: 9.85pt;">·   2 IOPS per GB: General purposes. Example applications include hosting small databases backing web applications or virtual machine disk images for a hypervisor.</p>
+              <p style="margin-left: 9.85pt;">·   4 IOPS per GB: High I/O intensity. Example applications include transactional and other performance-sensitive databases.</p>
+              <p style="margin-left: 9.85pt;">·   10 IOPS per GB: High I/O intensity. Example applications include analytics.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <strong>HA</strong>
+              </p>
+            </td>
+            <td>
+              <p>Yes, dual heads and controllers.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <strong>Configurability</strong>
+              </p>
+            </td>
+            <td>
+              <p>Size and IOPS only.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <strong>Disaster recovery and replication</strong>
+              </p>
+            </td>
+            <td>
+              <p>Snapshot and Replication provided over the IBM Cloud Private Network; also achieved using [vRealize Automation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/products/vrealize-automation){: new_window}, but no SRA.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 101.0px;">
+              <p>
+                <strong>Reliability</strong>
+              </p>
+            </td>
+            <td style="width: 266.0px;">
+              <p>Highly redundant, MPIO connection, NFS-based file storage routed TCP/IP connections. Snapshots and Replication enabled.</p>
+            </td>
+          </tr>
+	  <tr>
+            <td>
+              <strong>Latency</strong>
+            </td>
+            <td>
+              <p>&lt;10 ms UP to 48,000 IOPS</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Cost</strong>
+            </td>
+            <td>
+              <p>High for both CAPEX (10x for SAN of same size) and OPEX</p>
+            </td>
+          </tr>
+        </tbody>
+</table>
+
+Table 2 documentation links:
+* [File storage](/docs/infrastructure/FileStorage/index.html)
+* [Architecture Guide for IBM File Storage for IBM Cloud with VMware](/docs/infrastructure/FileStorage/architecture-guide-file-storage-vmware.html)
+
+
+
+Table 3 provides the pros and cons of private storage in a single-tenant environment.
+
+<table border="1" cellpadding="0" cellspacing="0">
+        <caption>Table 3. Pros and cons of VMware private storage options</caption>
 	<tbody>
 		<tr>
 			<td colspan="7" style="width:638px;">
@@ -546,150 +689,4 @@ Table 2 documentation links:
 * Spectrum Accelerate: Not available on the customer portal – bring your own solution.
   * [Working with an IBM Spectrum Accelerate system ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/STJTAG/com.ibm.help.xivgen3.doc/MT/UG/xiv_mt_deploying_spectrum_accelerate.html){: new_window}
 
-Table 3 provides the pros and cons of shared storage in a multi-tenant environment.
 
-<table border="1" cellpadding="0" cellspacing="0">
-        <caption>Table 3. Pros and cons of VMware shared storage options</caption>
-	<tbody>
-		<tr>
-			<td colspan="3" style="width:638px;">
-				<p><strong>VMware Shared storage (multi-tenant)</strong></p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Key factors/ storage options</strong></p>
-			</td>
-			<td bgcolor="#C6D9F1" style="width:266px;">
-				<p align="center">Block and File Endurance</p>
-			</td>
-			<td bgcolor="#C6D9F1" style="width:271px;">
-				<p align="center">Block and File Performance</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Type</strong></p>
-			</td>
-			<td style="width:266px;">
-				<p>SDS</p>
-			</td>
-			<td style="width:271px;">
-				<p>SDS</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Performance</strong></p>
-			</td>
-			<td style="width:266px;">
-				<p>Available in 0.25, 2, 4 or 104 IOPS per GB.</p>
-				<p>Predictable storage performance parameters.</p>
-				<p>Multiple volumes may be striped together to achieve higher IOPS and more throughput.</p>
-			</td>
-			<td style="width:271px;">
-				<p>Client provisions desired level of performance based on workload needs or price point.</p>
-				<p>&nbsp;</p>
-				<p>Predictable storage performance parameters.</p>
-				<p>Multiple volumes may be striped together to achieve higher IOPS and more throughput.</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Scalability</strong></p>
-			</td>
-			<td style="width:266px;">
-				<p>Volume sizes range from 20 GB to 12 TB. Cannot be resized once ordered.</p>
-			</td>
-			<td style="width:271px;">
-				<p>Volume sizes range from 20 GB to 12 TB. Cannot be resized once ordered.</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Protocols</strong></p>
-			</td>
-			<td style="width:266px;">
-				<p>iSCSI and NFS.</p>
-			</td>
-			<td style="width:271px;">
-				<p>iSCSI and NFS.</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Host Connections</strong></p>
-			</td>
-			<td style="width:266px;">
-				<p>Maximum of eight for iSCSI and64 for NFS.</p>
-			</td>
-			<td style="width:271px;">
-				<p>Maximum of eight for iSCSI and 64 for NFS.</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Use cases</strong></p>
-			</td>
-			<td style="width:266px;">
-				<p>Tier 1, 2, and 3 workloads:</p>
-				<p style="margin-left:9.85pt;">&middot;&nbsp;&nbsp; 0.25 IOPS per GB: Low I/O intensity. Example applications include storing mailboxes or department-level file shares.</p>
-				<p style="margin-left:9.85pt;">&middot;&nbsp;&nbsp; 2 IOPS per GB: General purposes. Example applications include hosting small databases backing web applications or virtual machine disk images for a hypervisor.</p>
-				<p style="margin-left:9.85pt;">&middot;&nbsp;&nbsp; 4 IOPS per GB: High I/O intensity. Example applications include transactional and other performance-sensitive databases.</p>
-				<p style="margin-left:9.85pt;">&middot;&nbsp;&nbsp; 10 IOPS per GB: High I/O intensity. Example applications include analytics.</p>
-			</td>
-			<td style="width:271px;">
-				<p>Tier 1, 2, and 3 workloads:</p>
-				<p>MPIO iSCSI-based storage ideally suited for I/O intensive applications such as relational databases that require predictable levels of performance. The storage volumes come in sizes from 20 GB to 12 TB with user selectable IOPS ranging from 100 to 48,000 IOPS.</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>HA</strong></p>
-			</td>
-			<td style="width:266px;">
-				<p>Yes, dual heads and controllers.</p>
-			</td>
-			<td style="width:271px;">
-				<p>Yes, dual heads and controllers.</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Configurability</strong></p>
-			</td>
-			<td style="width:266px;">
-				<p>Size and IOPS only.</p>
-			</td>
-			<td style="width:271px;">
-				<p>Size and IOPS only.</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Disaster recovery and replication</strong></p>
-			</td>
-			<td style="width:266px;">
-				<p>Snapshot and Replication provided, which is done over the IBM Cloud Private Network. Can use vRA to replicate at the VM level; no SRA.</p>
-			</td>
-			<td style="width:271px;">
-				<p>Snapshot and Replication provided, which is done over the IBM Cloud Private Network. Can use vRA to replicate at the VM level; no SRA.</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Reliability</strong></p>
-			</td>
-			<td style="width:266px;">
-				<p>Highly redundant, MPIO connection, NFS-based file storage routed TCP/IP connections. Snapshots and Replication enabled.</p>
-			</td>
-			<td style="width:271px;">
-				<p>Highly redundant, MPIO connection, NFS-based file storage routed TCP/IP connections.</p>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-Table 3 documentation links:
-* [Block storage](/docs/infrastructure/BlockStorage/index.html)
-* [File storage](/docs/infrastructure/FileStorage/index.html)
