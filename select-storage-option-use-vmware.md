@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 1994, 2018
-lastupdated: "2018-02-20"
+lastupdated: "2018-02-22"
 ---
 
 {:shortdesc: .shortdesc}
@@ -573,7 +573,7 @@ Table 3 provides the pros and cons of shared storage in a multi-tenant environme
             <td>
               <p>Predictable storage performance parameters.</p>
               <ul>
-                <li>Endurance option: Available in 0.25, 2, 4 or 104 IOPS per GB.</li>
+                <li>Endurance option: Available in 0.25, 2, 4 or 10 IOPS per GB.</li>
                 <li>Performance option: Client provisions desired level of performance based on workload needs or price point.</li>
               </ul>
               <p>Multiple volumes may be striped together to achieve higher IOPS and more throughput.</p>
@@ -669,7 +669,7 @@ Table 3 provides the pros and cons of shared storage in a multi-tenant environme
               <strong>Latency</strong>
             </td>
             <td>
-              <p>&lt;10 ms UP to 48,000 IOPS</p>
+              <p>&lt;10 ms</p>
             </td>
           </tr>
           <tr>
