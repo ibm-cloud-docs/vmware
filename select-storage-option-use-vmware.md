@@ -148,8 +148,6 @@ You can bring your own ESX license, but you need to open a ticket with Support t
 * Replication: [vSphere Replication Virtual Appliance ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://pubs.vmware.com/srm-51/index.jsp?topic=%2Fcom.vmware.srm.install_config.doc%2FGUID-E654F2D8-7D56-4A81-9568-E85172A7022D.html){: new_window}
 * Reliability: Multiple single points of failure
 
-
-ß
 ### vSAN [1]
 
 * Recommended workloads: Tier 1
