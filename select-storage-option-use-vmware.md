@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 1994, 2018
-lastupdated: "2018-02-22"
+lastupdated: "2018-02-28"
 ---
 
 {:shortdesc: .shortdesc}
@@ -119,7 +119,7 @@ Table 1 contains the storage tiers and where your workload might fall.
 
 ## VMware Private and Shared Storage Options
 
-You can choose from several storage options.  For private storage, you can select local disk options, VSAN, or QuantaStor. For shared storage, you can select Endurance or Performance storage. If you decide to bring your storage, there are several “private” options, including NetApp OnTap Edge, NetApp Private Storage (NPS), {{site.data.keyword.IBM}} Spectrum Accelerate, and software defined storage. Table 2 and Table 3 offer a side-by-side comparison of the options for your convenience.
+You can choose from several storage options.  For private storage, you can select local disk options, VSAN, or QuantaStor. For shared storage, you can select Endurance or Performance storage. If you decide to bring your storage, there are several “private” options, including NetApp OnTap Select, NetApp Private Storage (NPS), {{site.data.keyword.IBM}} Spectrum Accelerate, and software defined storage. Table 2 and Table 3 offer a side-by-side comparison of the options for your convenience.
 
 ## Private Storage Options
 
@@ -181,22 +181,28 @@ The [OSNexus Solution Design Guide ![External link icon](../../icons/launch-glyp
 
 
 <a name="NetApp"></a>
-### NetApp Data OnTap Edge
+### NetApp Data OnTap Select
 
-You must purchase a NetApp device from NetApp or IBM. You need to install it on a {{site.data.keyword.baremetal_short}} in your {{site.data.keyword.BluSoftlayer}} data center.
+NetApp® ONTAP® Select on IBM Cloud, a software-defined storage virtual appliance, extends existing data management capabilities by implementing NetApp ONTAP software as a service on IBM Cloud’s dedicated bare metal servers. You can provision storage resources with agility and flexibility while protecting your data by using NetApp’s advanced data management functions, such as the fast and efficient NetApp Snapshot® copies, FlexClone® copies, and SnapMirror® replication. NetApp ONTAP Select accelerates application DevOps while reducing the complexity and overhead associated with physical storage systems.
 
-For more information about connecting VMware with NetApp, see the following links:
-* [NetApp ONTAP Select ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.netapp.com/us/products/platform-os/data-ontap-edge/index.aspx){: new_window}
-* [Data ONTAP Edge: Build a data center on a server with NetApp fundamentals ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.netapp.com/us/media/ds-data-ontap-edge.pdf){: new_window}
+NetApp ONTAP Select on IBM Cloud is offered in both high performance (all SSD) and high capacity (all SATA) configurations, which can meet the range of use cases you demand today. You can use the tools provided by NetApp ONTAP Select to address your hybrid cloud needs, such as addressing disaster recovery scenarios, providing file services, and managing rapid transactional data workloads.
 
-* Recommended workloads: Tiers 2 and 3
-* Performance: Variable based on the number of drives and RAID
-* Scalability: Supports 110 TB; no scale out.
-* Protocols: iSCSI, NFS, and SMB
-* Cost: Medium for both CAPEX and OPEX
-* HA: Not available
-* Replication: Supports SnapMirror; also achieved using [vRealize Automation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/products/vrealize-automation){: new_window} (vRA).
-* Reliability: Single point of failure for the enclosure and RAID controller.
+NetApp ONTAP Select on IBM Cloud helps to improve productivity and efficiency, reduce IT overhead costs, and gain agility by offloading IT resources and management complexity from the cloud. The offering can accelerate hybrid cloud adoption by harnessing the NetApp integrated ONTAP capabilities with VMware running on IBM Cloud bare metal servers. The offering enables easier, security-rich, and near-seamless extension of existing workloads from on-premises data centers to IBM Cloud data centers worldwide.
+
+* Recommended workloads: Tiers 1, 2 and 3
+* Performance: Variable based on the number of drives, media type and RAID topology
+* Scalability: Supports up to 400 TB per node (RAW/Active Licensed Capacity)
+* HA: Supports 2, 4 and 8 node HA configurations or single node if no HA is required
+* Protocols: iSCSI, NFS v3 and v4, and SMB/CIFS
+* Protected: Integrated NetApp® Snapshot™ copies, local and remote backup, disaster recovery, and volume encryption
+* Efficient: Thin provisioning, cloning, deduplication, and compression
+* Cost: Available in CAPEX and OPEX models and is charged on a $GB Basis
+* Replication: Supports SnapMirror; also achieved using vRealize Automation External link icon (vRA).
+* Resiliency: 
+   - in a non-HA Configuration single points of failure include enclosure hardware
+   - in an HA configuration, no single points of failure
+
+Information on how to purchase and install ONTAP Select can be found here https://console.bluemix.net/infrastructure/vmware-solutions/console.
 
 <a name="NPS"></a>
 ### NetApp Private Storage
