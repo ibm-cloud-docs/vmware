@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-18"
+lastupdated: "2018-05-17"
 ---
 
 {:shortdesc: .shortdesc}
@@ -37,4 +37,4 @@ For example: `/opt/BUAgent/Install.log`
 If the installation fails and rolls back, the installation log will be in the `<Installation Failure directory>.`<br/>
 If it fails and does not roll back, the installation log will be in the `<Installation Kit directory>`.<br/>
 <!-- For more information, you are able to download the User Guide at: http://downloads.service.softlayer.com/evault/Documentation/VMware_Agent_User_Guide.pdf<br/>-->
-Be sure you are connected to the {{site.data.keyword.BluSoftlayer_full}} VPN in order to view the above link. For more information about connecting to the IBM Cloud VPN, see [Enable access to the IBM Cloud infrastructure private network](/docs/customer-portal/getting-started.html#enable-private-network)).
+Be sure that you are connected to the {{site.data.keyword.BluSoftlayer_full}} VPN to view the User Guide. For more information about connecting to the IBM Cloud VPN, see [Enable access to the IBM Cloud infrastructure private network](/docs/customer-portal/getting-started.html#enable-private-network)).
