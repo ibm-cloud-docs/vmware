@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-18"
+lastupdated: "2018-05-17"
 ---
 
 {:shortdesc: .shortdesc}
@@ -24,7 +24,7 @@ Expand or move your VMware cloud environments to any {{site.data.keyword.BluSoft
   2. [VMware Technology Network  ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://communities.vmware.com/welcome){: new_window}
 4. Update your admin team's training to support VMWare 6.
 5. Plan and design a new architecture.
-6. Select a [data center ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/data-centers){: new_window} that is based on compliance. Work with IBM Cloud sales to refine your candidate location based on availability of products/services.
+6. Select a data center that is based on compliance. Work with IBM Cloud sales to refine your candidate location based on availability of products/services.
 7. Define your required VLANs and subnets (portable public and private IPs).
 8. Design the vSphere Servers:
   1. Review the current IBM Cloud server catalog. Intel Xeon v3 Servers are recommended along with redundant uplinks, redundant power supplies, and RAID-1 for local (boot) disks.
