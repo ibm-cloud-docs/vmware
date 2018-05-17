@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-02-14"
+lastupdated: "2017-05-17"
 ---
 
 {:shortdesc: .shortdesc}
@@ -60,7 +60,7 @@ Use the following steps to order a virtual server with vCenter installed:
     * Second Disk : 1 x  50 GB (SAN)
     * Uplink Port Speeds: 1 Gbps Public and Private Network Uplinks
 
-5. If this is a new deployment into a new IBM Cloud Data Center proceed to step 6 below. If this deployment is an expansion or deployment in to a existing Data Center, select the preferred Backend BCR VLAN + Frontend FCR VLAN. For our example, our Backend BCR VLAN is 1101 and the Frontend FCR VLAN is 2200. (If this is a brand new deployment or a new deployment into a new DC the Backend BCR and Frontend FCR VLANs are created when you order the server)
+5. If this is a new deployment into a new IBM Cloud Data Center proceed to step 6. If this deployment is an expansion or deployment in to a existing Data Center, select the preferred Backend BCR VLAN + Frontend FCR VLAN. For our example, our Backend BCR VLAN is 1101 and the Frontend FCR VLAN is 2200. (If this is a brand new deployment or a new deployment into a new DC the Backend BCR and Frontend FCR VLANs are created when you order the server)
 6. Enter a **Hostname** and **Domain**.
 7. Review the order and click **Finalize Your Order** to start the provisioning process.
 
