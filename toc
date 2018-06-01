@@ -28,18 +28,20 @@ VMWare
         vmware-esx-create-virtual-machine.md
         mounting-iscsi-vmware-esxi.md
         vsan-stability-lsi-3108-based-controllers.md
-            
+
     {: .topicgroup}
     Ordering and managing licenses
         order-vmware-licenses.md
         manage-vmware-licenses.md
+        order-netapp-licenses.md
+        manage-netapp-licenses.md
         vmware-vsphere-6-applying-softlayer-issued-licenses.md
-        
+
     {: .topicgroup}
     Configuring Quantastor storage
         architecture-guide-quantastor-vmwaresoftlayer.md
         brocade-vrouter-vyatta-setup-guide-vmware-environments-quantastor.md
-        
+
     install-evault-backup-client-vmware.md
     {: .navgroup-end}
 
