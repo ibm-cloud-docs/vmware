@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 1994, 2018
-lastupdated: "2018-04-23"
+lastupdated: "2018-05-31"
 ---
 
 # Managing NetApp Licenses
@@ -11,5 +11,5 @@ lastupdated: "2018-04-23"
   * License key
   * CPUs
   * Order date.
-  
+
 From the NetApp licenses page, you can download license keys, cancel licenses, and order more licenses.
