@@ -27,5 +27,5 @@ Use the following steps to order licenses for the NetApp products.
 8. Review your order on the Confirm Order screen.
 9. Read the Master Service Agreement and enable the checkbox to indicate your agreement.
 10. Click **Place Order**. The **NetApp Licenses** page is displayed, which shows your NetApp products and license keys.
-7. Click Download Netapp Software You need to have an SSL connection to the IBM Cloud private network to access the download page.
+7. Click Download Netapp Software You need to have an SSL connection to the IBM Cloud private network to access the download page. Refer to [Use SSL VPN](https://console.bluemix.net/docs/infrastructure/iaas-vpn/use-ssl-vpn.html#use-ssl-vpn){:new_window}.
 8. Download the correct NetApp products and manually install them into your environment.
