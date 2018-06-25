@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-05-17"
+  years: 1994, 2018
+lastupdated: "2018-06-25"
 ---
 
 {:shortdesc: .shortdesc}
@@ -98,7 +98,7 @@ You can disable the vSphere public interfaces for security purposes if you are n
 3. Click the Configuration table and scroll down to the Network section.
 4. Select **Disconnect** for each applicable vSphere host eth1 and eth3 pairs for all hosts
 
-This can also be performed through the [{{site.data.keyword.slapi_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://sldn.softlayer.com/reference/services/softlayer_hardware_server/shutdownpublicport){: new_window}.
+<!--This can also be performed through the [{{site.data.keyword.slapi_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://sldn.softlayer.com/reference/services/softlayer_hardware_server/shutdownpublicport){: new_window}.-->
 
 ## Creating and Configuring vSphere Data Center Cluster <!-- create and configure should be separate tasks-->
 
@@ -163,7 +163,7 @@ Use the following steps to create a Port Group for VM data traffic.
 
 ### Optional - Installing Add On VMware licenses (NSX, vRealize, vSAN, etc.)
 
-Now that the VMware environment is up you are ready to continue with the deployment of additional configurations, Guest VMs or VMware Add Ons. Licenses for VMware Add Ons can also be purchased via the IBM Cloud control portal and added via your vCenter Console. For more information about ordering and managing VMware Add On licenses, see [VMware vSphere 6 Ordering and Managing Licenses](vmware-vsphere-6-ordering-and-managing-licenses.html).
+Now that the VMware environment is up you are ready to continue with the deployment of additional configurations, Guest VMs or VMware Add Ons. Licenses for VMware Add Ons can also be purchased via the IBM Cloud control portal and added via your vCenter Console. <!--For more information about ordering and managing VMware Add On licenses, see [VMware vSphere 6 Ordering and Managing Licenses](vmware-vsphere-6-ordering-and-managing-licenses.html).-->
 
 ## Next Steps
 You now have a basic single-site VMware environment running in an IBM Cloud data center. The basic configuration has only a local datastore, making it a simplified configuration that does not contain features such as VMware DRS, HA, Storage DRS, and a firewall.
