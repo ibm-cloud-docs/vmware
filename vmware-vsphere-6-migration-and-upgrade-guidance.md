@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2018-05-17"
+  years: 1994, 2018
+lastupdated: "2018-06-25"
 ---
 
 {:shortdesc: .shortdesc}
@@ -55,14 +55,14 @@ Expand or move your VMware cloud environments to any {{site.data.keyword.BluSoft
   5. Develop testing plans for verification of the environment.
   6. Coordinate a change/maintenance window with users. Individual VM maintenance windows can account for transfer of data, configuration of the VM, changing and propagation of DNS, as well as time for troubleshooting.
 14. Deploy the new environment:
-  1. [Getting Started with VMware vSphere 6](vmware-vsphere-6-getting-started.html).
-  2. Order the new vSphere and vCenter servers (as well as any other servers that you need).
+  <!--1. [Getting Started with VMware vSphere 6](vmware-vsphere-6-getting-started.html).-->
+  1. Order the new vSphere and vCenter servers (as well as any other servers that you need).
       **Note:** Ensure that the proper "unbonded" network uplinks are selected.
-  3. Order and configure the appropriate storage: [Architecture Guide for IBM File Storage for IBM Cloud with VMware](/docs/infrastructure/FileStorage/architecture-guide-file-storage-vmware.html)
-  4. Order the new VLANs and portable subnets (detailed architecture diagrams and justification might be required).
-  5. Configure vCenter to communicate the with vSphere servers and configure of the environment.
-  6. Take backups in the live environment.
-  7. Run the migration plan and associated test plans.
+  2. Order and configure the appropriate storage: [Architecture Guide for IBM File Storage for IBM Cloud with VMware](/docs/infrastructure/FileStorage/architecture-guide-file-storage-vmware.html)
+  3. Order the new VLANs and portable subnets (detailed architecture diagrams and justification might be required).
+  4. Configure vCenter to communicate the with vSphere servers and configure of the environment.
+  5. Take backups in the live environment.
+  6. Run the migration plan and associated test plans.
   8. Implement backups in the new environment.
   9. Operate the new environment.
   10. Decommission the legacy environment.
