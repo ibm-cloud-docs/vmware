@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 1994, 2018
-lastupdated: "2018-02-28"
+lastupdated: "2018-06-26"
 ---
 
 {:shortdesc: .shortdesc}
@@ -11,9 +11,8 @@ lastupdated: "2018-02-28"
 # Storage to use with VMware Systems
 You have several options when it comes to storage. They can choose private, shared, or bring their own storage solutions. Use the following information to help you decide which storage solution works best with your workload.
 
-Table 1 contains the storage tiers and where your workload might fall.
+See the following table for storage tiers and where your workload might fall.
 <table border="1" cellpadding="0" cellspacing="0">
-        <caption>Table 1. Storage tiers</caption>
 	<tbody>
 		<tr>
 			<td style="width:160px;">
@@ -114,6 +113,7 @@ Table 1 contains the storage tiers and where your workload might fall.
 			</td>
 		</tr>
 	</tbody>
+	 <caption>Table 1. Storage tiers</caption>
 </table>
 
 
@@ -257,10 +257,9 @@ The IBM Spectrum Accelerate private storage option is not available on the {{sit
   * vCenter Operations Manager (VCop)
   * For more information about IBM XIV Storage System, see [Platform and application integration for IBM XIV Storage System ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www-01.ibm.com/support/knowledgecenter/STJTAG/hsg/hsg_kcwelcomepage_xiv.html){: new_window}
 
-Table 2 provides the pros and cons of private storage in a single-tenant environment.
+See the following table to see pros and cons of private storage in a single-tenant environment.
 
 <table border="1" cellpadding="0" cellspacing="0">
-        <caption>Table 2. Pros and cons of VMware private storage options</caption>
 	<tbody>
 		<tr>
 			<td colspan="7" style="width:638px;">
@@ -511,6 +510,7 @@ Table 2 provides the pros and cons of private storage in a single-tenant environ
 			</td>
 		</tr>
 	</tbody>
+	 <caption>Table 2. Pros and cons of VMware private storage options</caption>
 </table>
 
 Table 2 documentation links:
@@ -533,14 +533,13 @@ You can order the {{site.data.keyword.baremetal_short}} from the {{site.data.key
 
 **Note**: In VMware, three predefined values are provided on the **Host Device Details Storage** tab – Username, Password (for CHAP authentication), and Host IQN.
 
-Table 3 provides the pros and cons of shared storage in a multi-tenant environment.
+See the following table 3 for pros and cons of shared storage in a multi-tenant environment.
 
 <table border="1" cellpadding="0" cellspacing="0">
         <colgroup>
           <col/>
           <col/>
 	</colgroup>
-	<caption>Table 3. Pros and cons of VMware shared storage options</caption><tbody>
           <tr>
             <td colspan="3">
               <p>
@@ -685,6 +684,7 @@ Table 3 provides the pros and cons of shared storage in a multi-tenant environme
             </td>
           </tr>
         </tbody>
+	<caption>Table 3. Pros and cons of VMware shared storage options</caption><tbody>
 </table>
 
 Table 3 documentation links:
