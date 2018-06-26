@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 1994, 2018
-lastupdated: "2018-06-25"
+lastupdated: "2018-06-26"
 ---
 
 {:shortdesc: .shortdesc}
@@ -38,7 +38,7 @@ Expand or move your VMware cloud environments to any {{site.data.keyword.BluSoft
     1. Reference Links:
         * [vCenter Server 6.0 requirements for installation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://kb.vmware.com/s/article/2107948){: new_window}
         * [VMware vCenter Server Performance and Best Practices ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.vmware.com/files/pdf/techpaper/vmware-vCenter6-perf.pdf){: new_window}
-        * [Deploying and Configuring a vCenter Server Appliance (vCSA) with VMware vSphere 6](/docs/infrastructure/vmware/vmware-vsphere-6-deploy-and-configure-vcenter-server-appliance-vcsa.html)
+        * [Deploying and Configuring a vCenter Server Appliance (vCSA) with VMware vSphere 6](https://console.bluemix.net/docs/infrastructure/vmware/vmware-vsphere-6-deploy-and-configure-vcenter-server-appliance-vcsa.html#deploying-and-configuring-a-vcenter-server-appliance-vcsa-with-vmware-vsphere-6)
 10. Non-VMWare servers: Identify and plan for any non-VMWare servers (virtual or Bare Metal) that might be needed and plan accordingly.
 11. Storage:
   1. Develop a storage plan for the environment. Endurance 2 IOPS/GB with snapshot space for virtualization is a good starting storage plan, but if virtual databases or other high performance applications are used, then the 4 IOPS/GB tier is a better fit.  NFS storage is typically recommended.  
