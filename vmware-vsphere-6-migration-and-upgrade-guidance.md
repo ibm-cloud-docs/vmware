@@ -42,8 +42,8 @@ Expand or move your VMware cloud environments to any {{site.data.keyword.BluSoft
 10. Non-VMWare servers: Identify and plan for any non-VMWare servers (virtual or Bare Metal) that might be needed and plan accordingly.
 11. Storage:
   1. Develop a storage plan for the environment. Endurance 2 IOPS/GB with snapshot space for virtualization is a good starting storage plan, but if virtual databases or other high performance applications are used, then the 4 IOPS/GB tier is a better fit.  NFS storage is typically recommended.  
-  2. Selection matrix can be found at [Storage to use with VMware Systems](select-storage-option-use-vmware.html).
-  3. Snapshot space is most commonly used as a secondary measure for point-in-time restores. 10% is a good starting place because the process is very efficient and can be easily sized up.
+  <!--2. Selection matrix can be found at [Storage to use with VMware Systems](select-storage-option-use-vmware.html).-->
+  2. Snapshot space is most commonly used as a secondary measure for point-in-time restores. 10% is a good starting place because the process is very efficient and can be easily sized up.
 12. Backups:
   1. Make sure that the existing backup strategy works. If a backup strategy does not exist, it should be created.
   2. You can use your own backup solution. You can use the backup features that are included with vSphere Enterprise Plus licensing, optimized third party solutions like VEEAM, or traditional IBM Cloud r1soft backups.
