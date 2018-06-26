@@ -20,7 +20,7 @@ Expand or move your VMware cloud environments to any {{site.data.keyword.BluSoft
   4. Determine what assigned vlans/subnets/etc are deployed (available in the control portal).
   5. Find the self-defined RFC1918 (private) subnets in use for the solution.
 3. Review the VMWare 6 Documentation and join the VMWare communities:
-  1. [VMware vSphere documentation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.vmware.com/nl/VMware-vSphere/index.html){: new_window}
+  1. [VMware vSphere documentation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.vmware.com/en/VMware-vSphere/index.html){: new_window}
   2. [VMware Technology Network  ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://communities.vmware.com/welcome){: new_window}
 4. Update your admin team's training to support VMWare 6.
 5. Plan and design a new architecture.
