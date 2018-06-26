@@ -58,7 +58,7 @@ Expand or move your VMware cloud environments to any {{site.data.keyword.BluSoft
   <!--1. [Getting Started with VMware vSphere 6](vmware-vsphere-6-getting-started.html).-->
   1. Order the new vSphere and vCenter servers (as well as any other servers that you need).
       **Note:** Ensure that the proper "unbonded" network uplinks are selected.
-  2. Order and configure the appropriate storage: [Architecture Guide for IBM File Storage for IBM Cloud with VMware](/docs/infrastructure/FileStorage/architecture-guide-file-storage-vmware.html)
+  2. Order and configure the appropriate storage: [Architecture Guide for IBM File Storage for IBM Cloud with VMware](https://console.bluemix.net/docs/infrastructure/FileStorage/architecture-guide-file-storage-vmware.html#architecture-guide-for-file-storage-with-vmware)
   3. Order the new VLANs and portable subnets (detailed architecture diagrams and justification might be required).
   4. Configure vCenter to communicate the with vSphere servers and configure of the environment.
   5. Take backups in the live environment.
