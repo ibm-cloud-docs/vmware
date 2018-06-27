@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 1994, 2018
-lastupdated: "2018-06-26"
+lastupdated: "2018-06-27"
 ---
 
 {:shortdesc: .shortdesc}
@@ -271,19 +271,19 @@ See the following table to see pros and cons of private storage in a single-tena
 				<p><strong>Key factors/ storage option</strong></p>
 			</td>
 			<td bgcolor="#C6D9F1" rowspan="2" style="width:87px;">
-				<p>Local</p>
+				<p><strong>Local</strong></p>
 			</td>
 			<td bgcolor="#C6D9F1" rowspan="2" style="width:95px;">
-				<p>Virtual SAN</p>
+				<p><strong>Virtual SAN</strong></p>
 			</td>
 			<td bgcolor="#C6D9F1" rowspan="2" style="width:99px;">
-				<p>QuantaStor</p>
+				<p><strong>QuantaStor</strong></p>
 			</td>
 			<td bgcolor="#C6D9F1" colspan="2" style="width:159px;">
-				<p align="center">NetApp</p>
+				<p align="center"><strong>NetApp</strong></p>
 			</td>
-			<td bgcolor="#C6D9F1" style="width:96px;">
-				<p>IBM Spectrum Accelerate</p>
+			<td bgcolor="#C6D9F1" style="width:101px;">
+				<p><strong>IBM Spectrum Accelerate</strong></p>
 			</td>
 		</tr>
 		<tr>
@@ -554,7 +554,7 @@ See the following table 3 for pros and cons of shared storage in a multi-tenant 
               </p>
             </td>
             <td>
-              <p align="center">File Storage - Endurance and Performance options</p>
+              <p align="center"><strong>File Storage - Endurance and Performance options</strong></p>
             </td>
           </tr>
           <tr>
@@ -690,8 +690,3 @@ See the following table 3 for pros and cons of shared storage in a multi-tenant 
 Table 3 documentation links:
 * [File storage](/docs/infrastructure/FileStorage/index.html)
 * [Architecture Guide for IBM File Storage for IBM Cloud with VMware](/docs/infrastructure/FileStorage/architecture-guide-file-storage-vmware.html)
-
-
-
-
-
