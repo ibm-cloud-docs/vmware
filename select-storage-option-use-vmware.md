@@ -15,12 +15,12 @@ See the following table for storage tiers and where your workload might fall.
 
 || Tier 1 | Tier 2 | Tier 3|
 |--------|--------|-------|
-| Business use | High performance and or high availability production applications, databases, and data| Non-mission critical test and development application, databases, and data | Non-mission critical data storage, backup, and archive |
-| Performance | High (SSDs, SAS) | Medium (SAS, SATA) | Low (SATA)|
-|Guaranteed IOPS|Yes| No | No|
-|High availability (HA)|Yes|No|No|
-|Replication|Yes|Yes|No|
-|Snapshots|Yes|No|No|
+| **Business use** | High performance and or high availability production applications, databases, and data| Non-mission critical test and development application, databases, and data | Non-mission critical data storage, backup, and archive |
+| **Performance** | High (SSDs, SAS) | Medium (SAS, SATA) | Low (SATA)|
+|**Guaranteed IOPS**|Yes| No | No|
+|**High availability (HA)**|Yes|No|No|
+|**Replication**|Yes|Yes|No|
+|**Snapshots**|Yes|No|No|
 
 <caption>Table 1. Storage tiers</caption>
 
