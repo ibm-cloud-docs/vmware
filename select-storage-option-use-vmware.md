@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 1994, 2018
-lastupdated: "2018-06-27"
+lastupdated: "2018-07-27"
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,109 +12,17 @@ lastupdated: "2018-06-27"
 You have several options when it comes to storage. They can choose private, shared, or bring their own storage solutions. Use the following information to help you decide which storage solution works best with your workload.
 
 See the following table for storage tiers and where your workload might fall.
-<table border="1" cellpadding="0" cellspacing="0">
-	<tbody>
-		<tr>
-			<td style="width:160px;">
-				<p>&nbsp;</p>
-			</td>
-			<td bgcolor="#C6D9F1" style="width:160px;">
-				<p><strong>Tier 1</strong></p>
-			</td>
-			<td bgcolor="#C6D9F1" style="width:160px;">
-				<p><strong>Tier 2</strong></p>
-			</td>
-			<td bgcolor="#C6D9F1" style="width:160px;">
-				<p><strong>Tier 3</strong></p>
-			</td>
-		</tr>
-		<tr>
-			<td bgcolor="#C6D9F1" style="width:160px;">
-				<p><strong>Business use</strong></p>
-			</td>
-			<td style="width:160px;">
-				<p>High performance and or high availability production applications, databases, and data</p>
-			</td>
-			<td style="width:160px;">
-				<p>Non-mission critical test and development application, databases, and data</p>
-			</td>
-			<td style="width:160px;">
-				<p>Non-mission critical data storage, backup, and archive</p>
-			</td>
-		</tr>
-		<tr>
-			<td bgcolor="#C6D9F1" style="width:160px;">
-				<p><strong>Performance</strong></p>
-			</td>
-			<td style="width:160px;">
-				<p>High (SSDs, SAS)</p>
-			</td>
-			<td style="width:160px;">
-				<p>Medium (SAS, SATA)</p>
-			</td>
-			<td style="width:160px;">
-				<p>Low (SATA)</p>
-			</td>
-		</tr>
-		<tr>
-			<td bgcolor="#C6D9F1" style="width:160px;">
-				<p><strong>Guaranteed IOPS</strong></p>
-			</td>
-			<td style="width:160px;">
-				<p>Yes</p>
-			</td>
-			<td style="width:160px;">
-				<p>No</p>
-			</td>
-			<td style="width:160px;">
-				<p>No</p>
-			</td>
-		</tr>
-		<tr>
-			<td bgcolor="#C6D9F1" style="width:160px;">
-				<p><strong>High availability (HA)</strong></p>
-			</td>
-			<td style="width:160px;">
-				<p>Yes</p>
-			</td>
-			<td style="width:160px;">
-				<p>No</p>
-			</td>
-			<td style="width:160px;">
-				<p>No</p>
-			</td>
-		</tr>
-		<tr>
-			<td bgcolor="#C6D9F1" style="width:160px;">
-				<p><strong>Replication</strong></p>
-			</td>
-			<td style="width:160px;">
-				<p>Yes</p>
-			</td>
-			<td style="width:160px;">
-				<p>Yes</p>
-			</td>
-			<td style="width:160px;">
-				<p>No</p>
-			</td>
-		</tr>
-		<tr>
-			<td bgcolor="#C6D9F1" style="width:160px;">
-				<p><strong>Snapshots</strong></p>
-			</td>
-			<td style="width:160px;">
-				<p>Yes</p>
-			</td>
-			<td style="width:160px;">
-				<p>No</p>
-			</td>
-			<td style="width:160px;">
-				<p>No</p>
-			</td>
-		</tr>
-	</tbody>
-	 <caption>Table 1. Storage tiers</caption>
-</table>
+
+|| Tier 1 | Tier 2 | Tier 3|
+|--------|--------|-------|
+| Business use | High performance and or high availability production applications, databases, and data| Non-mission critical test and development application, databases, and data | Non-mission critical data storage, backup, and archive |
+| Performance | High (SSDs, SAS) | Medium (SAS, SATA) | Low (SATA)|
+|Guaranteed IOPS|Yes| No | No|
+|High availability (HA)|Yes|No|No|
+|Replication|Yes|Yes|No|
+|Snapshots|Yes|No|No|
+
+<caption>Table 1. Storage tiers</caption>
 
 
 ## VMware Private and Shared Storage Options
@@ -259,259 +167,19 @@ The IBM Spectrum Accelerate private storage option is not available on the {{sit
 
 See the following table to see pros and cons of private storage in a single-tenant environment.
 
-<table border="1" cellpadding="0" cellspacing="0">
-	<tbody>
-		<tr>
-			<td colspan="7" style="width:638px;">
-				<p><strong>VMware &ndash; Private storage (single tenant)</strong></p>
-			</td>
-		</tr>
-		<tr>
-			<td rowspan="2" style="width:101px;">
-				<p><strong>Key factors/ storage option</strong></p>
-			</td>
-			<td bgcolor="#C6D9F1" rowspan="2" style="width:87px;">
-				<p><strong>Local</strong></p>
-			</td>
-			<td bgcolor="#C6D9F1" rowspan="2" style="width:95px;">
-				<p><strong>Virtual SAN</strong></p>
-			</td>
-			<td bgcolor="#C6D9F1" rowspan="2" style="width:99px;">
-				<p><strong>QuantaStor</strong></p>
-			</td>
-			<td bgcolor="#C6D9F1" colspan="2" style="width:159px;">
-				<p align="center"><strong>NetApp</strong></p>
-			</td>
-			<td bgcolor="#C6D9F1" style="width:101px;">
-				<p><strong>IBM Spectrum Accelerate</strong></p>
-			</td>
-		</tr>
-		<tr>
-			<td bgcolor="#C6D9F1" style="width:80px;">
-				<p>OnTap Edge</p>
-			</td>
-			<td bgcolor="#C6D9F1" style="width:80px;">
-				<p>NPS</p>
-			</td>
-			<td bgcolor="#C6D9F1" style="width:96px;">
-				<p align="center">&nbsp;</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Type</strong></p>
-			</td>
-			<td style="width:87px;">
-				<p>Local</p>
-			</td>
-			<td style="width:95px;">
-				<p>SDS</p>
-			</td>
-			<td style="width:99px;">
-				<p>SDS</p>
-			</td>
-			<td style="width:80px;">
-				<p>SDS</p>
-			</td>
-			<td style="width:80px;">
-				<p>Monolithic</p>
-			</td>
-			<td style="width:96px;">
-				<p>SDS</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Performance</strong></p>
-			</td>
-			<td style="width:87px;">
-				<p>Based on SSD /SA-SCSI specs; further RAID 5/10 can be used for read /write gains.</p>
-			</td>
-			<td style="width:95px;">
-				<p>90K+ IOPS per host depending on host configuration. 100 VMs per host, 32 hosts per cluster, 3,200 VMs per cluster, only 2,048 protected (v5.5)</p>
-				<p>Up to 20K IOPS, 200 VMs per host, 64 hosts per cluster, and 6,000 protected VMs per cluster (v6.0).</p>
-			</td>
-			<td style="width:99px;">
-				<p>Based on types and number of disks selected, as well as RAID configurations and use of iSCSI or NFS.</p>
-			</td>
-			<td style="width:80px;">
-				<p>Based on types and number of disks selected, as well as RAID configure-actions.</p>
-			</td>
-			<td style="width:80px;">
-				<p>Depends on model.</p>
-			</td>
-			<td style="width:96px;">
-				<p>Based on types and number of disks selected, as well as RAID configurations and optional use of SSD disk per hypervisor node.</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Scalability</strong></p>
-			</td>
-			<td style="width:87px;">
-				<p>Limited growth in size and in disk I/O throughput.</p>
-			</td>
-			<td style="width:95px;">
-				<p>Virtual machine disk (VMDK) up to 2TB with v5.5, and up to 62TB with v6.0.</p>
-				<p>Scale out with more nodes.</p>
-			</td>
-			<td style="width:99px;">
-				<p>Single QS up to 128TB (3.x). No scaling up or out.</p>
-			</td>
-			<td style="width:80px;">
-				<p>Up to 10TB; no scaling out.</p>
-			</td>
-			<td style="width:80px;">
-				<p>Yes, add disk shelves for capacity and IOPS.</p>
-			</td>
-			<td style="width:96px;">
-				<p>Scales from ~8 to 325TB usable space.</p>
-				<p>Min capacity is 3 VMs x 6 drives.</p>
-				<p>Max capacity is 15 VMs x 12 drives.</p>
-				<p>Scales up to 144 virtual arrays and more than 40 PB usable via IBM Hyper-Scale Manager.</p>
-				<p>Non-disruptive capacity expansion by adding more nodes.</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Protocols</strong></p>
-			</td>
-			<td style="width:87px;">
-				<p>NA</p>
-			</td>
-			<td style="width:95px;">
-				<p>Proprietary</p>
-			</td>
-			<td style="width:99px;">
-				<p>iSCSI/NFS/SMB</p>
-			</td>
-			<td colspan="2" style="width:159px;">
-				<p align="center">iSCSI/NFS/SMB</p>
-			</td>
-			<td style="width:96px;">
-				<p>iSCSI</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Use cases</strong></p>
-			</td>
-			<td style="width:87px;">
-				<p>Tier 2 and 3 workloads</p>
-			</td>
-			<td style="width:95px;">
-				<p>Tier 1 workloads</p>
-			</td>
-			<td style="width:99px;">
-				<p>Tier 2 and 3 workloads</p>
-			</td>
-			<td style="width:80px;">
-				<p>Tier 2 and 3 workloads</p>
-			</td>
-			<td style="width:80px;">
-				<p>Tier 1 workloads</p>
-			</td>
-			<td style="width:96px;">
-				<p>Tier 1 workloads</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>High availability (HA)</strong></p>
-			</td>
-			<td style="width:87px;">
-				<p>Available with RAID</p>
-			</td>
-			<td style="width:95px;">
-				<p>Yes; host and disk failures; failure domains (v6.0)</p>
-			</td>
-			<td style="width:99px;">
-				<p>Not available in IBM Cloud.</p>
-			</td>
-			<td style="width:80px;">
-				<p>NA</p>
-			</td>
-			<td style="width:80px;">
-				<p>Yes; dual heads and controllers.</p>
-			</td>
-			<td style="width:96px;">
-				<p>Yes; clustered solution.</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Configurability</strong></p>
-			</td>
-			<td style="width:87px;">
-				<p>Number and type of disks; RAID levels</p>
-			</td>
-			<td style="width:95px;">
-				<p>Specific controllers required.</p>
-			</td>
-			<td style="width:99px;">
-				<p>CPU, memory, cache, number and type of disks, and RAID levels.</p>
-			</td>
-			<td style="width:80px;">
-				<p>CPU, memory, cache, number and type of disks, and RAID levels.</p>
-			</td>
-			<td style="width:80px;">
-				<p>TBD</p>
-			</td>
-			<td style="width:96px;">
-				<p>CPU, memory, cache, number and type of disks, SSD, caching, iSCSI port configuration. Multi-tenancy QOS.</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Disaster recovery and replication</strong></p>
-			</td>
-			<td style="width:87px;">
-				<p>Use vRA to replicate; no SRAs.</p>
-			</td>
-			<td style="width:95px;">
-				<p>Use vRA to replicate.</p>
-			</td>
-			<td style="width:99px;">
-				<p>Built in replication; no SRAs available.</p>
-			</td>
-			<td style="width:80px;">
-				<p>Can use vRA to replicate, SnapMirror.</p>
-			</td>
-			<td style="width:80px;">
-				<p>Can use vRA to replicate, SnapMirror, SnapVault.</p>
-			</td>
-			<td style="width:96px;">
-				<p>vRA or SRA supported; replication between SDS and or Physical XIV devices.</p>
-				<p>Snapshots supported; application recovery via IBM FlashCopy Manager.</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:101px;">
-				<p><strong>Reliability</strong></p>
-			</td>
-			<td style="width:87px;">
-				<p>Single point of failure without HA.</p>
-			</td>
-			<td style="width:95px;">
-				<p>Tolerates up to three host failures with seven plus hosts.</p>
-				<p>Failure domains are introduced in v6.0.</p>
-			</td>
-			<td style="width:99px;">
-				<p>Single point of failure (enclosure and RAID controller) and no HA.</p>
-			</td>
-			<td style="width:80px;">
-				<p>Single point of failure (enclosure and RAID controller) and no HA.</p>
-			</td>
-			<td style="width:80px;">
-				<p>Highly- redundant multipath I/O (MPIO) connection.</p>
-			</td>
-			<td style="width:96px;">
-				<p>Highly-redundant iSCSI MPIO connections: any node can manage the cluster.</p>
-			</td>
-		</tr>
-	</tbody>
-	 <caption>Table 2. Pros and cons of VMware private storage options</caption>
-</table>
+|Key Factors/storage options| Local | Virtual SAN | QuantStor|NetApp (_OnTap Edge_)|NetApp (_NPS_)|IBM Spectrum Accelerate|
+|-|-|-|-|-|-|-|-|
+| **Type** |Local |SDS |SDS| SDS |Monolithic|SDS|
+| **Performance** | Based on SSD/SA-SCSI specs; further RAID 5/10 can be used for read /write gains. | 90K+ IOPS per host depending on host configuration. 100 VMs per host, 32 hosts per cluster, 3,200 VMs per cluster, only 2,048 protected (v5.5). Up to 20K IOPS, 200 VMs per host, 64 hosts per cluster, and 6,000 protected VMs per cluster (v6.0).| Based on types and number of disks selected, as well as RAID configurations and use of iSCSI or NFS. | Based on types and number of disks selected, as well as RAID configure-actions.|Depends on model. |Based on types and number of disks selected, as well as RAID configurations and optional use of SSD disk per hypervisor node.|
+|**Scalability**|Limited growth in size and in disk I/O throughput. | Virtual machine disk (VMDK) up to 2 TB with v5.5, and up to 62 TB with v6.0.|Single QS up to 128 TB (3.x). No scaling up or out.|Up to 10 TB; no scaling out.|Yes, add disk shelves for capacity and IOPS. | Scales from ~8 to 325 TB usable space. Min capacity is 3 VMs x 6 drives. Max capacity is 15 VMs x 12 drives. Scales up to 144 virtual arrays and more than 40 PB usable via IBM Hyper-Scale Manager. Non-disruptive capacity expansion by adding more nodes.|
+|**Protocols**|N/A|Proprietary|iSCSI/NFS/SMB|iSCSI/NFS/SMB|iSCSI/NFS/SMB|iSCSI|
+|**Use cases**|Tier 2 and 3 workloads|Tier 1 workloads|Tier 2 and 3 workloads|Tier 2 and 3 workloads|Tier 1 workloads|Tier 1 workloads|
+|**High availability (HA)**|Available with RAID|Yes; host and disk failures; failure domains (v6.0)|N/A|N/A|Yes; dual heads and controllers.|Yes; clustered solution.|
+|**Configurability (HA)**|Number and type of disks; RAID levels|Specific controllers required.|CPU, memory, cache, number and type of disks, and RAID levels.|CPU, memory, cache, number and type of disks, and RAID levels.|TBD|CPU, memory, cache, number and type of disks, SSD, caching, iSCSI port configuration. Multi-tenancy QOS.|
+|**Disaster recovery and replication**|Use vRA to replicate; no SRAs.|Use vRA to replicate.|Built in replication; no SRAs available.|Can use vRA to replicate, SnapMirror.|Can use vRA to replicate, SnapMirror, SnapVault.|vRA or SRA supported; replication between SDS and or Physical XIV devices. Snapshots supported; application recovery via IBM FlashCopy Manager.|
+|**Reliability**|Single point of failure without HA.|Tolerates up to three host failures with seven plus hosts. Failure domains are introduced in v6.0.|Single point of failure (enclosure and RAID controller) and no HA.|Single point of failure (enclosure and RAID controller) and no HA.|Highly- redundant multipath I/O (MPIO) connection.|Highly-redundant iSCSI MPIO connections: any node can manage the cluster.|
+
+<caption>Table 2. Pros and cons of VMware private storage options</caption>
 
 Table 2 documentation links:
 <!-- Internal link to exercise caution with QuantaStor: https://w3-connections.ibm.com/forums/html/topic?id=5c037198-96b8-43be-af21-edb47e4cf0bb#repliesPg=0-->
@@ -533,159 +201,24 @@ You can order the {{site.data.keyword.baremetal_short}} from the {{site.data.key
 
 **Note**: In VMware, three predefined values are provided on the **Host Device Details Storage** tab – Username, Password (for CHAP authentication), and Host IQN.
 
-See the following table 3 for pros and cons of shared storage in a multi-tenant environment.
+See the following table for pros and cons of shared storage in a multi-tenant environment.
 
-<table border="1" cellpadding="0" cellspacing="0">
-        <colgroup>
-          <col/>
-          <col/>
-	</colgroup>
-          <tr>
-            <td colspan="3">
-              <p>
-                <strong>VMware Shared storage (multi-tenant)</strong>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Key factors/ storage options</strong>
-              </p>
-            </td>
-            <td>
-              <p align="center"><strong>File Storage - Endurance and Performance options</strong></p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Type</strong>
-              </p>
-            </td>
-            <td>
-              <p>SDS</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Performance</strong>
-              </p>
-            </td>
-            <td>
-              <p>Predictable storage performance parameters.</p>
-              <ul>
-                <li>Endurance option: Available in 0.25, 2, 4 or 10 IOPS per GB.</li>
-                <li>Performance option: Client provisions desired level of performance based on workload needs or price point.</li>
-              </ul>
-              <p>Multiple volumes may be striped together to achieve higher IOPS and more throughput.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Scalability</strong>
-              </p>
-            </td>
-            <td>
-              <p>Volume sizes range from 20 GB to 12 TB.</p>
-              <p>File Share Capacity can be expanded to 12 TB after initial provisioning in GB increments.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Protocols</strong>
-              </p>
-            </td>
-            <td>
-              <p>NFS</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Host Connections</strong>
-              </p>
-            </td>
-            <td>
-              <p>Maximum of 64 for NFS.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Use cases</strong>
-              </p>
-            </td>
-            <td>
-              <p>Tier 1, 2, and 3 workloads:</p>
-              <p style="margin-left: 9.85pt;">·   0.25 IOPS per GB: Low I/O intensity. Example applications include storing mailboxes or department-level file shares.</p>
-              <p style="margin-left: 9.85pt;">·   2 IOPS per GB: General purposes. Example applications include hosting small databases backing web applications or virtual machine disk images for a hypervisor.</p>
-              <p style="margin-left: 9.85pt;">·   4 IOPS per GB: High I/O intensity. Example applications include transactional and other performance-sensitive databases.</p>
-              <p style="margin-left: 9.85pt;">·   10 IOPS per GB: High I/O intensity. Example applications include analytics.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>HA</strong>
-              </p>
-            </td>
-            <td>
-              <p>Yes, dual heads and controllers.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Configurability</strong>
-              </p>
-            </td>
-            <td>
-              <p>Size and IOPS only.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Disaster recovery and replication</strong>
-              </p>
-            </td>
-            <td>
-              <p>Snapshot and Replication provided over the IBM Cloud Private Network; also achieved using [vRealize Automation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/products/vrealize-automation), but no SRA.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <strong>Reliability</strong>
-              </p>
-            </td>
-            <td>
-              <p>Highly redundant, MPIO connection, NFS-based file storage routed TCP/IP connections. Snapshots and Replication enabled.</p>
-            </td>
-          </tr>
-	  <tr>
-            <td>
-              <strong>Latency</strong>
-            </td>
-            <td>
-              <p>&lt;10 ms</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Cost</strong>
-            </td>
-            <td>
-              <p>High for both CAPEX (10x for SAN of same size) and OPEX</p>
-            </td>
-          </tr>
-        </tbody>
-	<caption>Table 3. Pros and cons of VMware shared storage options</caption><tbody>
-</table>
+|Key Factors/storage options| File Storage - Endurance and Performance options | 
+|-|-|
+| **Type** |SDS |
+| **Performance** |Predictable storage performance parameters. <br>Endurance option: <br><ol>Available in 0.25, 2, 4 or 10 IOPS per GB.<br>Performance option: Client provisions desired level of performance based on workload needs or price point.<br></ol>Multiple volumes may be striped together to achieve higher IOPS and more throughput. |
+|**Scalability**|Volume sizes range from 20 GB to 12 TB.<br>File Share Capacity can be expanded to 12 TB after initial provisioning in GB increments. | 
+|**Protocols**|NFS|
+|**Host connections**|Maximum of 64 for NFS.|
+|**Use cases**|Tier 1, 2, and 3 workloads:<br><ol>0.25 IOPS per GB: Low I/O intensity. Example applications include storing mailboxes or department-level file shares.<br>2 IOPS per GB: General purposes. Example applications include hosting small databases backing web applications or virtual machine disk images for a hypervisor.<br>4 IOPS per GB: High I/O intensity. Example applications include transactional and other performance-sensitive databases.<br>10 IOPS per GB: High I/O intensity. Example applications include analytics.|
+|**HA**|Yes, dual heads and controllers.|
+|**Configurability**|Size and IOPS only.|
+|** Disaster recovery and replication **|Snapshot and Replication provided over the IBM Cloud Private Network; also achieved using [vRealize Automation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/products/vrealize-automation), but no SRA.|
+|**Reliability**|Highly redundant, MPIO connection, NFS-based file storage routed TCP/IP connections. Snapshots and Replication enabled.|
+|**Latency**|<10 ms|
+|**Cost**|High for both CAPEX (10x for SAN of same size) and OPEX|
+
+<caption> Table 3. Pros and cons of VMware shared storage options</caption>
 
 Table 3 documentation links:
 * [File storage](/docs/infrastructure/FileStorage/index.html)
