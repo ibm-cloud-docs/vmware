@@ -1,13 +1,13 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-16"
+  years: 1994, 2018
+lastupdated: "2018-08-15"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Getting started with VMware and {{site.data.keyword.cloud_notm}}
+# Getting started tutorial
 
 VMware provides an industry-leading virtualization platform that abstracts processor, memory, storage, and networking resources to create multiple {{site.data.keyword.virtualmachinesshort}} on a single physical server. Multiple physical servers can be clustered together to create a private cloud.
 
