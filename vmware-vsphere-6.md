@@ -67,9 +67,10 @@ In addition to offering the vSphere 6 Enterprise Plus License, {{site.data.keywo
 **License Model:** Per processor per month
 
 **Features:**
-* vRealize Automation: Automated delivery of personalized infrastructure, applications, and custom IT services
-* vRealize Operations: Intelligent health, performance, capacity, and configuration management Orchestration
-* vRealize Log Insight: Real time log management and log analysis.
+* vRealize Automation - Automated delivery of personalized infrastructure, applications, and custom IT services.
+* vRealize Operations - Intelligent health, performance, capacity, and configuration management orchestration.
+* vRealize Log Insight - Real-time log management and log analysis.
+* vRealize Network Insight - Accelerated security management for applications and network infrastructures.
 
 ## VMware vSAN
 
