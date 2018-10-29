@@ -21,7 +21,7 @@ vSphere implementation also enables the use of other components. Table 1 contain
 |VMware vRealize Operations Enterprise Edition|
 |VMware vRealize Automation Enterprise|
 |VMware vRealize Automation Advanced|
-|VMware vRealize Network Insight (1, 2, or 4 GPU)|
+|VMware vRealize Network Insight (1, 2, or 4 CPU)|
 |VMware NSX-V|
 |VMware Integrated OpenStack (VIO)|
 |Virtual SAN Standard Tier 1 (0 - 20 TB)|
