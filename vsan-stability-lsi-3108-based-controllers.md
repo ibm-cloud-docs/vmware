@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2018-05-15"
+  years: 1994, 2018
+lastupdated: "2018-11-15"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2018-05-15"
 
 # Configuring vSANs for stability on LSI 3108-based controllers
 
-To help prevent device-related failures when running vSAN with LSI 3108-series controllers, run the following commands from the ESXi shell:
+To help prevent device-related failures when you run vSAN with LSI 3108-series controllers, run the following commands from the ESXi shell:
 
 `esxcfg-advcfg -s 100000 /LSOM/diskIoTimeout`<br/>
 `esxcfg-advcfg -s 4 /LSOM/diskIoRetryFactor`
