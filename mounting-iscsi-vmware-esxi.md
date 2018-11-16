@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2018-11-15"
+lastupdated: "2018-11-16"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2018-11-15"
 
 # Mounting iSCSI VMWare ESXi
 
-Mounting iSCSI into VMWare ESXi can be accomplished with a few steps and only the details of the server and storage node.
+Mounting iSCSI into VMWare ESXi can be accomplished with a few steps and only the details of the server and storage node. **Note:** If you want to connect multiple ESXi servers to the same ISCSI LUNs, the Host Authorization limit for ISCSI is eight hosts.
 {:shortdesc}
 
 1. Log in to the vSphere by using the Primary Private IP and user **root** and root's password.
