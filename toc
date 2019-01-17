@@ -42,7 +42,6 @@ VMWare
         architecture-guide-quantastor-vmwaresoftlayer.md
         brocade-vrouter-vyatta-setup-guide-vmware-environments-quantastor.md
 
-    install-evault-backup-client-vmware.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
