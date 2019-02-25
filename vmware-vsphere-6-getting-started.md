@@ -32,7 +32,7 @@ To optimize your VMware solution it is recommended that you use a Private Networ
     * Software: OS = vSphere Enterprise Plus 6
     * OS Storage: 2 x 1 TB SATA (configured as a RAID 1)
     * Data Storage : Recommend ordering 2 TB SATA or 1.2 TB SSD or Endurance / Performance NFS SAN Storage
-      * If you are interested in other storage types, see [Storage to use with VMware Systems](/docs/infrastructure/vmware/select-storage-option-use-vmware.html)
+      * If you are interested in other storage types, see [Storage to use with VMware Systems](/docs/infrastructure/vmware?topic=VMware-storage-to-use-with-vmware-systems)
       * Uplink Port Speeds: 1 Gbps Dual Public and Private Networks (Unbonded)
         * 10 Gbps Uplinks are recommended for VMware vSAN solutions
 5. If you are creating a new deployment in a new IBM Cloud data center, proceed to step 6. If this deployment is a expansion or a deployment into an existing Data Center, select the preferred Backend BCR VLAN + Frontend FCR VLAN. For the example, the Backend BCR VLAN is 1101 and the Frontend FCR VLAN is 2200. **Note:** If this deployment is a new or a new deployment into a new DC the Backend BCR and Frontend FCR VLANs are created when you order the server.
@@ -41,7 +41,7 @@ To optimize your VMware solution it is recommended that you use a Private Networ
 
 ## Placing your order for vCenter Server
 
-vCenter is an add-on to a Windows Server. This configuration scales up to 20 vSphere hosts. For larger implementations, deployment of the vCenter Server Appliance (VCSA) [Deploy and Configure a vCenter Server Appliance (vCSA)](/docs/infrastructure/vmware/vmware-vsphere-6-deploy-and-configure-vcenter-server-appliance-vcsa.html) directly to a vSphere cluster is recommended.
+vCenter is an add-on to a Windows Server. This configuration scales up to 20 vSphere hosts. For larger implementations, deployment of the vCenter Server Appliance (VCSA) [Deploy and Configure a vCenter Server Appliance (vCSA)](/docs/infrastructure/vmware?topic=VMware-deploying-and-configuring-a-vcenter-server-appliance-vcsa-with-vmware-vsphere-6) directly to a vSphere cluster is recommended.
 
 Use the following steps to order a virtual server with vCenter installed:
 
@@ -79,7 +79,7 @@ The subnets are used for addressing VMware Guest Virtual Machine (VM) and VMware
 7. Click **Order IP addresses** on the upper right of the screen.
 8. Click **Place Order**.
 9. Follow this process for each applicable VLAN (Ex. 1101, 2200)
-  1. For more information about VLANs, see [Getting started with VLANs](/docs/infrastructure/vlans/getting-started.html).
+  1. For more information about VLANs, see [Getting started with VLANs](/docs/infrastructure/vlans?topic=vlans-getting-started-with-vlans).
 
 |Subnet Type|subnet size|Bound Vlan|vSphere host usage|
 |---|---|---|---|
@@ -107,7 +107,7 @@ You can now log in to the vCenter server and configure the vSphere Cluster.
 3. Scroll down the **Device Details** screen to the **Network** section of the server and make note of the **Private IP Address**.
 4. Scroll down the **Device Details** screen and note the **Passwords** for both the Windows OS and vCenter Software.
 5. Open a Microsoft Remote Desktop (RDP) session and connect to your vCenter Server via its Public IP address.
-6. Log in using the passwords that you obtained in step 4. **Note:** An active VPN connection to IBM Cloud needs to be in place if the Private IP address is used to access vCenter. For more information about VPN access, see [Enable access to the IBM Cloud infrastructure private network](/docs/customer-portal/getting-started.html#enable-private-network).
+6. Log in using the passwords that you obtained in step 4. **Note:** An active VPN connection to IBM Cloud needs to be in place if the Private IP address is used to access vCenter. For more information about VPN access, see [Enable access to the IBM Cloud infrastructure private network](/docs/customer-portal?topic=customer-portal-getting-started#enable-private-network).
 7. Download and install the traditional [vSphere Client ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2089791){: new_window} or use the vSphere Web Client via the link `https://<vCenter-Sever-Public-IP-Address>/vsphere-client/`.
 8. Log in to vCenter with the IP address and passwords you obtained in steps 3 and 4.
 9. Right-click the vCenter server name in the left pane and select **New Datacenter**.
@@ -166,4 +166,4 @@ Now that the VMware environment is up, you are ready to continue with the deploy
 ## Next Steps
 You now have a basic single-site VMware environment that is running in an IBM Cloud data center. The basic configuration has only a local datastore, making it a simplified configuration that does not contain features such as VMware DRS, HA, Storage DRS, and a firewall.
 
-For more information, see [FAQs: VMware](/docs/infrastructure/vmware/vmware-faq.html). 
+For more information, see [FAQs: VMware](/docs/infrastructure/vmware?topic=VMware-faqs-vmware). 

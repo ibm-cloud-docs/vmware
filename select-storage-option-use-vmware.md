@@ -201,7 +201,7 @@ IBM Cloud offers great {{site.data.keyword.filestorage_short}} options that you 
 
 ### {{site.data.keyword.filestorage_short}}
 
-You can order the {{site.data.keyword.baremetal_short}} from the {{site.data.keyword.slportal}} with ESX. In the customer portal, you can also provision {{site.data.keyword.filestorage_full}} in the same availability zone as your host. For more information about provisioning file storage, see [Ordering and Managing IBM File Storage for IBM Cloud](/docs/infrastructure/FileStorage/provisioning-file-storage.html).
+You can order the {{site.data.keyword.baremetal_short}} from the {{site.data.keyword.slportal}} with ESX. In the customer portal, you can also provision {{site.data.keyword.filestorage_full}} in the same availability zone as your host. For more information about provisioning file storage, see [Ordering and Managing IBM File Storage for IBM Cloud](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole).
 
 **Note**: In VMware, three predefined values are provided on the **Host Device Details Storage** tab – Username, Password (for CHAP authentication), and Host IQN.
 
@@ -225,5 +225,5 @@ See the following table for pros and cons of shared storage in a multi-tenant en
 <caption> Table 3. Pros and cons of VMware shared storage options</caption>
 
 Table 3 documentation links:
-* [File storage](/docs/infrastructure/FileStorage/index.html)
-* [Architecture Guide for IBM File Storage for IBM Cloud with VMware](/docs/infrastructure/FileStorage/architecture-guide-file-storage-vmware.html)
+* [File storage](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted)
+* [Architecture Guide for IBM File Storage for IBM Cloud with VMware](/docs/infrastructure/FileStorage?topic=FileStorage-architectureguide)

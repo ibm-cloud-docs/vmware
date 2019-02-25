@@ -30,4 +30,4 @@ To load your installation media, click the server name in the inventory list. Cl
 
 After you select your ISO image, you are ready to begin installing your respective OS.
 
-For more information about setting up a virtual machine network, see [Setting up a virtual machine network](/docs/infrastructure/virtualization/virtual-machine-network-setup.html){:new_window}.
+For more information about setting up a virtual machine network, see [Setting up a virtual machine network](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-a-virtual-machine-network){:new_window}.

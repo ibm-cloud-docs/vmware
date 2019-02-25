@@ -41,6 +41,6 @@ Deploying ESX from installation media is similar across all versions and can be 
 
 You can now manage the ESXi host.
 
-For more information about setting up endurance or performance block storage, see [Provisioning and Managing Block Storage](/docs/infrastructure/BlockStorage/provisioning-block_storage.html).
+For more information about setting up endurance or performance block storage, see [Provisioning and Managing Block Storage](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole).
 
-For more information about setting up QuantaStor, see [Architecture Guide for QuantaStor](/docs/infrastructure/vmware/architecture-guide-quantastor-vmwaresoftlayer.html).
+For more information about setting up QuantaStor, see [Architecture Guide for QuantaStor](/docs/infrastructure/vmware?topic=VMware-architecture-guide-for-quantastor).
