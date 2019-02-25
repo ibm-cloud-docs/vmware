@@ -16,7 +16,7 @@ VMware provides an industry-leading virtualization platform that abstracts proce
 | Get Started       |
 |:------------------|
 | __ 1. Learn about the [VMware and {{site.data.keyword.cloud_notm}}](/docs/infrastructure/vmware/vmware-6-topic-description.html) feature. |
-| __ 2. Review the [licensing options](/docs/infrastructure/vmware/vmware-vsphere-6.html) and [storage options](/docs/infrastructure/vmware//docs/infrastructure/vmware/select-storage-option-use-vmware.html).|
+| __ 2. Review the [licensing options](/docs/infrastructure/vmware/vmware-vsphere-6.html) and [storage options](/docs/infrastructure/vmware/select-storage-option-use-vmware.html).|
 | __ 3. To deploy a basic single-site VMware environment running in an IBM Cloud data center, see [Getting Started with VMware vSphere 6](/docs/infrastructure/vmware/vmware-vsphere-6-getting-started.html). |
 {: caption="Table 1. Getting started with VMware in IBM Cloud" caption-side="top"} 
 

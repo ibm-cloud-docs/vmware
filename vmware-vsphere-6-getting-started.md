@@ -32,7 +32,7 @@ To optimize your VMware solution it is recommended that you use a Private Networ
     * Software: OS = vSphere Enterprise Plus 6
     * OS Storage: 2 x 1 TB SATA (configured as a RAID 1)
     * Data Storage : Recommend ordering 2 TB SATA or 1.2 TB SSD or Endurance / Performance NFS SAN Storage
-      * If you are interested in other storage types, see [Storage to use with VMware Systems](/docs/infrastructure/vmware//docs/infrastructure/vmware/select-storage-option-use-vmware.html)
+      * If you are interested in other storage types, see [Storage to use with VMware Systems](/docs/infrastructure/vmware/select-storage-option-use-vmware.html)
       * Uplink Port Speeds: 1 Gbps Dual Public and Private Networks (Unbonded)
         * 10 Gbps Uplinks are recommended for VMware vSAN solutions
 5. If you are creating a new deployment in a new IBM Cloud data center, proceed to step 6. If this deployment is a expansion or a deployment into an existing Data Center, select the preferred Backend BCR VLAN + Frontend FCR VLAN. For the example, the Backend BCR VLAN is 1101 and the Frontend FCR VLAN is 2200. **Note:** If this deployment is a new or a new deployment into a new DC the Backend BCR and Frontend FCR VLANs are created when you order the server.
