@@ -2,6 +2,8 @@
 copyright:
   years: 1994, 2017
 lastupdated: "2018-11-15"
+
+subcollection: vmware
 ---
 
 {:shortdesc: .shortdesc}

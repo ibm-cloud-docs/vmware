@@ -2,6 +2,8 @@
 copyright:
   years: 1994, 2017
 lastupdated: "2017-08-07"
+
+subcollection: vmware
 ---
 
 # Installing VMware Tools - Linux
