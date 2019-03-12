@@ -1,20 +1,29 @@
 ---
+
 copyright:
-  years: 1994, 2018
+  years: 1994, 2019
 lastupdated: "2018-08-23"
 
+keywords: order vmware license, {{site.data.keyword.BluSoftlayer_full}}, {{site.data.keyword.slportal}}
+
 subcollection: vmware
+
 ---
 
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
 {:new_window: target="_blank"}
+{:pre: .pre}
+{:table: .aria-labeledby="caption"}
 
 # Ordering VMware Licenses
+{: #ordering-vmware-license}
 
 VMware administrators understand that they can quickly realize the cost-effective hybrid cloud characteristics by deploying into {{site.data.keyword.BluSoftlayer_full}}. One of the characteristics is that vSphere workloads and catalogs are provisioned onto VMware vSphere environments within {{site.data.keyword.cloud_notm}} data centers without modification to VMware VMs or guests. Using a common vSphere hypervisor and management/orchestration platform makes these deployments possible.
 {:shortdesc}
 
-vSphere implementation also enables the use of other components. Table 1 contains a list of VMware products that are available to order through the {{site.data.keyword.slportal}}. Pricing information can be found under [IBM Cloud for VMware Solutions](http://www.softlayer.com/vmware-solutions).
+vSphere implementation also enables the use of other components. Table 1 contains a list of VMware products that are available to order through the {{site.data.keyword.slportal}}. Pricing information can be found under www.ibm.com/cloud/vmware.
 
 |Product Name|
 |---|
