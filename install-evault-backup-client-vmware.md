@@ -1,15 +1,24 @@
 ---
+
 copyright:
-  years: 1994, 2017
+  years: 1994, 2019
 lastupdated: "2018-11-15"
 
+keywords: install evault backup client
+
 subcollection: vmware
+
 ---
 
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
 {:new_window: target="_blank"}
+{:pre: .pre}
+{:table: .aria-labeledby="caption"}
 
 # Installing EVault Backup Client for VMware
+{: #install-evault-client}
 
 Installing the EVault Backup client on a VMware server can be done through a series of commands in the shell or terminal within the target ESX server. This procedure outlines the steps that are required to install the EVault Backup client on your VMware server:
 {:shortdesc}
