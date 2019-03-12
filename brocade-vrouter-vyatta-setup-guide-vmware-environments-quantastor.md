@@ -1,15 +1,24 @@
 ---
+
 copyright:
-  years: 1994, 2017
+  years: 1994, 2019
 lastupdated: "2017-12-18"
 
+keywords: Brocade vRouter, Firewall rules, vyatta, 
+
 subcollection: vmware
+
 ---
 
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
 {:new_window: target="_blank"}
+{:pre: .pre}
+{:table: .aria-labeledby="caption"}
 
 # Setting up Brocade vRouter (Vyatta)for VMware Environments with QuantaStor
+{: #set-up-brocade}
 
 You can configure a Brocade vRouter (Brocade vRouter (Vyatta) appliance [high availability (HA) configuration] within a VMware environment that is using QuantaStor. Use the following information with the [Advanced Single-Site VMware Reference Architecture](/docs/infrastructure/virtualization?topic=Virtualization-advanced-single-site-vmware-reference-architecture) to set up one of these storage options in your VMware environment.
 {:shortdesc}
@@ -29,6 +38,7 @@ Figure 1 describes the communication between each zone. **Note:** Your environme
 ![Figure 1: Brocade vRouter (Vyatta) Zone Configuration](images/brocade_figure1.png "Brocade vRouter (Vyatta) Zone Configuration") Figure 1. Brocade vRouter (Vyatta) Zone Configuration
 
 ## Configuring Brocade vRouter (Vyatta)
+{: #configure-brocade}
 
 To configure the Brocade vRouter (Vyatta) follow these steps:
 
@@ -278,6 +288,7 @@ Use the following commands in `configure` mode:
     save
 
 ## Syncing with other Brocade vRouter (Vyatta) in the HA Pair
+{: #sync-with-brocade}
 
 Since you have set up one of the Brocade vRouter’s (Vyatta) in the HA pair, you must sync the changes to the other gateway device.
 
@@ -312,6 +323,7 @@ Use the following commands in `configure` mode:
     save
 
 ## Associating and Routing VLANs
+{: #associate-routing}
 
 After the zones and firewall rules are set up on the Brocade vRouter (Vyatta), you must associate the VLANs to it and enable routing of the VLANs via the Brocade vRouter (Vyatta).
 
