@@ -1,15 +1,24 @@
 ---
+
 copyright:
-  years: 1994, 2017
+  years: 1994, 2019
 lastupdated: "2017-12-18"
 
+keywords: IBM Issued Licenses VMware vSphere 6 
+
 subcollection: vmware
+
 ---
 
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
 {:new_window: target="_blank"}
+{:pre: .pre}
+{:table: .aria-labeledby="caption"}
 
 # Applying IBM Issued Licenses for VMware vSphere 6 
+{: #apply-vmware-vsphere-6-licenses}
 
 Many VMware Add On licenses can be purchased directly and stored on the {{site.data.keyword.slportal}}. After a license is purchased, you need to apply the license to your vSphere Hosts by using the following steps.
 {:shortdesc}
