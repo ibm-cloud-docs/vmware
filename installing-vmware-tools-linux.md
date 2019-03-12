@@ -1,12 +1,24 @@
 ---
+
 copyright:
-  years: 1994, 2017
+  years: 1994, 2019
 lastupdated: "2017-08-07"
 
+keywords: install vmware linux tools, linux
+
 subcollection: vmware
+
 ---
 
+{:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
+{:new_window: target="_blank"}
+{:pre: .pre}
+{:table: .aria-labeledby="caption"}
+
 # Installing VMware Tools - Linux
+{: #install-vmware-linux-tools}
 
 VMware Tools is a suite of utilities that enhances the performance of the virtual machine’s guest operating system and improves management of the virtual machine. Installing VMware Tools in the guest operating system is vital. Although the guest operating system can run without VMware Tools, you lose important functionality and convenience.
 
