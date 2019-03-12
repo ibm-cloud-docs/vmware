@@ -1,15 +1,24 @@
 ---
+
 copyright:
-  years: 1994, 2017
+  years: 1994, 2019
 lastupdated: "2017-11-30"
 
+keywords:  VMware administrators, vSphere workloads, VMware vSphere environments, cookbooks, VMware deployments, vSphere administrators
+
 subcollection: vmware
+
 ---
 
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
 {:new_window: target="_blank"}
+{:pre: .pre}
+{:table: .aria-labeledby="caption"}
 
 # Using cookbooks for VMware deployments
+{: #using-vmware-cookbooks}
 
 VMware administrators can quickly realize cost-effective hybrid cloud characteristics by deploying into the {{site.data.keyword.BluSoftlayer_full}} enterprise-grade global cloud. vSphere workloads and catalogs can be provisioned onto VMware vSphere environments within the {{site.data.keyword.cloud_notm}} data centers without modififying VMware VMs or guests. These deployments are made  possible by using a common vSphere hypervisor and management/orchestration platform. vSphere implementations also can leverage other components of the VMware vCloud Suite – vCloud Automation Center, vCenter Operations Management Suite, vSAN, vCloud Network & Security, Site Recovery Manager, vCenter Orchestrator, and NSX.
 
