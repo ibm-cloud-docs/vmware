@@ -1,15 +1,24 @@
 ---
+
 copyright:
-  years: 1994, 2017
+  years: 1994, 2019
 lastupdated: "2017-12-14"
 
+keywords: getting started nsx, nsx license
+
 subcollection: vmware
+
 ---
 
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
 {:new_window: target="_blank"}
+{:pre: .pre}
+{:table: .aria-labeledby="caption"}
 
-# Getting Started with VMware vSphere 6 NSX 
+# Getting Started with VMware vSphere 6 NSX
+{: #getting-started-nsx} 
 
 NSX is deployed as a license entitlement for you to apply to your infrastructure. {{site.data.keyword.BluSoftlayer_full}} supplies the licenses on a per-processor basis (pricing does not change for number of cores per CPU). An NSX license is required on every server that uses an NSX component (Management, Control, or Data Plane). NSX adds extra networking capabilities to the platform. You can create a robust overlay network for system security, tenant segmentation, and hybrid cloud environments that span providers or extends from on-premises private clouds.
 {:shortdesc}
@@ -17,6 +26,7 @@ NSX is deployed as a license entitlement for you to apply to your infrastructure
 You can add firewalls, load balancing, VPN, NAT services, VXLAN-based micro segmentation to your environment with support for automation through a RESTful API.
 
 ## Adding Licenses
+{: #add-nsx-license}
 Licenses are added to the servers by using the following process:
 1. Log in to vCenter Server with the vSphere Client.
 * Under **Administration**, click **Licensing**.
@@ -26,6 +36,7 @@ Licenses are added to the servers by using the following process:
 * Click **OK**.
 
 ## Installing NSX
+{: #install-nsx}
 
 1. Deploy NSX Manager.
 * Register NSX Manager with the vCenter Server.
@@ -34,6 +45,7 @@ Licenses are added to the servers by using the following process:
 * After the NSX Controllers are deployed on all applicable Hosts, define and configure the NSX Components such as Edge Gateways, Load Balancers, and Firewalls.
 
 ## Deployment Considerations
+{: #nsx-deployment-considerations}
 
 Enabling NSX for a solution requires that you use extra vSphere nodes in addition to the standard compute nodes.
 
