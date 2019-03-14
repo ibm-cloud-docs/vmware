@@ -30,7 +30,7 @@ The licensing approach is tied to your deployment mechanism. You have two ways t
 
 1. When you deploy vSphere from the control portal, VMware Service Provider Program licensing (VSPP) automatically enables. On deployment, a default user "slvmadmin" is added to the Host for vSphere administration and integration services into the control portal.
 
-2. When you deploy vSphere manually, you can bring your own license and media (BYOL/BYOM), which allows you to apply your standard licenses to these hosts. **Note:** If you want to use your own VMWare licensing, it is recommended that you order the server with a free OS such as CentOS or as NO OS. Then, install the VMWare OS through IPMI [Virtual ISO](/bare-metal?topic=bare-metal-mounting-an-iso-on-a-bare-metal-server)
+2. When you deploy vSphere manually, you can bring your own license and media (BYOL/BYOM), which allows you to apply your standard licenses to these hosts. **Note:** If you want to use your own VMWare licensing, it is recommended that you order the server with a free OS such as CentOS or as NO OS. Then, install the VMWare OS through IPMI [Virtual ISO](/docs/bare-metal?topic=bare-metal-bm-mount-iso#linux-and-windows)
 
 ## Can I create an isolated private VMware cloud?
 
