@@ -46,7 +46,7 @@ To optimize your VMware solution it is recommended that you use a Private Networ
     * Software: OS = vSphere Enterprise Plus 6
     * OS Storage: 2 x 1 TB SATA (configured as a RAID 1)
     * Data Storage : Recommend to order 2 TB SATA or 1.2 TB SSD or Endurance / Performance NFS SAN Storage
-      * If you are interested in other storage types, see [Storage to use with VMware Systems](/docs/infrastructure/vmware?topic=VMware-storage-to-use-with-vmware-systems)
+      * If you are interested in other storage types, see [Storage to use with VMware Systems](/docs/infrastructure/vmware?topic=VMware-vmware-storage#vmware-storage)
       * Uplink Port Speeds: 1 Gbps Dual Public and Private Networks (Unbonded)
         * 10 Gbps Uplinks are recommended for VMware vSAN solutions
 5. If you are creating a new deployment in a new IBM Cloud data center, proceed to step 6. If this is a expansion or a deployment into a existing Data Center, select the preferred Backend BCR VLAN + Frontend FCR VLAN. For the example, the Backend BCR VLAN is 1101 and the Frontend FCR VLAN is 2200. **Note:** If this is a new deployment or a new deployment into a new DC the Backend BCR and Frontend FCR VLANs are created when you order the server.
@@ -56,7 +56,7 @@ To optimize your VMware solution it is recommended that you use a Private Networ
 ## Placing your order for vCenter Server
 {: #order-vcenter-server}
 
-vCenter is an add-on to a Windows Server.  This configuration scales up to 20 vSphere hosts.  For larger implementations, deployment of the vCenter Server Appliance (VCSA) [Deploy and Configure a vCenter Server Appliance (vCSA)](/docs/infrastructure/vmware?topic=VMware-deploying-and-configuring-a-vcenter-server-appliance-vcsa-with-vmware-vsphere-6-deploying-and-configuring-should-each-be-a-separate-topic-) directly to a vSphere cluster is recommended.
+vCenter is an add-on to a Windows Server.  This configuration scales up to 20 vSphere hosts.  For larger implementations, deployment of the vCenter Server Appliance (VCSA) [Deploy and Configure a vCenter Server Appliance (vCSA)](/docs/infrastructure/vmware?topic=VMware-config-vcsa#config-vcsa) directly to a vSphere cluster is recommended.
 
 Use the following steps to order a virtual server with vCenter installed:
 
@@ -186,4 +186,4 @@ Now that the VMware environment is up you are ready to continue with the deploym
 {: vsphere-next-steps}
 You now have a basic single-site VMware environment running in an IBM Cloud data center. The basic configuration has only a local datastore, making it a simplified configuration that does not contain features such as VMware DRS, HA, Storage DRS, and a firewall.
 
-For more information, see [FAQs: VMware](/docs/infrastructure/vmware?topic=VMware-faqs-vmware). 
+For more information, see [FAQs: VMware](/docs/infrastructure/vmware?topic=VMware-vmware-faq#vmware-faq). 
