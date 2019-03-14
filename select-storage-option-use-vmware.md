@@ -235,5 +235,5 @@ See the following table for pros and cons of shared storage in a multi-tenant en
 <caption> Table 3. Pros and cons of VMware shared storage options</caption>
 
 Table 3 documentation links:
-* [File storage](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted)
+* [File storage](/docs/infrastructure/FileStorage?topic=FileStorage-gettingstarted#gettingstarted)
 * [Architecture Guide for IBM File Storage for IBM Cloud with VMware](/docs/infrastructure/FileStorage?topic=FileStorage-architectureguide)
