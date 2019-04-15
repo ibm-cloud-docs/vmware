@@ -9,6 +9,8 @@ lastupdated: "2017-11-20"
 
 
 # Almacenamiento para utilizar con sistemas VMware
+{: #vmware-storage}
+
 En lo que respecta al almacenamiento, tiene varias opciones. Puede ser privado, compartido o puede traer sus propias soluciones de almacenamiento. Utilice la siguiente información para decidir qué solución de almacenamiento se adapta mejor a se carga de trabajo.
 
 La tabla 1 contiene los niveles de almacenamiento en los que puede entrar su carga de trabajo.
