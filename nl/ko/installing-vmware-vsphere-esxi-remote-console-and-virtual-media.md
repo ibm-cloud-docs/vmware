@@ -8,6 +8,7 @@ lastupdated: "2017-12-18"
 {:new_window: target="_blank"}
 
 # 원격 콘솔 및 가상 미디어를 통한 VMware vSphere ESXi 설치
+{: #installing-vsphere-esxi}
 
 설치 미디어에서 ESX 배치는 모든 버전에서 유사하며 기존에 보유한 고유 라이센스 사용(BYOL) 시나리오에 사용할 수 있습니다.
 
