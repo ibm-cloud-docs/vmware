@@ -8,6 +8,7 @@ lastupdated: "2017-12-18"
 {:new_window: target="_blank"}
 
 # 通过远程控制台和虚拟介质安装 VMware vSphere ESXi
+{: #installing-vsphere-esxi}
 
 通过安装介质部署 ESX 的操作在所有版本中都很类似，并且可用于 BYOL（自带许可证）方案。
 
