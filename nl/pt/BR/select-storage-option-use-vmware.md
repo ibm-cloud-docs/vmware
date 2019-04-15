@@ -9,6 +9,8 @@ lastupdated: "2017-11-20"
 
 
 # Armazenamento para uso com sistemas VMware
+{: #vmware-storage}
+
 Existem várias opções com relação ao armazenamento. Pode-se optar por soluções privadas, compartilhadas ou trazer suas próprias soluções de armazenamento. Use as informações a seguir para ajudá-lo a decidir qual solução de armazenamento funciona melhor com sua carga de trabalho.
 
 A Tabela 1 contém as camadas de armazenamento e o local onde sua carga de trabalho pode estar.
