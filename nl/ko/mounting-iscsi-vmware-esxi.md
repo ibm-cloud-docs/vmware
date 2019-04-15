@@ -8,6 +8,7 @@ lastupdated: "2017-12-18"
 {:new_window: target="_blank"}
 
 # iSCSI VMWare ESXi 마운트
+{: #mount-iscsi-esxi}
 
 iSCSI를 VMWare ESXi에 마운트하는 작업은 서버와 스토리지 노드의 세부사항만으로 몇 번의 단계를 통해 수행할 수 있습니다.
 {:shortdesc}
