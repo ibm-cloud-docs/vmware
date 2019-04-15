@@ -8,6 +8,7 @@ lastupdated: "2017-12-18"
 {:new_window: target="_blank"}
 
 # iSCSI の VMWare ESXi へのマウント
+{: #mount-iscsi-esxi}
 
 iSCSI の VMWare ESXi へのマウントは、少ないステップで、サーバーおよびストレージ・ノードの詳細のみを使用して行えます。
 {:shortdesc}
