@@ -9,6 +9,8 @@ lastupdated: "2017-11-20"
 
 
 # Speicher für die Verwendung mit VMware-Systemen
+{: #vmware-storage}
+
 Für die Speicherung stehen Ihnen verschiedene Optionen zur Verfügung. Sie haben die Wahl zwischen privaten, gemeinsam genutzten und eigenen Speicherlösungen. Die folgenden Informationen erleichtern Ihnen die Entscheidung, welche Speicherlösung für Ihre Workload am besten geeignet ist.
 
 Tabelle 1 enthält die Speichertiers und erleichtert die Zuordnung zu Ihrer Workload.
