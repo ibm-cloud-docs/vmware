@@ -8,6 +8,7 @@ lastupdated: "2017-12-18"
 {:new_window: target="_blank"}
 
 # 装载 iSCSI VMware ESXi
+{: #mount-iscsi-esxi}
 
 只需要服务器和存储节点的详细信息，就可在少数几个步骤内将 iSCSI 装载到 VMWare ESXi 中。
 {:shortdesc}
