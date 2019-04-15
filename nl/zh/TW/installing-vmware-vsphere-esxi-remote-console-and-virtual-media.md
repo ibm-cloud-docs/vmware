@@ -8,6 +8,7 @@ lastupdated: "2017-12-18"
 {:new_window: target="_blank"}
 
 # 透過遠端主控台及虛擬媒體安裝 VMware vSphere ESXi
+{: #installing-vsphere-esxi}
 
 從安裝媒體部署 ESX 在所有版本中都很類似，而且可以在 BYOL（自帶授權）情況下使用。
 
