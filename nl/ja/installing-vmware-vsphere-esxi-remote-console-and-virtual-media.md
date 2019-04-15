@@ -8,6 +8,7 @@ lastupdated: "2017-12-18"
 {:new_window: target="_blank"}
 
 # Remote Console および仮想メディアを介した VMware vSphere ESXi のインストール
+{: #installing-vsphere-esxi}
 
 インストール・メディアからの ESX のデプロイは、すべてのバージョンで同様であり、BYOL (Bring Your Own License: ライセンス持ち込み) シナリオで使用できます。
 
