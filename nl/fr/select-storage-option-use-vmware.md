@@ -9,6 +9,8 @@ lastupdated: "2017-11-20"
 
 
 # Stockage à utiliser avec les systèmes VMware
+{: #vmware-storage}
+
 Vous disposez de plusieurs options quand vient la question du stockage. Il peut s'agir de stockage privé, partagé, ou bien de solutions de stockage propres. Utilisez les informations suivantes pour vous aider à déterminer la solution la mieux adaptée à votre charge de travail.
 
 Le Tableau 1 répertorie les niveaux de stockage ainsi que le type de charge de travail correspondant.
