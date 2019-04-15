@@ -8,6 +8,7 @@ lastupdated: "2017-12-18"
 {:new_window: target="_blank"}
 
 # Montaje de iSCSI en VMWare ESXi
+{: #mount-iscsi-esxi}
 
 El montaje de iSCSI en VMWare ESXi puede realizarse con pocos pasos y los detalles del nodo de almacenamiento y del servidor.
 {:shortdesc}
