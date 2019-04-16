@@ -9,6 +9,7 @@ lastupdated: "2017-12-18"
 
 
 # VMware ESX 仮想マシンの作成
+{: #create-esx-vm}
 
 新しい仮想マシンを作成するには、以下の手順を実行します。
 {:shortdesc}
