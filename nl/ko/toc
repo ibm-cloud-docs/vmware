@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 
 
-{: .toc subcollection="VMware" audience="compute" href="/docs/infrastructure/vmware/vmware_index.html"}
+{: .toc subcollection="VMware" audience="compute" href="/docs/infrastructure/vmware/vmware_index.html" path="infrastructure/vmware"}
 VMWare
 
     {: .navgroup id="learn"}

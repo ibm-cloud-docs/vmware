@@ -41,7 +41,6 @@ VMWare
     Configuring Quantastor storage
         architecture-guide-quantastor-vmwaresoftlayer.md
         brocade-vrouter-vyatta-setup-guide-vmware-environments-quantastor.md
-
     {: .navgroup-end}
 
     {: .navgroup id="help"}
