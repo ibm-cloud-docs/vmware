@@ -9,6 +9,7 @@ lastupdated: "2017-12-18"
 
 
 # Création d'une machine virtuelle VMware ESX
+{: #create-esx-vm}
 
 Pour créer une machine virtuelle, suivez cette procédure.
 {:shortdesc}
