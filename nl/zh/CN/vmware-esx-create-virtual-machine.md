@@ -9,6 +9,7 @@ lastupdated: "2017-12-18"
 
 
 # 创建 VMware ESX 虚拟机
+{: #create-esx-vm}
 
 要创建新的虚拟机，请执行以下步骤。
 {:shortdesc}
