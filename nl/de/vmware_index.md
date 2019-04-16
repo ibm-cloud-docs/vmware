@@ -8,6 +8,7 @@ lastupdated: "2017-11-16"
 {:new_window: target="_blank"}
 
 # Einführung in VMware und {{site.data.keyword.cloud_notm}}
+{: #vmware-getting-started}
 
 VMware stellt eine branchenführende Virtualisierungsplattform bereit, die durch Abstrahieren von Prozessor-, Hauptspeicher-, Speicher- und Netzressourcen mehrere {{site.data.keyword.virtualmachinesshort}} auf einem einzigen physischen Server erstellt. Mehrere physische Server können zu einem Cluster zusammengefasst werden, um eine private Cloud zu erstellen.
 
