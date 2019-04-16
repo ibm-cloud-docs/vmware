@@ -9,6 +9,7 @@ lastupdated: "2017-12-18"
 
 
 # 建立 VMware ESX 虛擬機器
+{: #create-esx-vm}
 
 若要建立新的虛擬機器，請遵循下列步驟。
 {:shortdesc}
