@@ -9,6 +9,7 @@ lastupdated: "2017-12-18"
 
 
 # VMware ESX 가상 머신 작성
+{: #create-esx-vm}
 
 새 가상 머신을 작성하려면 다음 단계를 수행하십시오.{:shortdesc}
 
