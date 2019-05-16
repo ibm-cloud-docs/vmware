@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2018-06-25"
+lastupdated: "2019-05-16"
 
 keywords: Getting Started VMware vSphere 6
 
@@ -36,7 +36,7 @@ To optimize your VMware solution it is recommended that you use a Private Networ
 ## Placing your order for vSphere Servers
 {: #order-vsphere-servers}
 
-1. Log in to the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window}.
+1. Log in to the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window}.
 2. Click **Account > Place an Order**.
 3. In the **Bare Metal Server** section, click **Monthly**.
 4. Select the servers. See VMware Support publications for minimum requirements:
@@ -63,7 +63,7 @@ Use the following steps to order a virtual server with vCenter installed:
 1. Log in to the {{site.data.keyword.slportal_short}}.
 2. Click **Account > Place an Order**.
 3. Order either a **Monthly** Bare Metal or Virtual Server public/private node Instance (VSI) under Virtual Servers.
-  1. For a SoftLayer Virtual Server Instance (VSI) to qualify for vCenter 6.0, you must deploy on at least **4 x 2.0 GHz Cores** and **4 GB of RAM**
+  1. For a Virtual Server Instance (VSI) to qualify for vCenter 6.0, you must deploy on at least **4 x 2.0 GHz Cores** and **4 GB of RAM**
   2. For a listing of vCenter Deployment recommendations, see the [VMware vCenter Server&trade; 6.0 Deployment Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/files/pdf/techpaper/vmware-vcenter-server6-deployment-guide.pdf){: new_window}.
 4. Enter the following information:
   * Based on the Recommended Minimum Server Configuration
@@ -168,7 +168,7 @@ A port group now needs to be added for vMotion. The group can be created as a Vi
   * **VLAN ID (Optional):** The VLAN ID for vMotion traffic (1101 for our example). The VLAN ID will allow VMware to tag the traffic for the specific VLAN.
   * Select **Use this port group for vMotion**.
 6. Click **Next**.
-7. Enter a **Portable IP address** for the VLAN. (You can get the port IP address from the SoftLayer portal, **Network > IP Management > VLANs**. Select the correct VLAN and under **Subnets** you will see a portable IP address range. If you have no available Portable IP Address or if you have exhausted your current pool please follow the steps in the section 'Order Private Subnets / IP Addresses ' to order additional Portable IP address
+7. Enter a **Portable IP address** for the VLAN. (You can get the port IP address from the control portal, **Network > IP Management > VLANs**. Select the correct VLAN and under **Subnets** you will see a portable IP address range. If you have no available Portable IP Address or if you have exhausted your current pool please follow the steps in the section 'Order Private Subnets / IP Addresses ' to order additional Portable IP address
 8. Click **Next** and then **Finish** to complete.
 
 Use the following steps to create a Port Group for VM data traffic.
