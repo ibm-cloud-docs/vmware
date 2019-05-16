@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2018-06-26"
+lastupdated: "2019-05-16"
 
 keywords: upgrade vsphere 6
 
@@ -49,7 +49,7 @@ Expand or move your VMware cloud environments to any {{site.data.keyword.BluSoft
     1. Reference Links:
         * [vCenter Server 6.0 requirements for installation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://kb.vmware.com/s/article/2107948){: new_window}
         * [VMware vCenter Server Performance and Best Practices ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.vmware.com/files/pdf/techpaper/vmware-vCenter6-perf.pdf){: new_window}
-        * [Deploying and Configuring a vCenter Server Appliance (vCSA) with VMware vSphere 6](https://console.bluemix.net/docs/infrastructure/vmware//docs/infrastructure/vmware?topic=VMware-deploying-and-configuring-a-vcenter-server-appliance-vcsa-with-vmware-vsphere-6-deploying-and-configuring-should-each-be-a-separate-topic-#deploying-and-configuring-a-vcenter-server-appliance-vcsa-with-vmware-vsphere-6)
+        * [Deploying and Configuring a vCenter Server Appliance (vCSA) with VMware vSphere 6](https://test.cloud.ibm.com/docs/infrastructure/vmware/docs/infrastructure/vmware?topic=VMware-config-vcsa)
 10. Non-VMWare servers: Identify and plan for any non-VMWare servers (virtual or Bare Metal) that might be needed and plan accordingly.
 11. Storage:
   1. Develop a storage plan for the environment. Endurance 2 IOPS/GB with snapshot space for virtualization is a good starting storage plan, but if virtual databases or other high performance applications are used, then the 4 IOPS/GB tier is a better fit.  NFS storage is typically recommended.  
@@ -69,7 +69,7 @@ Expand or move your VMware cloud environments to any {{site.data.keyword.BluSoft
   <!--1. [Getting Started with VMware vSphere 6](/docs/infrastructure/vmware?topic=VMware-getting-started-tutorial).-->
   1. Order the new vSphere and vCenter servers (as well as any other servers that you need).
       **Note:** Ensure that the proper "unbonded" network uplinks are selected.
-  2. Order and configure the appropriate storage: [Architecture Guide for IBM File Storage for IBM Cloud with VMware](https://console.bluemix.net/docs/infrastructure/FileStorage?topic=FileStorage-provisioning-file-storage-with-vmware#architecture-guide-for-file-storage-with-vmware)
+  2. Order and configure the appropriate storage: [Architecture Guide for IBM File Storage for IBM Cloud with VMware](https://cloud.ibm.com/docs/infrastructure/FileStorage?topic=FileStorage-architectureguide)
   3. Order the new VLANs and portable subnets (detailed architecture diagrams and justification might be required).
   4. Configure vCenter to communicate the with vSphere servers and configure of the environment.
   5. Take backups in the live environment.
