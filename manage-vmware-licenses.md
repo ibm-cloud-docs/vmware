@@ -20,7 +20,7 @@ subcollection: vmware
 # Managing VMware Licenses
 {: #manage-vmware-licenses}
 
-1. Log in to the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window}.
+1. Log in to the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window}.
 2. Go to **Devices > Manage > VMware Licenses**. Each VMware add-on that is purchased displays the following information:
   * License key
   * CPUs
