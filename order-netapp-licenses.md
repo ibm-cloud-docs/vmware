@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2017-12-18"
+lastupdated: "2019-05-16"
 
 keywords: netApp licenses, add license, netApp ONTAP select, order netapp license
 
@@ -28,7 +28,7 @@ There are two offerings for NetApp ONTAP Select:
 * Premium - uses Flash SSD drives
 
 Use the following steps to order licenses for the NetApp products.
-1. Log in to the [{{site.data.keyword.slportal_short}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window}.
+1. Log in to the [{{site.data.keyword.slportal_short}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window}.
 2. Click **Devices > Manage > NetApp Licenses**.
 3. Click **Order NetApp licenses**.
 4. Click the drop-down list under **Add License...** to list the NetApp products and number of CPUs for the licenses that you want to order.
