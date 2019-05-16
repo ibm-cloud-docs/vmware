@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2018-08-23"
+lastupdated: "2019-05-16"
 
 keywords: order vmware license, {{site.data.keyword.BluSoftlayer_full}}, {{site.data.keyword.slportal}}
 
@@ -42,7 +42,7 @@ vSphere implementation also enables the use of other components. Table 1 contain
 {: caption="Table 1. VMware products available in the Customer Portal" caption-side="top"}
 
 Use the following steps to order licenses for the VMware products that are listed in Table 1:
-1. Log in to the [{{site.data.keyword.slportal_short}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window}.
+1. Log in to the [{{site.data.keyword.slportal_short}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window}.
 2. Click **Devices > Managed > VMware Licenses > Order VMware licenses**.
 3. Click the drop-down list under **Add License...** to list the VMware products and number of CPUs for the licenses that you want to order.
   * **Note:** VMware vSphere Enterprise Plus (ESXi 6.0) is not ordered through this process. It is ordered as a requested OS when you order your bare metal server.
