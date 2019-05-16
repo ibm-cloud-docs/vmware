@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2017-12-18"
+lastupdated: "2019-05-16"
 
 keywords: iSCSI software adapter, Select Targets, QuantaStor, shared storage, iSCSI, storage volume
 
@@ -35,7 +35,7 @@ For the example environment, a smaller configuration that can deliver enough cap
 
 Use the following steps to order a QuantaStor server.
 
-1. Log in to [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} and click **Account > Place an Order**.
+1. Log in to [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window} and click **Account > Place an Order**.
 2. Select {{site.data.keyword.baremetal_short}}, Monthly on the pop-up screen.
 3. Select the appropriate server with the ability to store the numbers of disks that are needed from your environment from the Server List page. [For the example environment, a 12-core system (that is, dual hex core) with 12 drive bays is selected.]
 4. Enter the following configuration options:
@@ -83,7 +83,7 @@ For example, volume vmk3 has vmnic0 that connects to Portable Private Subnet A o
 ### Configuring Networking
 {: #configuring-networking}
 
-1. Open a web browser and go to the QuantaStor IP address listed on the **Devices** page on [{{site.data.keyword.slportal_short}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window}.
+1. Open a web browser and go to the QuantaStor IP address listed on the **Devices** page on [{{site.data.keyword.slportal_short}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window}.
 2. Enter the **Admin Username** and **Password** (found in the Passwords section on the **Device Details** page). Before you proceed, note the private network devices that are used by the QuantaStor server, such as eth4.
 3. Go to **Storage System > Network Ports**.
 4. Select the private adapter that is active (example: eth4) from the list of network adapters. Right-click and select **Modify Network Port** from the pop-up menu.
