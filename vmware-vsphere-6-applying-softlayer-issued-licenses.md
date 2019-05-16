@@ -23,7 +23,7 @@ subcollection: vmware
 Many VMware Add On licenses can be purchased directly and stored on the {{site.data.keyword.slportal}}. After a license is purchased, you need to apply the license to your vSphere Hosts by using the following steps.
 {:shortdesc}
 
-1. Log in to the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window}.
+1. Log in to the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window}.
 2. Go to **Devices > Manage > VMware Licenses**.
 3. Note the VMware **License Key**.
 4. Log in to your vCenter Instances.
