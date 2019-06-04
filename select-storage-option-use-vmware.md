@@ -176,7 +176,7 @@ The IBM Spectrum Accelerate private storage option is not available on the {{sit
   * Data at rest encryption
   * vStorage for API Array Integration (VAAI) if it is aligned with Virtual Volumes (VVol)ß
   * vCenter Operations Manager (VCop)
-  * For more information about IBM XIV Storage System, see [Platform and application integration for IBM XIV Storage System ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www-01.ibm.com/support/knowledgecenter/STJTAG/hsg/hsg_kcwelcomepage_xiv.html){: new_window}
+  * For more information about IBM XIV Storage System, see [Platform and application integration for IBM XIV Storage System ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/STJTAG/css/css_kcwelcomepage_xiv.html){: new_window}
 
 See the following table to see pros and cons of private storage in a single-tenant environment.
 
@@ -235,5 +235,5 @@ See the following table for pros and cons of shared storage in a multi-tenant en
 <caption> Table 3. Pros and cons of VMware shared storage options</caption>
 
 Table 3 documentation links:
-* [File storage](/docs/infrastructure/FileStorage?topic=FileStorage-gettingstarted#gettingstarted)
+* [File storage](docs/infrastructure/FileStorage?topic=FileStorage-getting-started)
 * [Architecture Guide for IBM File Storage for IBM Cloud with VMware](/docs/infrastructure/FileStorage?topic=FileStorage-architectureguide)
