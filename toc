@@ -6,7 +6,7 @@
 VMWare
 
     {: .navgroup id="learn"}
-    vmware_index.md
+    getting-started.md
     vmware-6-topic-description.md
     vmware-vsphere-6.md
     select-storage-option-use-vmware.md

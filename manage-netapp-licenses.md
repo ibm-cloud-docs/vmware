@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2019-05-16"
+lastupdated: "2019-06-24"
 
 keywords: NetApp licenses, license key, netapp
 

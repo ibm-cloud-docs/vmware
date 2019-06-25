@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2017-11-16"
+lastupdated: "2019-06-24"
 
 keywords: vmware, getting started, {{site.data.keyword.cloud_notm}}, {{site.data.keyword.baremetal_short}}
 
@@ -26,9 +26,9 @@ VMware provides an industry-leading virtualization platform that abstracts proce
 
 | Get Started       |
 |:------------------|
-| __ 1. Learn about the [VMware and {{site.data.keyword.cloud_notm}}](/docs/infrastructure/vmware?topic=VMware-about-vmware#about-vmware) feature. |
-| __ 2. Review the [licensing options](/docs/infrastructure/vmware?topic=VMware-license-options-vmware#license-options-vmware) and [storage options](/docs/infrastructure/vmware?topic=VMware-storage-to-use-with-vmware-systems).|
-| __ 3. To deploy a basic single-site VMware environment running in an IBM Cloud data center, see [Getting Started with VMware vSphere 6](/docs/infrastructure/vmware?topic=VMware-nsx-overview#nsx-overview). |
+| 1. Learn about the [VMware and {{site.data.keyword.cloud_notm}}](/docs/infrastructure/vmware?topic=VMware-about-vmware#about-vmware) feature. |
+| 2. Review the [licensing options](/docs/infrastructure/vmware?topic=VMware-license-options-vmware#license-options-vmware) and [storage options](/docs/infrastructure/vmware?topic=VMware-storage-to-use-with-vmware-systems).|
+| 3. To deploy a basic single-site VMware environment running in an IBM Cloud data center, see [Getting Started with VMware vSphere 6](/docs/infrastructure/vmware?topic=VMware-nsx-overview#nsx-overview). |
 {: caption="Table 1. Getting started with VMware in IBM Cloud" caption-side="top"}
 
 ## Next Steps

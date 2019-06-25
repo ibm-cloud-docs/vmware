@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2017-12-18"
+lastupdated: "2019-06-24"
 
 keywords: virtual media, deploying esx, private network, remote console, install vsphere, install esxi, esxi
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2017-12-18"
+lastupdated: "2019-06-24"
 
 keywords: VMware licenses, vmware, {{site.data.keyword.slportal_full}}
 
