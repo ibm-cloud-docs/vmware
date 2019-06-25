@@ -4,7 +4,7 @@ copyright:
   years: 1994, 2019
 lastupdated: "2017-12-18"
 
-keywords: virtual media, deploying esx, private network, remote console, install vsphere, install esxi, esxi 
+keywords: virtual media, deploying esx, private network, remote console, install vsphere, install esxi, esxi
 
 subcollection: vmware
 
@@ -27,6 +27,12 @@ Deploying ESX from installation media is similar across all versions and can be 
 * A virtual machine (VM) instance that has access to the Private Network [such as a cloud compute instance (VSI) that is installed with Windows or Linux, with a Java enabled browser, accessible via vpn.softlayer.com or public IP]. The VSI must be on the same private network that the server’s Intelligent Platform Management Interface (IPMI) addresses are located.
 * A copy of VMware ESXi VIM Installer ISO.
 
+## Before you begin
+* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/image-templates?topic=virtual-servers-navigating-devices).
+* Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
+
+For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
+
 <!--## Steps -->
 
 ## Connecting to IPMI
@@ -34,7 +40,9 @@ Deploying ESX from installation media is similar across all versions and can be 
 
 1. Upload the VMware ISO to the VSI that is specified in Requirements (The VSIs ought to have public web access.)
 2. Gather the IPMI address and login information from the customer portal.
-3. Select **Devices** > **Device List** > **[Server]** > and **Remote Management** tab.
+3. Click **Devices** > **Device List**
+4. Select the server instance to manage.
+5. Click **Remote Management**.
 4. Remote desktop (RDP) or Remote X into to the VSI that is storing the ESXi image.
 5. Open a web browser in the RDP session and enter the IPMI address that you collected in Step 2.
 6. Log in to the IPMI console with the credentials that are also found in Step 2 (typically root).
@@ -59,8 +67,8 @@ Deploying ESX from installation media is similar across all versions and can be 
 
 You can now manage the ESXi host.
 
-For more information on how to set up Endurance or Performance block storage, see 
-[Provisioning endurance storage](/docs/infrastructure/BlockStorage?topic=BlockStorage-About#provendurance) and 
+For more information on how to set up Endurance or Performance block storage, see
+[Provisioning endurance storage](/docs/infrastructure/BlockStorage?topic=BlockStorage-About#provendurance) and
 [Provisioning performance block storage](/docs/infrastructure/BlockStorage?topic=BlockStorage-About#provperformance).
 
 For more information about setting up QuantaStor, see [Architecture Guide for QuantaStor](/docs/infrastructure/vmware?topic=VMware-quantastor-architecture-guide#quantastor-architecture-guide).

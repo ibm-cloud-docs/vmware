@@ -41,13 +41,18 @@ vSphere implementation also enables the use of other components. Table 1 contain
 |VMware Site Recovery Manager (SRM)|
 {: caption="Table 1. VMware products available in the Customer Portal" caption-side="top"}
 
+## Before you begin
+* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/image-templates?topic=virtual-servers-navigating-devices).
+* Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
+
+For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
+
 Use the following steps to order licenses for the VMware products that are listed in Table 1:
-1. Log in to the [{{site.data.keyword.slportal_short}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window}.
-2. Click **Devices > Managed > VMware Licenses > Order VMware licenses**.
-3. Click the drop-down list under **Add License...** to list the VMware products and number of CPUs for the licenses that you want to order.
+1. Click **Devices > Managed > VMware Licenses > Order VMware licenses**.
+2. Click the drop-down list under **Add License...** to list the VMware products and number of CPUs for the licenses that you want to order.
   * **Note:** VMware vSphere Enterprise Plus (ESXi 6.0) is not ordered through this process. It is ordered as a requested OS when you order your bare metal server.
-4. You can see the price of the VMware product that you selected on the far right of the screen.
-5. Click **Continue** to order the licenses or you can click **Add License** to add more licenses.
+3. You can see the price of the VMware product that you selected on the far right of the screen.
+4. Click **Continue** to order the licenses or you can click **Add License** to add more licenses.
   * After you click **Continue**, you are taken back to the **VMware Licenses** page, which displays your VMware products and license keys.
-6. Download the **Install Files** from the link that is provided. You need to have an SSL connection to the IBM Cloud Private network to access the download page.
-7. Download the correct VMware products and manually install them into your vSphere environment.
+5. Download the **Install Files** from the link that is provided. You need to have an SSL connection to the IBM Cloud Private network to access the download page.
+6. Download the correct VMware products and manually install them into your vSphere environment.

@@ -33,17 +33,24 @@ To optimize your VMware solution it is recommended that you use a Private Networ
 |VLAN4 - **2200**|Public Internet Access DMZ|Public FCR|Native Untagged VLAN, Original Native VLAN that the VMWare Hosts are deployed into at the time of ordering|
 {: caption="Table 1. Private and Public VLAN examples" caption-side="top"}
 
+## Before you begin
+* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/image-templates?topic=virtual-servers-navigating-devices).
+* Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
+
+For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
+
 ## Placing your order for vSphere Servers
 {: #order-vsphere-servers}
 
-1. Log in to the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window}.
-2. Click **Account > Place an Order**.
+1. Click **Devices > Device List**.
+2. Click **Order Devices**
+3. In the **Compute** category, click **Bare Metal Servers**.
 3. In the **Bare Metal Server** section, click **Monthly**.
 4. Select the servers. See VMware Support publications for minimum requirements:
-  * The following servers were selected for the example. **Note:** Having dual unbonded public and private uplinks is a requirement for redundancy. Confirm that the data center where you created your VLANs have unbonded uplinks.  
+  * The following servers were selected for the example. **Note:** Having dual unbonded public and private uplinks is a requirement for redundancy. Confirm that the data center where you created your VLANs have unbonded uplinks. 
   * Capacity Cluster (Quantity: 2)
     * Server configuration: Select a Intel Xeon v3 server from the 'Dual Processor Multi-Core Servers' section
-    * Software: OS = vSphere Enterprise Plus 6
+    * Software: OS = VMware 6.0
     * OS Storage: 2 x 1 TB SATA (configured as a RAID 1)
     * Data Storage : Recommend to order 2 TB SATA or 1.2 TB SSD or Endurance / Performance NFS SAN Storage
       * If you are interested in other storage types, see [Storage to use with VMware Systems](/docs/infrastructure/vmware?topic=VMware-vmware-storage#vmware-storage)
@@ -60,9 +67,9 @@ vCenter is an add-on to a Windows Server.  This configuration scales up to 20 vS
 
 Use the following steps to order a virtual server with vCenter installed:
 
-1. Log in to the {{site.data.keyword.slportal_short}}.
-2. Click **Account > Place an Order**.
-3. Order either a **Monthly** Bare Metal or Virtual Server public/private node Instance (VSI) under Virtual Servers.
+1. Click **Devices > Device List**.
+2. Click **Order Devices**
+3. In the **Compute** category, click either **Bare Metal Servers** or **Virtual Server**. Select the **Monthly*8 billing option.
   1. For a Virtual Server Instance (VSI) to qualify for vCenter 6.0, you must deploy on at least **4 x 2.0 GHz Cores** and **4 GB of RAM**
   2. For a listing of vCenter Deployment recommendations, see the [VMware vCenter Server&trade; 6.0 Deployment Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/files/pdf/techpaper/vmware-vcenter-server6-deployment-guide.pdf){: new_window}.
 4. Enter the following information:
@@ -86,7 +93,7 @@ Use the following steps to order a virtual server with vCenter installed:
 
 The subnets are used for addressing VMware Guest Virtual Machine (VM) and VMware Host kernel-based traffic.
 
-1. From the Control Portal, click **Network > IP Management > Subnets**.
+1. Click **Network > IP Management > Subnets**.
 2. Click **Order IP Addresses** on the upper right of the screen.
 3. Select **Portable Private**.
 4. Select the appropriate VLAN (Example: bcr01.wdc04: 1101)
@@ -109,19 +116,19 @@ The subnets are used for addressing VMware Guest Virtual Machine (VM) and VMware
 
 You can disable the vSphere public interfaces for security purposes if you are not going to use them.
 
-1. From the Control Portal, click **Devices > Device List**.
+1. Click **Devices > Device List**.
 2. Click the name of your vSphere Host.
 3. Click the Configuration table and scroll down to the Network section.
 4. Select **Disconnect** for each applicable vSphere host eth1 and eth3 pairs for all hosts
 
 <!--This can also be performed through the [{{site.data.keyword.slapi_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://sldn.softlayer.com/reference/services/softlayer_hardware_server/shutdownpublicport){: new_window}.-->
 
-## Creating and Configuring vSphere Data Center Cluster 
+## Creating and Configuring vSphere Data Center Cluster
 {: #create-config-vsphere-data-center-cluster}
 
 You can now log in to the vCenter server and configure the vSphere Cluster.
 
-1. From the Control Portal, click **Devices > Device List**
+1. Click **Devices > Device List**
 2. Find your vCenter device and click its name.
 3. Scroll down the **Device Details** screen to the **Network** section of the server and make note of the **Private IP Address**.
 4. Scroll down the **Device Details** screen and note the **Passwords** for both the Windows OS and vCenter Software.
@@ -186,4 +193,4 @@ Now that the VMware environment is up you are ready to continue with the deploym
 {: vsphere-next-steps}
 You now have a basic single-site VMware environment running in an IBM Cloud data center. The basic configuration has only a local datastore, making it a simplified configuration that does not contain features such as VMware DRS, HA, Storage DRS, and a firewall.
 
-For more information, see [FAQs: VMware](/docs/infrastructure/vmware?topic=VMware-vmware-faq#vmware-faq). 
+For more information, see [FAQs: VMware](/docs/infrastructure/vmware?topic=VMware-vmware-faq#vmware-faq).
