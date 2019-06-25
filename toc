@@ -15,8 +15,9 @@ VMWare
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    {: .topicgroup}
     /vsi/virtual-servers-navigating-devices
+
+    {: .topicgroup}
     Configuring the environment
         vmware-vsphere-6-getting-started.md
         vmware-vsphere-6-nsx-getting-started.md
