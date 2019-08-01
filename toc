@@ -3,7 +3,7 @@
 
 
 {: .toc subcollection="VMware" audience="compute" href="/docs/infrastructure/vmware/vmware_index.html" path="infrastructure/vmware"}
-VMWare
+VMware
 
     {: .navgroup id="learn"}
     getting-started.md
