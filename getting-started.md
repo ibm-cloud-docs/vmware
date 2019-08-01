@@ -17,7 +17,7 @@ subcollection: vmware
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Getting started with VMWare
+# Getting started with VMware
 {: #vmware-getting-started}
 
 VMware provides an industry-leading virtualization platform that abstracts processor, memory, storage, and networking resources to create multiple {{site.data.keyword.virtualmachinesshort}} on a single physical server. Multiple physical servers can be clustered together to create a private cloud.
