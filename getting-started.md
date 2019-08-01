@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2019-06-24"
+lastupdated: "2019-08-01"
 
 keywords: vmware, getting started, {{site.data.keyword.cloud_notm}}, {{site.data.keyword.baremetal_short}}
 
@@ -17,7 +17,7 @@ subcollection: vmware
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Getting started tutorial
+# Getting started with VMWare
 {: #vmware-getting-started}
 
 VMware provides an industry-leading virtualization platform that abstracts processor, memory, storage, and networking resources to create multiple {{site.data.keyword.virtualmachinesshort}} on a single physical server. Multiple physical servers can be clustered together to create a private cloud.
