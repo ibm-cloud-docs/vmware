@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2017-12-18"
+lastupdated: "2019-08-21"
 
 keywords: Brocade vRouter, Firewall rules, vyatta, 
 
@@ -17,7 +17,7 @@ subcollection: vmware
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Setting up Brocade vRouter (Vyatta)for VMware Environments with QuantaStor
+# Setting up Brocade vRouter (Vyatta) for VMware environments with QuantaStor
 {: #set-up-brocade}
 
 You can configure a Brocade vRouter (Brocade vRouter (Vyatta) appliance [high availability (HA) configuration] within a VMware environment that is using QuantaStor. Use the following information with the [Advanced Single-Site VMware Reference Architecture](/docs/infrastructure/virtualization?topic=Virtualization-advanced-single-site-vmware-reference-architecture) to set up one of these storage options in your VMware environment.
@@ -25,13 +25,13 @@ You can configure a Brocade vRouter (Brocade vRouter (Vyatta) appliance [high av
 
 The Brocade vRouter (Vyatta) gateway serves as a gateway and router for your environment and contains zones that consist of subnets. Firewall rules are set in place between zones so they can communicate with each other. For those zones that do not need to communicate with other zones, no firewall rule is needed as all packets are dropped.
 
-In the example configuration, there are five zones that are created in the Brocade vRouter (Vyatta):
+In the example configuration, five zones are created in the Brocade vRouter (Vyatta):
 
 * SLSERVICE – {{site.data.keyword.BluSoftlayer_full}} services
 * VMACCESS – Virtual machines(VMs) on the capacity cluster
-* MGMT – Management and capacity clusters as well as management VMs
-* STORAGE – Storage server(s)
-* OUTSIDE – Public Internet access
+* MGMT – Management and capacity clusters and management VMs
+* STORAGE – Storage servers
+* OUTSIDE – Public internet access
 
 Figure 1 describes the communication between each zone. **Note:** Your environment might be different and might require different zones and firewall rules.
 
@@ -40,14 +40,14 @@ Figure 1 describes the communication between each zone. **Note:** Your environme
 ## Configuring Brocade vRouter (Vyatta)
 {: #configure-brocade}
 
-To configure the Brocade vRouter (Vyatta) follow these steps:
+To configure the Brocade vRouter (Vyatta), follow these steps:
 
 1. SSH into the appliance by using the root password that is found on the Device Details screen.
 2. Type 'Configure' to enter the configuration mode and follow the steps in the subsequent sections.
 
-### Setting up Interfaces
+### Setting up interfaces
 
-You configure the bond interfaces on both Brocade vRouters (Vyatta) to be linked to the subnets in the environment. You need to replace the VLANs (1101, 1102, and 1103) with the corresponding VLANs in your environment. Also, note that instructions that are made with '<>' must be replaced with your environment’s details (with the '<>' removed).
+You configure the bond interfaces on both Brocade vRouters (Vyatta) to be linked to the subnets in the environment. You need to replace the VLANs (1101, 1102, and 1103) with the corresponding VLANs in your environment. **Note:** Instructions that are made with '<>' must be replaced with your environment’s details (with the '<>' removed).
 
 Use the following commands to configure the bond interfaces on the Brocade vRouters (Vyatta). You must be in `configure` mode.
 
@@ -114,7 +114,7 @@ Use the following commands to configure the bond interfaces on the Brocade vRout
     commit
     save
 
-### Configuring SNAT for External Access
+### Configuring SNAT for external access
 
 You configure SNAT such that management VMs and VMs on the capacity cluster can access the internet. From this step forward, configuration needs to be done on only one Brocade vRouter (Vyatta) since syncing the setup occurs later.
 
@@ -131,9 +131,9 @@ Use the following commands in `configure` mode:
     commit
     save
 
-### Configuring Firewall Groups
+### Configuring firewall groups
 
-Next, you will configure the firewall groups that are associated with certain IP ranges.
+Next, configure the firewall groups that are associated with certain IP ranges.
 
 Use the following commands in `configure` mode:
 
@@ -169,9 +169,9 @@ Use the following commands in `configure` mode:
     commit
     save
 
-### Configuring Firewall Name Rules
+### Configuring firewall name rules
 
-You will now define the firewall rules for each direction of traffic.
+Define the firewall rules for each direction of traffic.
 
 Use the following commands in `configure` mode:
 
@@ -243,9 +243,9 @@ Use the following commands in `configure` mode:
     commit
     save
 
-### Configuring Zone Bindings
+### Configuring zone bindings
 
-In this step, you will bind particular zones to interfaces on the Brocade vRouter (Vyatta).
+Bind particular zones to interfaces on the Brocade vRouter (Vyatta).
 
 Use the following commands in `configure` mode:
 
@@ -267,9 +267,9 @@ Use the following commands in `configure` mode:
     commit
     save
 
-### Applying Firewall Rules to Zones
+### Applying firewall rules to zones
 
-You will now apply the firewall rules to the communication between zones.
+Apply the firewall rules to the communication between zones.
 
 Use the following commands in `configure` mode:
 
@@ -290,7 +290,7 @@ Use the following commands in `configure` mode:
 ## Syncing with other Brocade vRouter (Vyatta) in the HA Pair
 {: #sync-with-brocade}
 
-Since you have set up one of the Brocade vRouter’s (Vyatta) in the HA pair, you must sync the changes to the other gateway device.
+Since you set up one of the Brocade vRouter’s (Vyatta) in the HA pair, you must sync the changes to the other gateway device.
 
 Use the following commands in `configure` mode:
 
@@ -322,18 +322,18 @@ Use the following commands in `configure` mode:
     commit
     save
 
-## Associating and Routing VLANs
+## Associating and routing VLANs
 {: #associate-routing}
 
 After the zones and firewall rules are set up on the Brocade vRouter (Vyatta), you must associate the VLANs to it and enable routing of the VLANs via the Brocade vRouter (Vyatta).
 
 1. Log in to the IBM Cloud customer portal and click **Network, Gateway Appliance** and click the Brocade vRouter (Vyatta).
 2. Select a VLAN and click **Associate**.
-3. Repeat step 2 for each VLAN that you created for your environment. The VLANs must have the routing option enabled to be associated with the Brocade vRouter (Vyatta).
-4. Locate the VLANs under Associated VLANs and check the box next to each one.
+3. Repeat step 2 for each VLAN that you created for your environment. THe routing option must be enabled on your VLANs to be associated with the Brocade vRouter (Vyatta).
+4. Locate the VLANs under **Associated VLANs** and check the box next to each one.
 5. Click the **Bulk Actions** drop–down menu and select **Route**.
 6. Click **OK** on the pop-up screen.
 
-Your VLANs are now routed via the Brocade vRouter (Vyatta). If you notice that communication is hindered between two zones, bypass one or more of the particular VLAN in question and check your Brocade vRouter (Vyatta) settings.
+Your VLANs are now routed via the Brocade vRouter (Vyatta). If you notice that communication is hindered between two zones, bypass one or more of the particular VLANs in question and check your Brocade vRouter (Vyatta) settings.
 
 You now have a working single-site VMware environment that is secured by a Brocade vRouter (Vyatta) within IBM Cloud.
