@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2019-06-24"
+lastupdated: "2019-08-21"
 
 keywords: NetApp licenses, license key, netapp
 
@@ -22,7 +22,7 @@ subcollection: vmware
 
 ## Before you begin
 * Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/vmware?topic=virtual-servers-navigating-devices).
-* Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
+* Make sure that you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
 For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
 
