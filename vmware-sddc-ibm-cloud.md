@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2017-11-06"
+lastupdated: "2019-08-21"
 
 keywords: vmware sddc, {{site.data.keyword.BluSoftlayer_full}}
 
@@ -31,6 +31,6 @@ The VMware SDDC on IBM Cloud – Advanced reference architecture is the first pa
 
 For more information about VMware SDDC on IBM Cloud, see [VMware SDDC on IBM Cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wpc.c320.edgecastcdn.net/00C320/VMware%20SDDC%20on%20IBM%20Cloud%20-%20Advanced%20v1.1.pdf){: new_window}, [NSX ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/products/nsx){: new_window}, and [VSAN ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/products/virtual-san){: new_window}.
 
-Add additional security and compliance to your workloads with a [trusted secure cloud solution with IBM, VMware, and HyTrust ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wpc.c320.edgecastcdn.net/00C320/DeploymentGuide_IBM_Intel_HyTrust_VMware_v1%200.pdf){: new_window}.
+Add extra security and compliance to your workloads with a [trusted secure cloud solution with IBM, VMware, and HyTrust ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wpc.c320.edgecastcdn.net/00C320/DeploymentGuide_IBM_Intel_HyTrust_VMware_v1%200.pdf){: new_window}.
 
 For more information about the VMware Validated Design Certified Partner Architecture, see [VMware Compatibility Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.vmware.com/resources/compatibility/vcl/cpa.php){: new_window}. 
