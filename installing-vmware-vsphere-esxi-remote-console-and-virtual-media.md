@@ -67,8 +67,8 @@ For more information about permissions, see [Classic infrastructure permissions]
 
 You can now manage the ESXi host.
 
-For more information on how to set up Endurance or Performance block storage, see
-[Provisioning endurance storage](/docs/infrastructure/BlockStorage?topic=BlockStorage-About#provendurance) and
+For more information on how to set up Endurance or Performance block storage, see 
+[Provisioning endurance storage](/docs/infrastructure/BlockStorage?topic=BlockStorage-About#provendurance) and 
 [Provisioning performance block storage](/docs/infrastructure/BlockStorage?topic=BlockStorage-About#provperformance).
 
-For more information about setting up QuantaStor, see [Architecture Guide for QuantaStor](/docs/infrastructure/vmware?topic=VMware-quantastor-architecture-guide#quantastor-architecture-guide).
+For more information about setting up QuantaStor, see [Architecture Guide for QuantaStor](/docs/infrastructure/vmware?topic=VMware-quantastor-architecture-guide).
