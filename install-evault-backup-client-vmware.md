@@ -29,14 +29,14 @@ To install the Agent, download and copy the `Agent-VMware-ESX-Server-6.71.<versi
 
 **Note:** You must perform the following steps locally on the target ESX Server.
 
-1. Extract the files from the package. To do so, use this command (in which “PACKAGENAME” could be “Agent-VMware-ESX-Server-6.71”):<br/>`tar xvfz PACKAGENAME.tar.gz`
+1. Extract the files from the package. To do so, use this command (in which “PACKAGENAME” might be “Agent-VMware-ESX-Server-6.71”):<br/>`tar xvfz PACKAGENAME.tar.gz`
 2. Go to the directory where you extracted the package.
 3. Run the installation script:<br />`# ./install.sh`<br/><br/>
-**Note:**  The installation script prompts you for configuration information such as web registration (address, port number, and authentication) and log file name.
+**Note:** The installation script prompts you for configuration information such as web registration (address, port number, and authentication) and log file name.
 
-Enter the WebCC username for this server.
+Enter the WebCC user name for this server.
 
-4. Enter the **EVault Backup User name** as the input for the prompt requesting the WebCC username. Refer to the [View EVault Backup Storage Details](/docs/infrastructure/Backup?topic=Backup-GettingStarted#viewing-evault-backup-storage-details-in-ibm-cloud-infrastructure-customer-portal) procedure for instructions to view the EVault Backup User name.
+4. Enter the **EVault Backup user name** for the WebCC username. For more information about viewing your EVault Backup name, see [View EVault Backup Storage Details](/docs/infrastructure/Backup?topic=Backup-GettingStarted#viewing-evault-backup-storage-details-in-ibm-cloud-infrastructure-customer-portal).
 5. Enter the EVault Backup Password as the input for the prompt that requests the WebCC password.
 6. When the installation finishes, a completion message appears, and the Agent daemon runs.
 
