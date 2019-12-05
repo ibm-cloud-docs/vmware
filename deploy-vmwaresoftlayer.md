@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2019-08-21"
+lastupdated: "2019-12-05"
 
 keywords:  VMware administrators, vSphere workloads, VMware vSphere environments, cookbooks, VMware deployments, vSphere administrators
 
@@ -29,7 +29,7 @@ The core objective of the VMware cookbook series is to assist vSphere administra
 The following cookbooks are available to administrators:
 
 * [Build a single site VMware environment](/docs/infrastructure/virtualization?topic=Virtualization-advanced-single-site-vmware-reference-architecture): You, as the vSphere administrator, are walked through the steps of building your environment, including the use of either Endurance or Performance Block Storage or QuantaStor.
-* [Migrate vSphere workloads ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wpc.c320.edgecastcdn.net/00C320/VMware_at_SoftLayer_CookBook_Migrating%20Workloads_v1%200.pdf){: new_window}: Scenarios are presented to help you migrate workloads [virtual machines (VMs)] into VMware after your vSphere implementation is deployed in an IBM Cloud data center.
+* **vSphere Migration**: https://docs.vmware.com/en/VMware-vSphere/6.0/vsphere-vcenter-server-602-migration-guide.pdf - Scenarios are presented to help you migrate workloads into VMware after your vSphere implementation is deployed in an IBM Cloud data center.
 * [Use NSX® ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wpc.c320.edgecastcdn.net/00C320/VMware_at_SoftLayer_CookBook_NSX_v1.1.pdf){: new_window}: You can use VMware NSX to provide software-defining networking (SDN) constructs to VMware@SoftLayer deployments.
 * [Catalogic ECX ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wpc.c320.edgecastcdn.net/00C320/CatalogicECX@SoftLayer_CDM.pdf){: new_window}: You can manage and analyze CopyData in a hybrid IT infrastructure. The infrastructure is deployed on the IBM Cloud infrastructure by using the Catalogic Software intelligent Copy Data management platform, ECX, and by using NetApp Private Storage and VMware vSphere infrastructure.
 * [VMware back up ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wpc.c320.edgecastcdn.net/00C320/VMware@SoftLayer_BURA_v1%201.pdf){: new_window}: This cookbook describes alternative approaches to backing up, recovering, and archiving VMware-based workloads (VMs) that are running in a VMware deployment.
