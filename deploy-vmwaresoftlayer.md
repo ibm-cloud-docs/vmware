@@ -13,9 +13,10 @@ subcollection: vmware
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
 
 # Using cookbooks for VMware deployments
 {: #using-vmware-cookbooks}
@@ -38,5 +39,5 @@ The following cookbooks are available to administrators:
 * [Vormetric Encryption of VMware](http://go.thalesesecurity.com/rs/480-LWA-970/images/VMware-Encryption-and-KMIP-Integration-with-Vormetric-Data-Security-Manager-Integration-guide.pdf){: external}Vormetric protects VMware workloads by encrypting VM data.
 * [Deploy a trusted cloud solution with IBM, VMware, and HyTrust](https://www.hytrust.com/solutions/ibm-cloud-secure-virtualization/){: external} You can integrate the various architectural elements to create a chain of trust from hardware up through the hypervisor and management applications.
 
-
-**Note:** The cookbooks are intended for experienced vSphere Administrators. Some topics that are covered, consider that the reader has basic deployment skills to install and configure vSphere and vCenter.
+The cookbooks are intended for experienced vSphere Administrators. Some topics that are covered, consider that the reader has basic deployment skills to install and configure vSphere and vCenter.
+{ :note}
