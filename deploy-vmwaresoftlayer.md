@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2019-12-05"
+lastupdated: "2019-12-12"
 
 keywords:  VMware administrators, vSphere workloads, VMware vSphere environments, cookbooks, VMware deployments, vSphere administrators
 
@@ -28,14 +28,15 @@ The core objective of the VMware cookbook series is to assist vSphere administra
 
 The following cookbooks are available to administrators:
 
-* [Build a single site VMware environment](/docs/infrastructure/virtualization?topic=Virtualization-advanced-single-site-vmware-reference-architecture): You, as the vSphere administrator, are walked through the steps of building your environment, including the use of either Endurance or Performance Block Storage or QuantaStor.
-* **vSphere Migration**: https://docs.vmware.com/en/VMware-vSphere/6.0/vsphere-vcenter-server-602-migration-guide.pdf - Scenarios are presented to help you migrate workloads into VMware after your vSphere implementation is deployed in an IBM Cloud data center.
-* [Use NSX® ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wpc.c320.edgecastcdn.net/00C320/VMware_at_SoftLayer_CookBook_NSX_v1.1.pdf){: new_window}: You can use VMware NSX to provide software-defining networking (SDN) constructs to VMware@SoftLayer deployments.
-* [Catalogic ECX ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wpc.c320.edgecastcdn.net/00C320/CatalogicECX@SoftLayer_CDM.pdf){: new_window}: You can manage and analyze CopyData in a hybrid IT infrastructure. The infrastructure is deployed on the IBM Cloud infrastructure by using the Catalogic Software intelligent Copy Data management platform, ECX, and by using NetApp Private Storage and VMware vSphere infrastructure.
-* [VMware back up ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wpc.c320.edgecastcdn.net/00C320/VMware@SoftLayer_BURA_v1%201.pdf){: new_window}: This cookbook describes alternative approaches to backing up, recovering, and archiving VMware-based workloads (VMs) that are running in a VMware deployment.
-* [VMware disaster recovery ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wpc.c320.edgecastcdn.net/00C320/VMware@SoftLayer_DR.pdf){: new_window}: This cookbook details two use cases that establish a disaster recovery (DR) solution by using VMware. The first pairs with an on-premises VMware environment that allows an on-premises workload to be recovered or vice versa. The second is recovering VMware workloads in a second {{site.data.keyword.cloud_notm}} data center.
-* [Vormetric encryption of VMware ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wpc.c320.edgecastcdn.net/00C320/VMware@Softlayer%20Vormetric%20Encryption%20v1.2.pdf){: new_window}: Use cases illustrate how Vormetric protects VMware workloads by encrypting VM data.
-* [Deploy a trusted cloud solution with IBM, VMware, and HyTrust ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wpc.c320.edgecastcdn.net/00C320/DeploymentGuide_IBM_Intel_HyTrust_VMware_v1%200.pdf){: new_window}: You can integrate the various architectural elements to create a chain of trust from hardware up through the hypervisor and management applications.
+
+* [Build a Single Site VMware Environment](/docs/infrastructure/virtualization?topic=Virtualization-advanced-single-site-vmware-reference-architecture): You, as the vSphere administrator, are walked through the steps of building your environment, including the use of either Endurance or Performance Block Storage or QuantaStor.
+* [vSphere Migration](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.update_manager.doc/GUID-F7191592-048B-40C7-A610-CFEE6A790AB0.html){: external} Scenarios are presented to help you migrate workloads into VMware after your vSphere implementation is deployed in an IBM Cloud data center.
+* [Leverage NSX®](https://developer.ibm.com/recipes/tutorials/?s=nsx){: external} You can use VMware NSX to provide software-defining networking (SDN) constructs to VMware IBM Cloud deployments.
+* [Catalogic ECX](https://developer.ibm.com/recipes/tutorials/steps-to-attach-dedicated-storage-to-existing-ic4v-deployments-on-ibm-cloud/#r_overview){: external} This recipe explains how IBM Cloud (IC4V) users can attach their NetApp ONTAP Select (OTS) to their existing IC4V deployments. Providing step-by-step instructions to create NFS volume and mount it on Linux virtual machines.
+* [VMware Back Up](https://www.vmware.com/pdf/vi3_30_20_vm_backup.pdf){: external} This guide describes alternative approaches to backing up, recovering, and archiving VMware-based workloads (VMs) that are running in a VMware deployment.
+* [VMware Disaster Recovery Guide](https://www.vmware.com/support/pubs/srm_pubs.html){: external} Documentation for VMware Site Recovery Manager.
+* [Vormetric Encryption of VMware](http://go.thalesesecurity.com/rs/480-LWA-970/images/VMware-Encryption-and-KMIP-Integration-with-Vormetric-Data-Security-Manager-Integration-guide.pdf){: external}Vormetric protects VMware workloads by encrypting VM data.
+* [Deploy a trusted cloud solution with IBM, VMware, and HyTrust](https://www.hytrust.com/solutions/ibm-cloud-secure-virtualization/){: external} You can integrate the various architectural elements to create a chain of trust from hardware up through the hypervisor and management applications.
 
 
 **Note:** The cookbooks are intended for experienced vSphere Administrators. Some topics that are covered, consider that the reader has basic deployment skills to install and configure vSphere and vCenter.
