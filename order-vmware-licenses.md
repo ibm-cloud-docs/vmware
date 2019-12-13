@@ -2,9 +2,9 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2019-06-24"
+lastupdated: "2019-12-13"
 
-keywords: order vmware license, {{site.data.keyword.BluSoftlayer_full}}, {{site.data.keyword.slportal}}
+keywords: order vmware license, {{site.data.keyword.BluSoftlayer_full}}
 
 subcollection: vmware
 
@@ -13,6 +13,7 @@ subcollection: vmware
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:external: target="_blank" .external}
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
@@ -23,7 +24,7 @@ subcollection: vmware
 VMware administrators understand that they can quickly realize the cost-effective hybrid cloud characteristics by deploying into {{site.data.keyword.BluSoftlayer_full}}. One of the characteristics is that vSphere workloads and catalogs are provisioned onto VMware vSphere environments within {{site.data.keyword.cloud_notm}} data centers without modification to VMware VMs or guests. Using a common vSphere hypervisor and management/orchestration platform makes these deployments possible.
 {:shortdesc}
 
-vSphere implementation also enables the use of other components. Table 1 contains a list of VMware products that are available to order through the {{site.data.keyword.slportal}}. Pricing information can be found under www.ibm.com/cloud/vmware.
+vSphere implementation also enables the use of other components. Table 1 contains a list of VMware products that are available to order through the {{site.data.keyword.cloud_notm}} catalog. Pricing information can be found under www.ibm.com/cloud/vmware.
 
 |Product Name|
 |---|
@@ -39,7 +40,7 @@ vSphere implementation also enables the use of other components. Table 1 contain
 |Virtual SAN Standard Tier 2 (21 - 64 TB)|
 |Virtual SAN Standard Tier 3 (65 - 124 TB)|
 |VMware Site Recovery Manager (SRM)|
-{: caption="Table 1. VMware products available in the Customer Portal" caption-side="top"}
+{: caption="Table 1. VMware products available in the IBM Cloud catalog" caption-side="top"}
 
 ## Before you begin
 * Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/vmware?topic=virtual-servers-navigating-devices).
