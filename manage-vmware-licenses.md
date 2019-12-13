@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2019-06-24"
+lastupdated: "2019-12-13"
 
 keywords: VMware licenses, vmware, {{site.data.keyword.slportal_full}}
 
@@ -13,22 +13,24 @@ subcollection: vmware
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:external: target="_blank" .external}
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
 # Managing VMware Licenses
-
-## Before you begin
-* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/vmware?topic=virtual-servers-navigating-devices).
-* Make sure that you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
-
-For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
 {: #manage-vmware-licenses}
 
-Go to **Devices > Manage > VMware Licenses**. Each VMware add-on that is purchased displays the following information:
+1. Log in to the [{{site.data.keyword.cloud_notm}} catalog](https://cloud.ibm.com/catalog/){: external}.
+2. Go to **Devices > Manage > VMware Licenses**. Each VMware add-on that is purchased displays the following information:
   * License key
   * CPUs
   * Order date
 
-From the VMware licenses page, you can download license keys, cancel licenses, and order more licenses.
+**Ordering VMware Licensing**
+1. Log in to the [{{site.data.keyword.cloud_notm}} catalog](https://cloud.ibm.com/catalog/){: external}.
+2. Go to **Devices > Manage > VMware Licenses**.
+3. Click **Order VMware Licenses**.
+4. Select the appropriate licenses.
+5. Click **Continue**.
+6. Review charges and the MSA and click **Place Order**. 
