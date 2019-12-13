@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2018-07-27"
+lastupdated: "2019-12-13"
 
 keywords: NetApp OnTap Select, High performance, vmware storage, QuantaStor, IBM Spectrum Accelerate, shared storage, private storage
 
@@ -13,6 +13,7 @@ subcollection: vmware
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:external: target="_blank" .external}
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
@@ -56,7 +57,7 @@ There are several options for storage for connecting to VMware in a single-tenan
 <a name="Local"></a>
 ### Local Storage
 
-Order {{site.data.keyword.baremetal_short}} from the {{site.data.keyword.slportal}} with ESX and select the wanted disks [SATA, serial attached SCSI (SA SCSI), or SSD].
+Order {{site.data.keyword.baremetal_short}} from the {{site.data.keyword.cloud_notm}} catalog with ESX and select the wanted disks [SATA, serial attached SCSI (SA SCSI), or SSD].
 
 You can bring your own ESX license, but you need to open a ticket with Support to inform them of the change.
 
@@ -66,7 +67,7 @@ You can bring your own ESX license, but you need to open a ticket with Support t
 * Protocols: Not applicable
 * Cost: Low capital expenditure (CAPEX) and operating expenditure (OPEX)
 * HA: Not available
-* Replication: [vSphere Replication Virtual Appliance ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://pubs.vmware.com/srm-51/index.jsp?topic=%2Fcom.vmware.srm.install_config.doc%2FGUID-E654F2D8-7D56-4A81-9568-E85172A7022D.html){: new_window}
+* Replication: [vSphere Replication Virtual Appliance](https://pubs.vmware.com/srm-51/index.jsp?topic=%2Fcom.vmware.srm.install_config.doc%2FGUID-E654F2D8-7D56-4A81-9568-E85172A7022D.html){: external}
 * Reliability: Multiple single points of failure
 
 ### vSAN [1]
@@ -77,7 +78,7 @@ You can bring your own ESX license, but you need to open a ticket with Support t
 * Protocols: Proprietary
 * Cost: Medium for both CAPEX and OPEX
 * HA: Supported for both host and disk failures. Failure domains are supported from v6 of VMware.
-* Replication: [vSphere Replication Virtual Appliance ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://pubs.vmware.com/srm-51/index.jsp?topic=%2Fcom.vmware.srm.install_config.doc%2FGUID-E654F2D8-7D56-4A81-9568-E85172A7022D.html){: new_window}
+* Replication: [vSphere Replication Virtual Appliance ![External link icon](https://pubs.vmware.com/srm-51/index.jsp?topic=%2Fcom.vmware.srm.install_config.doc%2FGUID-E654F2D8-7D56-4A81-9568-E85172A7022D.html){: external}
 * Replication and disaster recovery:
 * Reliability: Tolerates up to three host failures with seven or more hosts. Failure domains were introduced in v6 of VMware.   
 
@@ -85,11 +86,11 @@ You can bring your own ESX license, but you need to open a ticket with Support t
 
 vSAN 5.5 is only available with BYOL (Bring Your Own License). It is only supported by VMware if you use an Avago LSI MegaRAID SAS 9361-8i disk controller.
 
-vSAN 6.0 is available directly from the IBM Cloud portal with CPU license billing base.
+vSAN 6.0 is available directly from the {{site.data.keyword.cloud_notm}} catalog with CPU license billing base.
 
 ### QuantaStor
 
-The [OSNexus Solution Design Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wiki.osnexus.com/index.php?title=Solution_Design_Guide){: new_window} can be used to help connect VMware with QuantaStor.
+The [OSNexus Solution Design Guide](http://wiki.osnexus.com/index.php?title=Solution_Design_Guide){: external} can be used to help connect VMware with QuantaStor.
 
 * Recommended workloads: Tiers 2 and 3
 * Performance: Variable based on the number of drives, RAID, and disk use (iSCSI or NFS)  
@@ -131,8 +132,8 @@ Fpr more Information on how to purchase and install ONTAP Select, see [Ordering 
 You must purchase a NetApp device from NetApp or IBM. You need to install it in one of the colocation sites near your IBM Cloud data center and connect it by using Direct Link Colocation or Direct Link Cloud.
 
 For more information about connectting to VMware with NetApp, see the following links:
-* [NetApp Private Storage for IBM Cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.netapp.com/us/solutions/cloud/private-storage-cloud/softlayer.aspx){: new_window}
-* [Solution brief: NetApp Private Storage for IBM Cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.netapp.com/us/media/ds-3619_tcm10-127472.pdf){: new_window}
+* [NetApp Private Storage for IBM Cloud](http://www.netapp.com/us/solutions/cloud/private-storage-cloud/softlayer.aspx){: external}
+* [Solution brief: NetApp Private Storage for IBM Cloud](http://www.netapp.com/us/media/ds-3619_tcm10-127472.pdf){: external}
 
 
 * Recommended workloads: Tier 1
@@ -141,13 +142,13 @@ For more information about connectting to VMware with NetApp, see the following 
 * Protocols: iSCSI, NFS, and SMB
 * Cost: High for both CAPEX and OPEX
 * HA: Dual heads and controllers
-* Replication: Supports SnapVault and SnapMirror; also achieved using [vRealize Automation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/products/vrealize-automation).
+* Replication: Supports SnapVault and SnapMirror; also achieved using [vRealize Automation](https://www.vmware.com/products/vrealize-automation){: external}.
 * Reliability: High redundancy and MPIO support
 
 <a name="IBM"></a>
 ### IBM Spectrum Accelerate
 
-The IBM Spectrum Accelerate private storage option is not available on the {{site.data.keyword.slportal}}.
+The IBM Spectrum Accelerate private storage option is not available on the {{site.data.keyword.cloud_notm}} catalog.
 
 * Recommended workloads: Tier 1
 * Performance: Dependent upon number of disks, SSD (optional), and amount of memory that is given to each “node” VM.
@@ -163,10 +164,10 @@ The IBM Spectrum Accelerate private storage option is not available on the {{sit
   * Not tied to any specific hardware configuration. Example: 200 TiB license could be deployed various ways – one 200 TiB instance, two 100 TiB instances, or four 50 TiB instances
   * Offered two ways: perpetual license [includes one year of subscription and service (S&S)] and monthly license (includes S&S)
 * HA: Clustered solution
-* Replication: Achieved by using [vRealize Automation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/products/vrealize-automation){: new_window}
+* Replication: Achieved by using [vRealize Automation](https://www.vmware.com/products/vrealize-automation){: external}
  or SRA, which can be used to replicate from physical IBM XIV with VMware’s Site Recovery Manager (SRM)
-  * [vSphere Replication ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/products/vsphere/replication.html){: new_window}
-  * [VMware vCenter Site Recovery Manager version 5.x guidelines for IBM XIV Gen3 Storage System ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www-356.ibm.com/partnerworld/wps/servlet/ContentHandler/stg_ast_sto_wp_vmware_vcenter_recovery_gen3){: new_window}
+  * [vSphere Replication](https://www.vmware.com/products/vsphere/replication.html){: external}
+  * [VMware vCenter Site Recovery Manager version 5.x guidelines for IBM XIV Gen3 Storage System](https://www-356.ibm.com/partnerworld/wps/servlet/ContentHandler/stg_ast_sto_wp_vmware_vcenter_recovery_gen3){: external}
 * Reliability: High redundancy and MPIO support. Any available node can manage the cluster. The following capabilities are not supported by IBM Spectrum Accelerate at this time over hardware-based IBM XIV:
   * Three-site mirroring
   * IBM Hyper-Scale Mobility (iSCSI)
@@ -176,7 +177,7 @@ The IBM Spectrum Accelerate private storage option is not available on the {{sit
   * Data at rest encryption
   * vStorage for API Array Integration (VAAI) if it is aligned with Virtual Volumes (VVol)ß
   * vCenter Operations Manager (VCop)
-  * For more information about IBM XIV Storage System, see [Platform and application integration for IBM XIV Storage System ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/STJTAG/css/css_kcwelcomepage_xiv.html){: new_window}
+  * For more information about IBM XIV Storage System, see [Platform and application integration for IBM XIV Storage System](https://www.ibm.com/support/knowledgecenter/STJTAG/css/css_kcwelcomepage_xiv.html){: external}
 
 See the following table to see pros and cons of private storage in a single-tenant environment.
 
@@ -195,13 +196,12 @@ See the following table to see pros and cons of private storage in a single-tena
 <caption>Table 2. Pros and cons of VMware private storage options</caption>
 
 Table 2 documentation links:
-<!-- Internal link to exercise caution with QuantaStor: https://w3-connections.ibm.com/forums/html/topic?id=5c037198-96b8-43be-af21-edb47e4cf0bb#repliesPg=0-->
-* NetApp OnTap Edge: Not available on the customer portal – bring your own solution.
-  * [Data ONTAP Installation and Administration Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://library.netapp.com/ecm/ecm_download_file/ECMP1200031){: new_window}
-  * [Data ONTAP Express Setup Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://library.netapp.com/ecm/ecm_download_file/ECMP1369085){: new_window}
-* [NetApp Private Storage for IBM Cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.netapp.com/us/solutions/cloud/private-storage-cloud/softlayer.aspx){: new_window}
-* Spectrum Accelerate: Not available on the customer portal – bring your own solution.
-  * [Working with an IBM Spectrum Accelerate system ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/STJTAG/com.ibm.help.xivgen3.doc/MT/UG/xiv_mt_deploying_spectrum_accelerate.html){: new_window}
+* NetApp OnTap Edge: Not available on the {{site.data.keyword.cloud_notm}} catalog – bring your own solution.
+  * [Data ONTAP Installation and Administration Guide](https://library.netapp.com/ecm/ecm_download_file/ECMP1200031){: external}
+  * [Data ONTAP Express Setup Guide](https://library.netapp.com/ecm/ecm_download_file/ECMP1369085){: external}
+* [NetApp Private Storage for IBM Cloud](http://www.netapp.com/us/solutions/cloud/private-storage-cloud/softlayer.aspx){: external}
+* Spectrum Accelerate: Not available on the {{site.data.keyword.cloud_notm}} catalog – bring your own solution.
+  * [Working with an IBM Spectrum Accelerate system](https://www.ibm.com/support/knowledgecenter/STJTAG/com.ibm.help.xivgen3.doc/MT/UG/xiv_mt_deploying_spectrum_accelerate.html){: external}
 
 
 ## Shared Storage Options
@@ -211,7 +211,7 @@ IBM Cloud offers great {{site.data.keyword.filestorage_short}} options that you 
 
 ### {{site.data.keyword.filestorage_short}}
 
-You can order the {{site.data.keyword.baremetal_short}} from the {{site.data.keyword.slportal}} with ESX. In the customer portal, you can also provision {{site.data.keyword.filestorage_full}} in the same availability zone as your host. For more information about provisioning file storage, see [Ordering and Managing IBM File Storage for IBM Cloud](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole).
+You can order the {{site.data.keyword.baremetal_short}} from the {{site.data.keyword.cloud_notm}} catalog with ESX. In the {{site.data.keyword.cloud_notm}} catalog, you can also provision {{site.data.keyword.filestorage_full}} in the same availability zone as your host. For more information about provisioning file storage, see [Ordering and Managing IBM File Storage for IBM Cloud](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole).
 
 **Note**: In VMware, three predefined values are provided on the **Host Device Details Storage** tab – Username, Password (for CHAP authentication), and Host IQN.
 
@@ -235,5 +235,5 @@ See the following table for pros and cons of shared storage in a multi-tenant en
 <caption> Table 3. Pros and cons of VMware shared storage options</caption>
 
 Table 3 documentation links:
-* [File storage](/docs/FileStorage?topic=FileStorage-getting-started)
+* [File storage](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started)
 * [Architecture Guide for IBM File Storage for IBM Cloud with VMware](/docs/infrastructure/FileStorage?topic=FileStorage-architectureguide)
