@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 1994, 2019
-lastupdated: "2019-07-26"
+  years: 1994, 2020
+lastupdated: "2020-03-18"
 
 keywords: iSCSI software adapter, Select Targets, QuantaStor, VMware shared storage, iSCSI, storage volume, software defined storage
 
@@ -24,7 +24,7 @@ subcollection: vmware
 You can order and configure the OSNexus QuantaStor shared storage solution for a VMware ESXi 5 environment. Use the following information along with the [Advanced Single-Site VMware Reference Architecture](/docs/infrastructure/virtualization?topic=Virtualization-advanced-single-site-vmware-reference-architecture) cookbook to set up one of these storage options in your VMware environment.
 
 ## Before you begin
-* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/vmware?topic=virtual-servers-navigating-devices).
+* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/bare-metal?topic=virtual-servers-navigating-devices).
 * Ensure that you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
 For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
