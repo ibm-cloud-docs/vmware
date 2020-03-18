@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 1994, 2019
-lastupdated: "2019-12-13"
+  years: 1994, 2020
+lastupdated: "2020-03-18"
 
 keywords: order vmware license, {{site.data.keyword.BluSoftlayer_full}}
 
@@ -43,7 +43,7 @@ vSphere implementation also enables the use of other components. Table 1 contain
 {: caption="Table 1. VMware products available in the IBM Cloud catalog" caption-side="top"}
 
 ## Before you begin
-* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/vmware?topic=virtual-servers-navigating-devices).
+* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/bare-metal?topic=virtual-servers-navigating-devices).
 * Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
 For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
