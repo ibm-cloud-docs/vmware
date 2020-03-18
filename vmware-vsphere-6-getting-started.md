@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 1994, 2019
-lastupdated: "2019-09-24"
+  years: 1994, 2020
+lastupdated: "2020-03-18"
 
 keywords: Getting Started VMware vSphere 6
 
@@ -34,7 +34,7 @@ To optimize your VMware solution it is recommended that you use a Private Networ
 {: caption="Table 1. Private and public VLAN examples" caption-side="top"}
 
 ## Before you begin
-* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/vmware?topic=virtual-servers-navigating-devices).
+* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/bare-metal?topic=virtual-servers-navigating-devices).
 * Make sure that you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
 For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
@@ -102,7 +102,7 @@ The subnets are used for addressing VMware Guest virtual machine (VM) and VMware
 7. Click **Order IP addresses** on the upper right of the screen.
 8. Click **Place order**.
 9. Follow this process for each applicable VLAN (Ex. 1101, 2200)
-  1. For more information about VLANs, see [Getting started with VLANs](/docs/infrastructure/vlans?topic=vlans-getting-started-with-vlans).
+  1. For more information about VLANs, see [Getting started with VLANs](/docs/vlans?topic=vlans-getting-started).
 
 |Subnet Type|subnet size|Bound Vlan|vSphere host usage|
 |---|---|---|---|
