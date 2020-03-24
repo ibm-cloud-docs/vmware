@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 1994, 2019
+  years: 1994, 2020
 lastupdated: "2019-12-13"
 
 keywords: NetApp OnTap Select, High performance, vmware storage, QuantaStor, IBM Spectrum Accelerate, shared storage, private storage
@@ -211,7 +211,7 @@ IBM Cloud offers great {{site.data.keyword.filestorage_short}} options that you 
 
 ### {{site.data.keyword.filestorage_short}}
 
-You can order the {{site.data.keyword.baremetal_short}} from the {{site.data.keyword.cloud_notm}} catalog with ESX. In the {{site.data.keyword.cloud_notm}} catalog, you can also provision {{site.data.keyword.filestorage_full}} in the same availability zone as your host. For more information about provisioning file storage, see [Ordering and Managing IBM File Storage for IBM Cloud](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole).
+You can order the {{site.data.keyword.baremetal_short}} from the {{site.data.keyword.cloud_notm}} catalog with ESX. In the {{site.data.keyword.cloud_notm}} catalog, you can also provision {{site.data.keyword.filestorage_full}} in the same availability zone as your host. For more information about provisioning file storage, see [Ordering and Managing IBM File Storage for IBM Cloud](/docs/FileStorage?topic=FileStorage-orderingConsole#orderingConsole).
 
 **Note**: In VMware, three predefined values are provided on the **Host Device Details Storage** tab – Username, Password (for CHAP authentication), and Host IQN.
 
@@ -235,5 +235,5 @@ See the following table for pros and cons of shared storage in a multi-tenant en
 <caption> Table 3. Pros and cons of VMware shared storage options</caption>
 
 Table 3 documentation links:
-* [File storage](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started)
-* [Architecture Guide for IBM File Storage for IBM Cloud with VMware](/docs/infrastructure/FileStorage?topic=FileStorage-architectureguide)
+* [File storage](/docs/FileStorage?topic=FileStorage-getting-started)
+* [Architecture Guide for IBM File Storage for IBM Cloud with VMware](/docs/FileStorage?topic=FileStorage-architectureguide)
