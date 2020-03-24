@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 1994, 2019
+  years: 1994, 2020
 lastupdated: "2019-09-24"
 
 keywords: virtual media, deploying esx, private network, remote console, install vsphere, install esxi, esxi 
@@ -60,7 +60,7 @@ Deploying ESX from installation media is similar across all versions and can be 
 You can now manage the ESXi host.
 
 For more information about setting up endurance or performance block storage, see 
-[Provisioning endurance storage](/docs/infrastructure/BlockStorage?topic=BlockStorage-About#provendurance) and 
-[Provisioning performance block storage](/docs/infrastructure/BlockStorage?topic=BlockStorage-About#provperformance).
+[Provisioning endurance storage](/docs/BlockStorage?topic=BlockStorage-About#provendurance) and 
+[Provisioning performance block storage](/docs/BlockStorage?topic=BlockStorage-About#provperformance).
 
-For more information about setting up QuantaStor, see [Architecture Guide for QuantaStor](/docs/infrastructure/vmware?topic=VMware-quantastor-architecture-guide).
+For more information about setting up QuantaStor, see [Architecture Guide for QuantaStor](/docs/vmware?topic=VMware-quantastor-architecture-guide).
