@@ -26,9 +26,9 @@ VMware provides an industry-leading virtualization platform that abstracts proce
 
 | Get Started       |
 |:------------------|
-| 1. Learn about the [VMware and {{site.data.keyword.cloud_notm}}](/docs/infrastructure/vmware?topic=VMware-about-vmware#about-vmware) feature. |
-| 2. Review the [licensing options](/docs/infrastructure/vmware?topic=VMware-license-options-vmware#license-options-vmware) and [storage options](/docs/infrastructure/vmware?topic=VMware-vmware-storage).|
-| 3. To deploy a basic single-site VMware environment running in an IBM Cloud data center, see [Getting Started with VMware vSphere 6](/docs/infrastructure/vmware?topic=VMware-nsx-overview#nsx-overview). |
+| 1. Learn about the [VMware and {{site.data.keyword.cloud_notm}}](/docs/vmware?topic=VMware-about-vmware#about-vmware) feature. |
+| 2. Review the [licensing options](/docs/vmware?topic=VMware-license-options-vmware#license-options-vmware) and [storage options](/docs/vmware?topic=VMware-vmware-storage).|
+| 3. To deploy a basic single-site VMware environment running in an IBM Cloud data center, see [Getting Started with VMware vSphere 6](/docs/vmware?topic=VMware-nsx-overview#nsx-overview). |
 {: caption="Table 1. Getting started with VMware in IBM Cloud" caption-side="top"}
 
 ## Next Steps
@@ -36,4 +36,4 @@ VMware provides an industry-leading virtualization platform that abstracts proce
 
 After you have a basic environment configured, you can [manage licenses](/docs/vmware?topic=VMware-manage-vmware-licenses).
 
-For more information about an advanced reference architecture that outlines a hybrid cloud configuration, see [VMware Software Defined Data Center (SDDC) on IBM Cloud](/docs/infrastructure/vmware?topic=VMware-vmware-sddc-on-ibm-cloud).
+For more information about an advanced reference architecture that outlines a hybrid cloud configuration, see [VMware Software Defined Data Center (SDDC) on IBM Cloud](/docs/vmware?topic=VMware-vmware-sddc-on-ibm-cloud).
