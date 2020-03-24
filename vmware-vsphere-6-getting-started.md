@@ -53,7 +53,7 @@ For more information about permissions, see [Classic infrastructure permissions]
     * Software: OS = VMware 6.0
     * OS Storage: 2 x 1 TB SATA (configured as a RAID 1)
     * Data Storage: Recommend ordering 2 TB SATA or 1.2 TB SSD or Endurance / Performance NFS SAN Storage
-      * If you are interested in other storage types, see [Storage to use with VMware Systems](/docs/infrastructure/vmware?topic=VMware-vmware-storage#vmware-storage)
+      * If you are interested in other storage types, see [Storage to use with VMware Systems](/docs/vmware?topic=VMware-vmware-storage#vmware-storage)
       * Uplink Port Speeds: 1 Gbps Dual Public and Private Networks (Unbonded)
         * 10 Gbps Uplinks are recommended for VMware vSAN solutions
 5. If you are creating a new deployment in a new IBM Cloud data center, proceed to step 6. If this deployment is an expansion or a deployment into an existing Data Center, select the preferred Backend BCR VLAN + Frontend FCR VLAN. For the example, the Backend BCR VLAN is 1101 and the Frontend FCR VLAN is 2200. **Note:** If this deployment is new or a new deployment into a new DC the Backend BCR and Frontend FCR VLANs are created when you order the server.
@@ -63,7 +63,7 @@ For more information about permissions, see [Classic infrastructure permissions]
 ## Ordering vCenter Server
 {: #order-vcenter-server}
 
-vCenter is an add-on to a Windows Server. This configuration scales up to 20 vSphere hosts. For larger implementations, deployment of the vCenter Server Appliance (VCSA) [Deploy and Configure a vCenter Server Appliance (vCSA)](/docs/infrastructure/vmware?topic=VMware-config-vcsa#config-vcsa) directly to a vSphere cluster is recommended.
+vCenter is an add-on to a Windows Server. This configuration scales up to 20 vSphere hosts. For larger implementations, deployment of the vCenter Server Appliance (VCSA) [Deploy and Configure a vCenter Server Appliance (vCSA)](/docs/vmware?topic=VMware-config-vcsa#config-vcsa) directly to a vSphere cluster is recommended.
 
 Use the following steps to order a virtual server with vCenter installed:
 
@@ -191,4 +191,4 @@ Now that the VMware environment is up you are ready to continue with the deploym
 {: vsphere-next-steps}
 You now have a basic single-site VMware environment that is running in an IBM Cloud data center. The basic configuration has only a local datastore, making it a simplified configuration that does not contain features such as VMware DRS, HA, Storage DRS, and a firewall.
 
-For more information, see [FAQs: VMware](/docs/infrastructure/vmware?topic=VMware-vmware-faq#vmware-faq).
+For more information, see [FAQs: VMware](/docs/vmware?topic=VMware-vmware-faq#vmware-faq).
