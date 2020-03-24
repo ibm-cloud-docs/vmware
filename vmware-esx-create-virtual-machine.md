@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 1994, 2019
+  years: 1994, 2020
 lastupdated: "2019-08-21"
 
 keywords: custom, vmware esx virtual machine, virtual machine
@@ -41,4 +41,4 @@ To begin loading your installation media, click the server name in the inventory
 
 After you select your ISO image, you are ready to begin the installation process of your respective OS.
 
-For more information about setting up a virtual machine network, see [Setting up a Virtual Machine Network](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-a-virtual-machine-network){:new_window}.
+For more information about setting up a virtual machine network, see [Setting up a Virtual Machine Network](/docs/virtualization?topic=Virtualization-setting-up-a-virtual-machine-network){:new_window}.
