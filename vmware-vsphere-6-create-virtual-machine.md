@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 1994, 2019
+  years: 1994, 2020
 lastupdated: "2017-08-10"
 
 keywords: VMware vSphere 6 virtual machine
@@ -37,4 +37,4 @@ subcollection: vmware
 * The ISO files that are uploaded to the default Storage1 Datastore are selectable here. You also see folders that contain the configuration/log files (set up during Step 3 Datastore section of the Create a new Virtual Machine process) for all the server virtual machines.
 11. After you select your ISO image, you are ready to begin the installation process of your respective OS.
 * After your Guest VM is successfully up and running, if supported, install [VMWare Tools ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://kb.vmware.com/s/article/1014294){: new_window}.
-* For more information about networking instructions, see [Setting up a Virtual Machine Network](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-a-virtual-machine-network).
+* For more information about networking instructions, see [Setting up a Virtual Machine Network](/docs/virtualization?topic=Virtualization-setting-up-a-virtual-machine-network).
