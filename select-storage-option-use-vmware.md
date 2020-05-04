@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2020
-lastupdated: "2019-12-13"
+lastupdated: "2020-05-04"
 
 keywords: NetApp OnTap Select, High performance, vmware storage, QuantaStor, IBM Spectrum Accelerate, shared storage, private storage
 
@@ -224,7 +224,7 @@ See the following table for pros and cons of shared storage in a multi-tenant en
 |**Scalability**|Volume sizes range from 20 GB to 12 TB.<br>File Share Capacity can be expanded to 12 TB after initial provisioning in GB increments. | 
 |**Protocols**|NFS|
 |**Host connections**|Maximum of 64 for NFS.|
-|**Use cases**|Tier 1, 2, and 3 workloads:<br><ol>0.25 IOPS per GB: Low I/O intensity. Example applications include storing mailboxes or department-level file shares.<br>2 IOPS per GB: General purposes. Example applications include hosting small databases backing web applications or virtual machine disk images for a hypervisor.<br>4 IOPS per GB: High I/O intensity. Example applications include transactional and other performance-sensitive databases.<br>10 IOPS per GB: High I/O intensity. Example applications include analytics.|
+|**Use cases**|Tier 1, 2, and 3 workloads:<br><ol>0.25 IOPS per GB: Low I/O intensity. Example applications include storing mailboxes or department-level file shares.<br></ol>2 IOPS per GB: General purposes. Example applications include hosting small databases backing web applications or virtual machine disk images for a hypervisor.<br>4 IOPS per GB: High I/O intensity. Example applications include transactional and other performance-sensitive databases.<br>10 IOPS per GB: High I/O intensity. Example applications include analytics.|
 |**HA**|Yes, dual heads and controllers.|
 |**Configurability**|Size and IOPS only.|
 |** Disaster recovery and replication **|Snapshot and Replication provided over the IBM Cloud Private Network; also achieved using [vRealize Automation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/products/vrealize-automation), but no SRA.|
