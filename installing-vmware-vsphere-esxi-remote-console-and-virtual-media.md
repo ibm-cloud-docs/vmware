@@ -63,4 +63,4 @@ For more information about setting up endurance or performance block storage, se
 [Provisioning endurance storage](/docs/BlockStorage?topic=BlockStorage-About#provendurance) and 
 [Provisioning performance block storage](/docs/BlockStorage?topic=BlockStorage-About#provperformance).
 
-For more information about setting up QuantaStor, see [Architecture Guide for QuantaStor](/docs/vmware?topic=VMware-quantastor-architecture-guide).
+For more information about setting up QuantaStor, see [Architecture Guide for QuantaStor](/docs/vmware?topic=vmware-quantastor-architecture-guide).
