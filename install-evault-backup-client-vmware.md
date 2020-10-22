@@ -36,7 +36,7 @@ To install the Agent, download and copy the `Agent-VMware-ESX-Server-6.71.<versi
 
 Enter the WebCC user name for this server.
 
-4. Enter the **EVault Backup user name** for the WebCC username. For more information about viewing your EVault Backup name, see [View EVault Backup Storage Details](/docs/infrastructure/Backup?topic=Backup-GettingStarted#viewing-evault-backup-storage-details-in-ibm-cloud-infrastructure-customer-portal).
+4. Enter the **EVault Backup user name** for the WebCC username. For more information about viewing your EVault Backup name, see [Accessing and viewing IBM Cloud Backup storage details in the Console](/docs/infrastructure/Backup?topic=Backup-GettingStarted#viewing-evault-backup-storage-details-in-ibm-cloud-infrastructure-customer-portal).
 5. Enter the EVault Backup Password as the input for the prompt that requests the WebCC password.
 6. When the installation finishes, a completion message appears, and the Agent daemon runs.
 
@@ -48,4 +48,4 @@ For example: `/opt/BUAgent/Install.log`
 If the installation fails and rolls back, the installation log is in the `<Installation Failure directory>.`<br/>
 If it fails and does not roll back, the installation log is in the `<Installation Kit directory>`.<br/>
 
-Be sure that you are connected to the {{site.data.keyword.BluSoftlayer_full}} VPN to view the User Guide. For more information about connecting to the IBM Cloud VPN, see [Enable access to the IBM Cloud infrastructure private network](/docs/customer-portal?topic=customer-portal-getting-started#enable-private-network)).
+Be sure that you are connected to the {{site.data.keyword.BluSoftlayer_full}} VPN to view the User Guide. For more information about connecting to the IBM Cloud VPN, see [Getting started with IBM Cloud Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started)).

@@ -20,7 +20,7 @@ subcollection: vmware
 # Setting up Brocade vRouter (Vyatta) for VMware environments with QuantaStor
 {: #set-up-brocade}
 
-You can configure a Brocade vRouter (Brocade vRouter (Vyatta) appliance [high availability (HA) configuration] within a VMware environment that is using QuantaStor. Use the following information with the [Advanced Single-Site VMware Reference Architecture](/docs/virtualization?topic=Virtualization-advanced-single-site-vmware-reference-architecture) to set up one of these storage options in your VMware environment.
+You can configure a Brocade vRouter (Brocade vRouter (Vyatta) appliance [high availability (HA) configuration] within a VMware environment that is using QuantaStor. Use the following information with the [Advanced Single-Site VMware Reference Architecture](/docs/virtualization?topic=virtualization-advanced-single-site-vmware-reference-architecture) to set up one of these storage options in your VMware environment.
 {:shortdesc}
 
 The Brocade vRouter (Vyatta) gateway serves as a gateway and router for your environment and contains zones that consist of subnets. Firewall rules are set in place between zones so they can communicate with each other. For those zones that do not need to communicate with other zones, no firewall rule is needed as all packets are dropped.

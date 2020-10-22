@@ -37,7 +37,7 @@ To optimize your VMware solution it is recommended that you use a Private Networ
 * Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/bare-metal?topic=virtual-servers-navigating-devices).
 * Make sure that you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
-For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
+For more information about permissions, see [Classic infrastructure permissions](/docs/account?topic=account-infrapermission#infrapermission) and [Managing device access](/docs/virtual-servers?topic=virtual-servers-managing-device-access).
 
 ## Placing your order for vSphere Servers
 {: #order-vsphere-servers}
@@ -131,8 +131,8 @@ You can now log in to the vCenter server and configure the vSphere cluster.
 3. Scroll down the **Device Details** screen to the **Network** section of the server and make note of the **Private IP Address**.
 4. Scroll down the **Device Details** screen and note the **Passwords** for both the Windows OS and vCenter software.
 5. Open a Microsoft Remote Desktop (RDP) session and connect to your vCenter server through its public IP address.
-6. Log in using the passwords that you obtained in step 4. **Note:** You need an active VPN connection to IBM Cloud needs if you use a private IP address to access vCenter. For more information about VPN access, see [Enable access to the IBM Cloud infrastructure private network](/docs/customer-portal?topic=customer-portal-getting-started#enable-private-network).
-7. Download and install the traditional [vSphere Client ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2089791){: new_window} or use the vSphere web client by following the link `https://<vCenter-Sever-Public-IP-Address>/vsphere-client/`.
+6. Log in using the passwords that you obtained in step 4. **Note:** You need an active VPN connection to IBM Cloud if you use a private IP address to access vCenter. For more information about VPN access, see [Enable access to the IBM Cloud infrastructure private network](docs/iaas-vpn?topic=iaas-vpn-getting-started).
+7. Download and install the traditional [vSphere Client ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://kb.vmware.com/s/){: new_window} or use the vSphere web client by following the link `https://<vCenter-Sever-Public-IP-Address>/vsphere-client/`.
 8. Log in to vCenter with the IP address and passwords you obtained in steps 3 and 4.
 9. Right-click the vCenter server name in the left pane and select **New Datacenter**.
 10. Enter an appropriate name for the data center.

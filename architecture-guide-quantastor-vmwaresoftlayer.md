@@ -21,13 +21,13 @@ subcollection: vmware
 # QuantaStor for VMware Architecture Guide
 {: #quantastor-architecture-guide}
 
-You can order and configure the OSNexus QuantaStor shared storage solution for a VMware ESXi 5 environment. Use the following information along with the [Advanced Single-Site VMware Reference Architecture](/docs/virtualization?topic=Virtualization-advanced-single-site-vmware-reference-architecture) cookbook to set up one of these storage options in your VMware environment.
+You can order and configure the OSNexus QuantaStor shared storage solution for a VMware ESXi 5 environment. Use the following information along with the [Advanced Single-Site VMware Reference Architecture](/docs/virtualization?topic=virtualization-advanced-single-site-vmware-reference-architecture) cookbook to set up one of these storage options in your VMware environment.
 
 ## Before you begin
 * Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/bare-metal?topic=virtual-servers-navigating-devices).
 * Ensure that you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
-For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
+For more information about permissions, see [Classic infrastructure permissions](/docs/account?topic=account-infrapermission#infrapermission) and [Managing device access](/docs/virtual-servers?topic=virtual-servers-managing-device-access).
 
 ## Step 1: Ordering QuantaStor Shared Storage
 {: #order-quantastor-storage}

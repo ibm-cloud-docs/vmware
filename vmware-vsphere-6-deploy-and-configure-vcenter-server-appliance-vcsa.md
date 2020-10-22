@@ -52,7 +52,7 @@ Use the following steps to deploy a VMware vCenter Server Appliance.
   * Subnet mask
   * Network gateway
   * Network DNS Servers
-      * For more information, see [What are Local DNS Resolvers](/docs/infrastructure/dns?topic=dns-dns-faq#what-are-the-local-dns-resolvers-).
+      * For more information, see [What are Local DNS Resolvers](/docs/dns?topic=dns-dns-faq#what-are-the-local-dns-resolvers-).
   * Configure time sync
   * Click **Next**
 15. Review the settings, then click **Finish**. Your vCSA instance is provisioned.

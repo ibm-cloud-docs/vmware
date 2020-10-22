@@ -124,7 +124,7 @@ NetApp ONTAP Select on IBM Cloud helps to improve productivity and efficiency, r
    - in a non-HA Configuration single points of failure include enclosure hardware
    - in an HA configuration, no single points of failure
 
-Fpr more Information on how to purchase and install ONTAP Select, see [Ordering NetApp ONTAP Select instances {{site.data.keyword.cloud_notm}}](/docs/services/vmwaresolutions/vmonic?topic=vmware-solutions-ordering-netapp-ontap-select-instances#ordering-netapp-ontap-select-instances).
+For more Information on how to request ONTAP Select, see [NetApp ONTAP Select](/docs/vmwaresolutions?topic=vmwaresolutions-netapp).
 
 <a name="NPS"></a>
 ### NetApp Private Storage

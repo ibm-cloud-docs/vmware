@@ -15,7 +15,7 @@ VMware
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    /vsi/virtual-servers-navigating-devices
+    /virtual-servers/virtual-servers-navigating-devices
 
     {: .topicgroup}
     Configuring the environment

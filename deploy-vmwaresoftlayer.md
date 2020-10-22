@@ -30,7 +30,7 @@ The core objective of the VMware cookbook series is to assist vSphere administra
 The following cookbooks are available to administrators:
 
 
-* [Build a Single Site VMware Environment](/docs/virtualization?topic=Virtualization-advanced-single-site-vmware-reference-architecture): You, as the vSphere administrator, are walked through the steps of building your environment, including the use of either Endurance or Performance Block Storage or QuantaStor.
+* [Build a Single Site VMware Environment](/docs/virtualization?topic=virtualization-advanced-single-site-vmware-reference-architecture): You, as the vSphere administrator, are walked through the steps of building your environment, including the use of either Endurance or Performance Block Storage or QuantaStor.
 * [vSphere Migration](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.update_manager.doc/GUID-F7191592-048B-40C7-A610-CFEE6A790AB0.html){: external} Scenarios are presented to help you migrate workloads into VMware after your vSphere implementation is deployed in an IBM Cloud data center.
 * [Leverage NSX®](https://developer.ibm.com/recipes/tutorials/?s=nsx){: external} You can use VMware NSX to provide software-defining networking (SDN) constructs to VMware IBM Cloud deployments.
 * [Catalogic ECX](https://developer.ibm.com/recipes/tutorials/steps-to-attach-dedicated-storage-to-existing-ic4v-deployments-on-ibm-cloud/#r_overview){: external} This recipe explains how IBM Cloud (IC4V) users can attach their NetApp ONTAP Select (OTS) to their existing IC4V deployments. Providing step-by-step instructions to create NFS volume and mount it on Linux virtual machines.
