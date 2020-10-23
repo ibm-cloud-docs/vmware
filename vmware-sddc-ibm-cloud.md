@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2019
-lastupdated: "2019-08-21"
+lastupdated: "2017-11-06"
 
 keywords: vmware sddc, {{site.data.keyword.BluSoftlayer_full}}
 
@@ -13,10 +13,9 @@ subcollection: vmware
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
-
+{:external: .external}
 
 # VMware SDDC on IBM Cloud
 {: vmware-sddc}
@@ -29,8 +28,8 @@ Shared storage is included based on VMware Virtual Storage Area Networking (VSAN
 
 The VMware SDDC on IBM Cloud – Advanced reference architecture is the first partner architecture to be certified under the VMware Validated Design program.
 
-For more information about VMware SDDC on IBM Cloud, see [VMware SDDC on IBM Cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wpc.c320.edgecastcdn.net/00C320/VMware%20SDDC%20on%20IBM%20Cloud%20-%20Advanced%20v1.1.pdf){: new_window}, [NSX ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/products/nsx){: new_window}, and [VSAN ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/products/virtual-san){: new_window}.
+For more information about VMware SDDC on IBM Cloud, see [VMware SDDC on IBM Cloud](https://www.ibm.com/cloud/learn/software-defined-data-center){: external}, [NSX](https://www.vmware.com/products/nsx){:external}, and [VSAN](https://www.vmware.com/products/virtual-san){: external}.
 
-Add extra security and compliance to your workloads with a [trusted secure cloud solution with IBM, VMware, and HyTrust ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wpc.c320.edgecastcdn.net/00C320/DeploymentGuide_IBM_Intel_HyTrust_VMware_v1%200.pdf){: new_window}.
+Add additional security and compliance to your workloads with a [trusted secure cloud solution with IBM, VMware, and HyTrust](http://wpc.c320.edgecastcdn.net/00C320/DeploymentGuide_IBM_Intel_HyTrust_VMware_v1%200.pdf){: external}.
 
-For more information about the VMware Validated Design Certified Partner Architecture, see [VMware Compatibility Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.vmware.com/resources/compatibility/vcl/cpa.php){: new_window}. 
+For more information about the VMware Validated Design Certified Partner Architecture, see [VMware Compatibility Guide] (https://www.vmware.com/resources/compatibility/vcl/cpa.php){: external}. 
