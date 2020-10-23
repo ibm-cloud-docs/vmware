@@ -3,7 +3,7 @@
 
 
 {: .toc subcollection="vmware" category="compute" href="/docs/vmware?topic=vmware-vmware-getting-started" path="vmware"}
-VMware TS
+VMware
 
     {: .navgroup id="learn"}
     getting-started.md
