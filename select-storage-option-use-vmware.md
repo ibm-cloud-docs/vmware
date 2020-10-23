@@ -167,7 +167,7 @@ The IBM Spectrum Accelerate private storage option is not available on the {{sit
 * Replication: Achieved by using [vRealize Automation](https://www.vmware.com/products/vrealize-automation){: external}
  or SRA, which can be used to replicate from physical IBM XIV with VMware’s Site Recovery Manager (SRM)
   * [vSphere Replication](https://www.vmware.com/products/vsphere/replication.html){: external}
-  * [VMware vCenter Site Recovery Manager version 5.x guidelines for IBM XIV Gen3 Storage System](https://www-356.ibm.com/partnerworld/wps/servlet/ContentHandler/stg_ast_sto_wp_vmware_vcenter_recovery_gen3){: external}
+  <!--* [VMware vCenter Site Recovery Manager version 5.x guidelines for IBM XIV Gen3 Storage System](https://www-356.ibm.com/partnerworld/wps/servlet/ContentHandler/stg_ast_sto_wp_vmware_vcenter_recovery_gen3)-->
 * Reliability: High redundancy and MPIO support. Any available node can manage the cluster. The following capabilities are not supported by IBM Spectrum Accelerate at this time over hardware-based IBM XIV:
   * Three-site mirroring
   * IBM Hyper-Scale Mobility (iSCSI)
