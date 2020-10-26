@@ -28,6 +28,7 @@ NetApp ONTAP Select is only available on bare metal servers that are provisioned
 * Premium - uses Flash SSD drives
 
 ## Before you begin
+{: #before-you-begin-netapp-order}
 * Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/virtual-servers?topic=virtual-servers-navigating-devices).
 * Make sure that you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
