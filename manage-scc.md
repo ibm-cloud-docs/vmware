@@ -28,8 +28,8 @@ VMWare on {{site.data.keyword.BluSoftlayer_full}} is integrated with the {{site.
 
 With the {{site.data.keyword.compliance_short}}, you can:
 
-* Monitor for controls and goals that pertain to VMWare on {{site.data.keyword.BluSoftlayer_full}}.
-* Define rules for VMWare on {{site.data.keyword.BluSoftlayer_full}} that can help to standardize resource configuration.
+* Monitor for controls and goals that pertain to VMWare on {{site.data.keyword.BluSoftlayer_full}}
+* Define rules for VMWare on {{site.data.keyword.BluSoftlayer_full}} that can help to standardize resource configuration
 
 
 ## Monitoring security and compliance posture with VMWare on {{site.data.keyword.BluSoftlayer_full}}
