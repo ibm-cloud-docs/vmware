@@ -3,7 +3,7 @@ copyright:
   years: 2020
 lastupdated: "2020-12-15"
 
-keywords: security and compliance for vmware, security for vmware*, compliance for vmware,
+keywords: security and compliance for vmware, security for vmware, compliance for vmware,
 
 subcollection: vmware
 
@@ -16,7 +16,7 @@ subcollection: vmware
 {:table: .aria-labeledby="caption"}
 
 
-# Managing security and compliance with *service_name*
+# Managing security and compliance with VMWare on {{site.data.keyword.BluSoftlayer_full}}
 {: #manage-security-compliance}
 
 <!-- Name this file `manage-scc.md` and place it in the "Enhancing security" topic group. -->
