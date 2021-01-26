@@ -16,7 +16,7 @@ subcollection: vmware
 {:table: .aria-labeledby="caption"}
 
 
-# Managing security and compliance with VMWare on {{site.data.keyword.BluSoftlayer_full}}
+# Managing security and compliance with VMWare on IBM Cloud
 {: #manage-security-compliance}
 
 <!-- Name this file `manage-scc.md` and place it in the "Enhancing security" topic group. -->
