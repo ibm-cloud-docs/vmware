@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 1994, 2020
-lastupdated: "2019-09-24"
+  years: 1994, 2021
+lastupdated: "2021-04-20"
 
 keywords: virtual media, deploying esx, private network, remote console, install vsphere, install esxi, esxi 
 
@@ -24,7 +24,8 @@ Deploying ESX from installation media is similar across all versions and can be 
 
 ## Requirements
 {: #reqs-vsphere-esxi}
-* A virtual machine (VM) instance that has access to the Private Network [such as a cloud compute instance that is installed with Windows or Linux, with a Java enabled browser, accessible via vpn.softlayer.com or public IP]. The VSI must be on the same private network that the server’s Intelligent Platform Management Interface (IPMI) addresses are located.
+* A virtual server instance that has access to the private network [such as a cloud compute instance that is installed with Windows or Linux, with a Java enabled browser, accessible via vpn.softlayer.com or public IP]. The virtual server instance must be on the same private network that the server’s Intelligent Platform Management Interface (IPMI) addresses are located.|
+
 * A copy of VMware ESXi VIM Installer ISO.
 
 <!--## Steps -->
@@ -32,13 +33,13 @@ Deploying ESX from installation media is similar across all versions and can be 
 ## Connecting to IPMI
 {: #connecting-ipmi}
 
-1. Upload the VMware ISO to the virtual server instance that is specified in Requirements (The virtual server instance needs public web access.)
+1. Upload the VMware ISO to the virtual server instance that is specified in Requirements. The virtual server instance needs public web access.
 2. Gather the IPMI address and login information from the customer portal.
 3. Select **Devices** > **Device List** > **[Server]** > and **Remote Management** tab.
 4. Remote desktop (RDP) or Remote X into to the virtual server instance that is storing the ESXi image.
 5. Open a web browser in the RDP session and enter the IPMI address that you collected in Step 2.
 6. Log in to the IPMI console with the credentials that are also found in Step 2 (typically root).
-* Make a note of your IPMI user access level. It might be Administrator. You might experience a problem when you mount your remote storage if it is set to **Operator**. File a support ticket to elevate your IPMI credentials if you cannot mount media.
+* Make a note of your IPMI user access level. It might be Administrator. You might experience a problem when you mount your remote storage if it is set to **Operator**. Open a support case to elevate your IPMI credentials if you cannot mount media.
 7. Confirm that you are on the home login page and click **Remote Control** > **Console Redirection** > **Launch Console**.
 
 ## Attaching ISO
@@ -59,7 +60,7 @@ Deploying ESX from installation media is similar across all versions and can be 
 
 You can now manage the ESXi host.
 
-For more information about setting up endurance or performance block storage, see 
+For more information about setting up endurance or performance block storage, see the following information:
 [Provisioning endurance storage](/docs/BlockStorage?topic=BlockStorage-About#provendurance) and 
 [Provisioning performance block storage](/docs/BlockStorage?topic=BlockStorage-About#provperformance).
 
