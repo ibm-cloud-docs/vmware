@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 1994, 2019
-lastupdated: "2017-12-18"
+  years: 2017, 2021
+lastupdated: "2021-05-26"
 
 keywords: vmware, vSphere, hypervisor,{{site.data.keyword.BluSoftlayer_full}}, {{site.data.keyword.cloud_notm}}, {{site.data.keyword.baremetal_short}}, 
 
@@ -28,6 +28,6 @@ vSphere workloads and catalogs can be provisioned onto VMware vSphere environmen
 The core objective of VMware and {{site.data.keyword.cloud_notm}} is to assist vSphere administrators to deploy VMware vSphere environments within an {{site.data.keyword.cloud_notm}} infrastructure. VMware administrators can use bare metal instances and network, storage, and backup and recovery constructs in a self-service manner. These constructs can then be used to deploy fully functional vSphere implementations, which can be built to extend or replace on-premises vSphere implementations.
 
 For more information about administering vSphere, see
-* [VMware Education ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://mylearn.vmware.com/mgrreg/index.cfm){: new_window} 
+* [VMware Education ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/learning.html){: new_window} 
 * [VMware Knowledge Base ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://kb.vmware.com/){: new_window} 
 * [VMware vSphere documentation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.vmware.com/en/VMware-vSphere/index.html){: new_window}.
