@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 1994, 2020
-lastupdated: "2020-05-04"
+  years: 2017, 2021
+lastupdated: "2021-05-26"
 
 keywords: NetApp OnTap Select, High performance, vmware storage, QuantaStor, IBM Spectrum Accelerate, shared storage, private storage
 
@@ -142,7 +142,7 @@ For more information about connectting to VMware with NetApp, see the following 
 * Protocols: iSCSI, NFS, and SMB
 * Cost: High for both CAPEX and OPEX
 * HA: Dual heads and controllers
-* Replication: Supports SnapVault and SnapMirror; also achieved using [vRealize Automation](https://www.vmware.com/products/vrealize-automation){: external}.
+* Replication: Supports SnapVault and SnapMirror; also achieved using [vRealize Automation](https://www.vmware.com/products/vrealize-automation.html){: external}.
 * Reliability: High redundancy and MPIO support
 
 <a name="IBM"></a>
