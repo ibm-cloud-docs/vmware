@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 1994, 2020
-lastupdated: "2020-03-18"
+  years: 2017, 2021
+lastupdated: "2021-05-26"
 
 keywords: Getting Started VMware vSphere 6
 
@@ -73,7 +73,7 @@ Use the following steps to order a virtual server with vCenter installed:
 2. Click **Order devices**
 3. In the **Compute** category, click either **Bare metal servers** or **Virtual Server**. Select the **Monthly*8 billing option.
   1. For a virtual server instance to qualify for vCenter 6.0, you must deploy on at least **4 x 2.0 GHz Cores** and **4 GB of RAM**
-  2. For a listing of vCenter Deployment recommendations, see the [VMware vCenter Server&trade; 6.0 Deployment Guide](https://www.vmware.com/files/pdf/techpaper/vmware-vcenter-server6-deployment-guide.pdf){: external}.
+  2. For a listing of vCenter Deployment recommendations, see the [VMware vCenter Server&trade; 6.0 Deployment Guide](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/techpaper/vmware-vcenter-server6-deployment-guide-white-paper.pdf){: external}.
 4. Enter the following information:
   * Based on the Recommended Minimum Server Configuration
     * vCPU Core Configuration: 4 x 2.0 GHz Cores
