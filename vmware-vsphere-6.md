@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 1994, 2019
+  years: 1994, 2021
 lastupdated: "2018-08-23"
 
 keywords: vmware vcenter, vmware license, vsphere, vrealize, vsan, srm, nsx
@@ -19,9 +19,9 @@ subcollection: vmware
 # VMware licensing options 
 {: #license-options-vmware}
 
-VMware administrators can quickly realize cost-effective hybrid cloud characteristics by deploying into an {{site.data.keyword.BluSoftlayer_full}} enterprise-grade global cloud. A key {{site.data.keyword.BluSoftlayer_notm}} differentiator is that vSphere workloads and catalogs can be provisioned onto VMware vSphere environments within {{site.data.keyword.BluSoftlayer_notm}} data centers without modifying VMware VMs or guests. These deployments are made possible by using a common vSphere hypervisor and management/orchestration platform.
+VMware&reg; administrators can quickly realize cost-effective hybrid cloud characteristics by deploying into an {{site.data.keyword.cloud}} enterprise-grade global cloud. A key differentiator is that vSphere workloads and catalogs can be provisioned onto VMware vSphere environments within {{site.data.keyword.cloud}} data centers without modifying VMware VMs or guests. These deployments are made possible by using a common vSphere hypervisor and management or orchestration platform.
 
-In addition to offering the vSphere 6 Enterprise Plus License, {{site.data.keyword.BluSoftlayer_notm}} offers monthly licensing for vCenter, NSX, vRealize, vSAN, and Site Recovery Manager (SRM).
+In addition to offering the vSphere 6 Enterprise Plus License, {{site.data.keyword.cloud}} offers monthly licensing for vCenter, NSX, vRealize, vSAN, and Site Recovery Manager (SRM).
 
 ## VMware vSphere
 {: #vmware-vsphere-features}
@@ -32,14 +32,14 @@ In addition to offering the vSphere 6 Enterprise Plus License, {{site.data.keywo
 
 **Features:**
 * vMotion live migration
-* High Availability
-* Fault Tolerance
+* High availability
+* Fault tolerance
 * Replication
-* Nvidia GRID vGPU Virtualization
-* Workload Capacity Optimization
+* Nvidia GRID vGPU virtualization
+* Workload capacity optimization
 * Distributed Resources Scheduler (DRS)
-* Thin Provisioning
-* Network I/O Control
+* Thin provisioning
+* Network I/O control
 
 ## VMware vCenter
 {: #vmware-vcenter-features}
@@ -50,11 +50,11 @@ In addition to offering the vSphere 6 Enterprise Plus License, {{site.data.keywo
 
 **Features:**
 * Centralized control and visibility for all aspects within managed vSphere hosts and guest virtual machines.
-* Provides a single pane of glass interface view via the vCenter web client for compute network and storage management.
+* Provides a single pane of glass interface view through the vCenter web client for compute network and storage management.
 * Proactive Optimization. Enables allocation and optimization of resources for maximum efficiency across the vSphere hosts.
 * Extended management function for other integrated add-ons and services such as NSX, vRealize, vSAN, and Site Recovery Manager (SRM).
 * Monitoring, alerting, scheduling. Cloud admins can view events, alerts within the vCenter web client and configure scheduled actions.
-* Automation engine. vCenter is the engine that performs the tasks that are given to it via the vSphere API web interface. VMware vRealize Automation and vRealize Orchestration are examples of applications that drive vCenter actions via the VMware API.
+* Automation engine. vCenter is the engine that performs the tasks that are given to it through the vSphere API web interface. VMware vRealize Automation and vRealize Orchestration are examples of applications that drive vCenter actions through the VMware API.
 
 ## VMware NSX
 {: #vmware-nsx-features}
@@ -64,12 +64,12 @@ In addition to offering the vSphere 6 Enterprise Plus License, {{site.data.keywo
 **User Interface:** vCenter Clients, VMware API, VMware CLI
 
 **Features:**
-* Load Balancing
+* Load balancing
 * Firewalls
 * Routing
 * Logical switches
 * VPN
-* VxLAN Segmentation / Tunnel Endpoints
+* VxLAN segmentation and tunnel endpoints
 
 ## VMware vRealize
 {: #vmware-vrealize-features}
@@ -94,7 +94,7 @@ In addition to offering the vSphere 6 Enterprise Plus License, {{site.data.keywo
 **User Interface:** vCenter Clients, VMware API, VMware CLI
 
 **Features:**
-* Distributed Host based storage
+* Distributed host based storage
 * Shared-nothing architecture
 * Scales up to 64 nodes
 * Low latency
@@ -115,3 +115,9 @@ In addition to offering the vSphere 6 Enterprise Plus License, {{site.data.keywo
 * Orchestrated cross-vCenter vMotion
 * Centralized recovery plans
 * Policy-based management
+
+## VMWare BYOL (Bring Your Own License)
+{: #vmware-byol}
+
+When you Bring Your Own License (BYOL), you can use your existing IBM Cloud for VMware Solutions (IC4V) licenses that you have with OS and software vendors. For more information, see [How is VMware licensed?](/docs/vmware?topic=vmware-vmware-faq#how-is-vmware-licensed-)
+
