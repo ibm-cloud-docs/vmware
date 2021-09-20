@@ -49,15 +49,15 @@ For more information about permissions, see [Classic infrastructure permissions]
 3. In the **Compute** category, click **Bare Metal Servers**.
 3. In the **Bare Metal Server** section, click **Monthly**.
 4. Select the servers. See VMware Support publications for minimum requirements:
-  * The following servers were selected for the example. **Note:** Having dual unbonded public and private uplinks is a requirement for redundancy. Confirm that the data center where you created your VLANs contain unbonded uplinks. 
-  * Capacity Cluster (Quantity 2)
-    * Server configuration - Select an Intel&reg; Xeon v3 server from the 'Dual processor multi-core Servers' section
-    * Software is OS = VMware 6.0
-    * OS Storage is 2 x 1 TB SATA (configured as a RAID 1)
-    * Data Storage - Recommend ordering 2 TB SATA or 1.2 TB SSD or Endurance or Performance NFS SAN Storage
-      * If you are interested in other storage types, see [Storage to use with VMware Systems](/docs/vmware?topic=vmware-vmware-storage#vmware-storage)
-      * Uplink Port Speeds: 1 Gbps Dual Public and Private Networks (Unbonded)
-        * 10 Gbps Uplinks are recommended for VMware vSAN solutions
+   * The following servers were selected for the example. **Note:** Having dual unbonded public and private uplinks is a requirement for redundancy. Confirm that the data center where you created your VLANs contain unbonded uplinks. 
+   * Capacity Cluster (Quantity 2)
+      * Server configuration - Select an Intel&reg; Xeon v3 server from the 'Dual processor multi-core Servers' section
+      * Software is OS = VMware 6.0
+      * OS Storage is 2 x 1 TB SATA (configured as a RAID 1)
+      * Data Storage - Recommend ordering 2 TB SATA or 1.2 TB SSD or Endurance or Performance NFS SAN Storage
+         * If you are interested in other storage types, see [Storage to use with VMware Systems](/docs/vmware?topic=vmware-vmware-storage#vmware-storage)
+         * Uplink Port Speeds: 1 Gbps Dual Public and Private Networks (Unbonded)
+            * 10 Gbps Uplinks are recommended for VMware vSAN solutions
 5. If you are creating a new deployment in a new IBM Cloud data center, proceed to step 6. If this deployment is an expansion or a deployment into an existing Data Center, select the preferred back-end BCR VLAN + front-end FCR VLAN. For the example, the back-end BCR VLAN is 1101 and the front-end FCR VLAN is 2200. **Note:** If this deployment is new or a new deployment into a new DC the back-end BCR and front-end FCR VLANs are created when you order the server.
 6. Enter a **Hostname** and **Domain**.
 7. Review the order and click **Finalize Your Order** to start the provisioning process.
@@ -75,14 +75,14 @@ Use the following steps to order a virtual server with vCenter.
   1. For a virtual server instance to qualify for vCenter 6.0, you must deploy on at least **4 x 2.0 GHz Cores** and **4 GB of RAM**
   2. For a listing of vCenter Deployment recommendations, see the [VMware vCenter Server 6.0 Deployment Guide](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/techpaper/vmware-vcenter-server6-deployment-guide-white-paper.pdf){: external}.
 4. Enter the following information:
-  * Based on the Recommended Minimum Server Configuration
-    * vCPU Core Configuration: 4 x 2.0 GHz Cores
-    * RAM Configuration: 12 GB RAM
-    * Software - OS = Windows&reg; Server 2012 R2 Standard Edition (64 Bit)
-    * OS-Specific Addon: vCenter 6
-    * First Disk - 1 x 100 GB (SAN)
-    * Second Disk - 1 x 50 GB (SAN)
-    * Uplink Port Speeds: 1 Gbps Public and Private Network Uplinks
+   * Based on the Recommended Minimum Server Configuration
+      * vCPU Core Configuration: 4 x 2.0 GHz Cores
+      * RAM Configuration: 12 GB RAM
+      * Software - OS = Windows&reg; Server 2012 R2 Standard Edition (64 Bit)
+      * OS-Specific Addon: vCenter 6
+      * First Disk - 1 x 100 GB (SAN)
+      * Second Disk - 1 x 50 GB (SAN)
+      * Uplink Port Speeds: 1 Gbps Public and Private Network Uplinks
 
 5. If this deployment is new, proceed to step 6. If this deployment is an expansion or deployment in to an existing data center, select the preferred back-end BCR VLAN + front-end FCR VLAN. For our example, our back-end BCR VLAN is 1101 and the front-end FCR VLAN is 2200. **Note:** If this deployment is new or if it's a new deployment into a new DC, the back-end BCR and front-end FCR VLANs are created when you order the server)
 6. Enter a **Hostname** and **Domain**.
@@ -104,7 +104,7 @@ The subnets are used for addressing VMware Guest virtual machine (VM) and VMware
 7. Click **Order IP addresses** on the upper right of the screen.
 8. Click **Place order**.
 9. Follow this process for each applicable VLAN (Ex. 1101, 2200)
-  1. For more information about VLANs, see [Getting started with VLANs](/docs/vlans?topic=vlans-getting-started).
+   1. For more information about VLANs, see [Getting started with VLANs](/docs/vlans?topic=vlans-getting-started).
 
 |Subnet Type|subnet size|Bound Vlan|vSphere host usage|
 |---|---|---|---|
@@ -171,9 +171,9 @@ A port group now needs to be added for vMotion. The group can be created as a Vi
 3. Click **Add...** to create a Port Group.
 4. Select **VMkernel** and click **Next**.
 5. Complete **Port group properties** with the following information:
-  * **Network label:** An appropriate name for the port group.
-  * **VLAN ID (Optional):** The VLAN ID for vMotion traffic (1101 for our example). The VLAN ID allows VMware to tag the traffic for the specific VLAN.
-  * Select **Use this port group for vMotion**.
+   * **Network label:** An appropriate name for the port group.
+   * **VLAN ID (Optional):** The VLAN ID for vMotion traffic (1101 for our example). The VLAN ID allows VMware to tag the traffic for the specific VLAN.
+   * Select **Use this port group for vMotion**.
 6. Click **Next**.
 7. Enter a **Portable IP address** for the VLAN. (You can get the port IP address from the control portal, **Network > IP Management > VLANs**. Select the correct VLAN and under **Subnets** you see a portable IP address range. If you have no available Portable IP address or if you exhausted your current pool, follow the steps in 'Order Private Subnets and IP addresses' to order extra portable IP address
 8. Click **Next** and then **Finish** to complete.
@@ -182,8 +182,8 @@ Use the following steps to create a port group for VM data traffic.
 
 1. Click **Properties...** for vSwitch0 and select **Add virtual machine**.
 2. Complete the **Port group properties** with the following information:
-  * **Network label:** Enter the name of the port group, such as `VM Data`.
-  * **VLAN ID (Optional):** Enter a VLAN ID; we used 1101 for our example. The VLAN ID allows VMware to tag the traffic for the VLAN.
+   * **Network label:** Enter the name of the port group, such as `VM Data`.
+   * **VLAN ID (Optional):** Enter a VLAN ID; we used 1101 for our example. The VLAN ID allows VMware to tag the traffic for the VLAN.
 
 ### Optional - Installing add-on VMware licenses (NSX, vRealize, vSAN)
 

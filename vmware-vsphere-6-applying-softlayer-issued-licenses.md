@@ -29,7 +29,7 @@ Many VMware&reg; Add-on licenses can be purchased directly and stored on the {{s
 3. Note the VMware **License Key**.
 4. Log in to your vCenter Instances.
 5. Go to **Administration > Licensing > Licenses**.
-  * From here, you can see what licenses that are applied and apply new licenses.
+   * From here, you can see what licenses that are applied and apply new licenses.
 6. To apply a new license, click the green **plus** [+] sign.
 7. Enter your license keys, one per line.
 8. Click **Next**.

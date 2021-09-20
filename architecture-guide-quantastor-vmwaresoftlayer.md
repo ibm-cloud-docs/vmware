@@ -45,17 +45,17 @@ Complete the following steps to order a 24 TB usable QuantaStor hybrid system th
 1. Log in to [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window} and click **Account > Place an Order**.
 2. Select {{site.data.keyword.baremetal_short}}, Monthly on the pop-up screen.
 3. Enter the following configuration options:
-  * **Data Center:** Location of the VLANs and ESXi hosts that were previously created
-  * **Server:** 36-bay chassis with Dual Processor Xeon
-  * **RAM:** 128 GB
-  * **Operating System:** OSNEXUS QuantaStor 5.x (48 TB)
-  * **Hard Disk Drives:**
-    * OS Disks: 2 x 960 GB SSD in RAID 1
-    * Data Disks: 24 x 2 TB SATA in Individual
-    * Log Disks: 2 x 960 GB SSD in Individual
-    * Cache Disks: 2 x 960 GB SSD in Individual
-  * **Public Bandwidth:** Private Network Only
-  * **Uplink Port Speeds:** 10 Gbps Redundant Private Network Uplinks
+   * **Data Center:** Location of the VLANs and ESXi hosts that were previously created
+   * **Server:** 36-bay chassis with Dual Processor Xeon
+   * **RAM:** 128 GB
+   * **Operating System:** OSNEXUS QuantaStor 5.x (48 TB)
+   * **Hard Disk Drives:**
+      * OS Disks: 2 x 960 GB SSD in RAID 1
+      * Data Disks: 24 x 2 TB SATA in Individual
+      * Log Disks: 2 x 960 GB SSD in Individual
+      * Cache Disks: 2 x 960 GB SSD in Individual
+   * **Public Bandwidth:** Private Network Only
+   * **Uplink Port Speeds:** 10 Gbps Redundant Private Network Uplinks
 4. Click **Continue Your Order**.
 
 **Note:** The storage server is configured with two network interfaces that are unbonded so that two different subnets can be used to load balance traffic to the storage array.
@@ -109,33 +109,33 @@ For example, volume vmk3 has vmnic0 that connects to Portable Private Subnet A o
 You need to open a support ticket after you configure a second adapter with a primary private IP address. Opening the ticket helps make sure that the IP address that you used is not taken if another system is provisioned on the VLAN.
 
 1. Click **Support** > **Add Ticket** and enter the following information:
-  * Subject: Private network question
-  * Title: Reserve and assign private IP address
-  * Associate Devices: 'Select the QuantaStor server'
-  * Details: Reserve and assign on VLAN. This IP address is used for the second adapter on the QuantaStor server.
+   * Subject: Private network question
+   * Title: Reserve and assign private IP address
+   * Associate Devices: 'Select the QuantaStor server'
+   * Details: Reserve and assign on VLAN. This IP address is used for the second adapter on the QuantaStor server.
 
 ### Configuring QuantaStor
 {: #configuring-quantastor}
 
 Now that the array can accept connections from both adapters, the adapters’ virtual interfaces that are on the Storage Path A and Storage Path B subnets must be assigned.
 
-  1. Right-click the initial private adapter interface (eth4) and select **Create Virtual Interface** on the menu.
-  2. Enter a portable private IP address and subnet for the adapter on the resulting pop-up screen, and make sure that **iSCSI Enabled** is checked.
-  3. If you are using the VLAN worksheet, use an address from the Storage Path A row.
-  4. Record the IP address that is used in the Notes section on the Portable IP address page.
-  5. Select the initial private adapter interface (eth4) to bind the virtual interface and click **OK**.
-  6. Right-click the other private adapter interface (eth6) and select **Create Virtual Interface** on the menu.
-  7. Enter a portable private IP address and subnet for the adapter and make sure that **iSCSI enabled** is checked on the resulting pop-up window.
-  8. If you are using the VLAN worksheet, use an address from the Storage Path B row.
-  9. Record this IP address as used in the Notes section on the Portable IP address page.
-  10. Select the other private adapter interface (eth6) to bind the virtual interface and click **OK**.
+1. Right-click the initial private adapter interface (eth4) and select **Create Virtual Interface** on the menu.
+2. Enter a portable private IP address and subnet for the adapter on the resulting pop-up screen, and make sure that **iSCSI Enabled** is checked.
+3. If you are using the VLAN worksheet, use an address from the Storage Path A row.
+4. Record the IP address that is used in the Notes section on the Portable IP address page.
+5. Select the initial private adapter interface (eth4) to bind the virtual interface and click **OK**.
+6. Right-click the other private adapter interface (eth6) and select **Create Virtual Interface** on the menu.
+7. Enter a portable private IP address and subnet for the adapter and make sure that **iSCSI enabled** is checked on the resulting pop-up window.
+8. If you are using the VLAN worksheet, use an address from the Storage Path B row.
+9. Record this IP address as used in the Notes section on the Portable IP address page.
+10. Select the other private adapter interface (eth6) to bind the virtual interface and click **OK**.
 
 After the QuantaStor server is configured with IP addresses and virtual interfaces, configure the routing to make sure that the outgoing traffic uses the correct interface.(There are two NICs on different subnets).
 
 1. SSH into the QuantaStor server with your root credentials and append the following lines to /etc/network/interfaces. Assuming eth4 and eth6 are the NICs on the private network:
-  * post-up ip route add 10.0.0.0/8 on dev eth4
-  * post-up ip route add 10.0.0.0/8 on dev eth6 table eth6
-  * post-up ip rule add from table eth6
+   * post-up ip route add 10.0.0.0/8 on dev eth4
+   * post-up ip route add 10.0.0.0/8 on dev eth6 table eth6
+   * post-up ip rule add from table eth6
 
 ### Configure pass-through (RAID0) Units
 {: #creating-passthru-units}
@@ -153,10 +153,10 @@ Next, you must create a storage pool that is used to allocate volumes before you
 
 1. Right-click **Storage Pools** and select **Create Storage Pool**.
 2. Enter the following information on the **Create Storage Pool** screen:
-  * Name: Enter the appropriate name for the storage pool. Example: StoragePool-01
-  * Pool Type: Default (zfs)
-  * I/O Profile: Virtualization
-  * Disks to use for the Storage Pool: check all the data disks (do not check SSD's).
+   * Name: Enter the appropriate name for the storage pool. Example: StoragePool-01
+   * Pool Type: Default (zfs)
+   * I/O Profile: Virtualization
+   * Disks to use for the Storage Pool: check all the data disks (do not check SSD's).
 3. Click **OK**.
 
 ### Creating iSCSI Storage Volumes
@@ -192,10 +192,10 @@ You need to configure QuantaStor to allow access from the ESXi hosts through eac
 
 1. Navigate to the QuantaStor administration page and right-click the **Hosts** menu and select **Add Host**.
 2. Enter the following information on the **Add Host** screen:
-  * Host name: Enter an appropriate host name. The host name does not have the fully qualified domain name (FQDN), but is must describe the host. Example: MyESXiHostName
-  * Operating System Type: VMware
-  * Initiator: iSCSI Qualified Name (IQN)
-  * iSCSI Qualified Name: The IQN for the respective host.
+   * Host name: Enter an appropriate host name. The host name does not have the fully qualified domain name (FQDN), but is must describe the host. Example: MyESXiHostName
+   * Operating System Type: VMware
+   * Initiator: iSCSI Qualified Name (IQN)
+   * iSCSI Qualified Name: The IQN for the respective host.
 3. Click **OK**.
 
 Follow these steps for each host in ESXi environment. After you add each host in the management and capacity clusters follow these steps:

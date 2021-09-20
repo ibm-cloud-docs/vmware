@@ -32,8 +32,7 @@ To install the Agent, download and copy the `Agent-VMware-ESX-Server-6.71.<versi
 1. Extract the files from the package. To do so, use this command (in which “PACKAGENAME” might be “Agent-VMware-ESX-Server-6.71”):<br/>`tar xvfz PACKAGENAME.tar.gz`
 2. Go to the directory where you extracted the package.
 3. Run the installation script:<br />`# ./install.sh`<br/><br/>
-  The installation script prompts you for configuration information such as web registration (address, port number, and authentication) and log file name.
-  {: note}
+   The installation script prompts you for configuration information such as web registration (address, port number, and authentication) and log file name{: note}
 
 Enter the WebCC username for this server.
 

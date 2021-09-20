@@ -28,9 +28,9 @@ subcollection: vmware
 * The **Virtual Machine Version** menu gives you the option to use different cluster types. Since this cluster is new and you do not need support for older versions, select **Virtual Machine Version 8**. **Note:** If you use the Web Client to create a cluster, use version 11.
 5. Select the **Operating System** type.
 6. Set the number of virtual processors (on the CPUs page) and click **Next**
-  1. **Note:** You can change the number of CPUs later if the resources are available.
+   1. **Note:** You can change the number of CPUs later if the resources are available.
 7. Set the amount of memory that you want for the virtual machine. Click **Next**
-  1. **Note:** You can change the amount of memory later if the resources are available.
+   1. **Note:** You can change the amount of memory later if the resources are available.
 8. In the network section, you need to connect the two NICs. NIC 1 is for the Private Network and NIC 2 is for the Public Network. The adapter type ID “Flexible”. Make sure that the “Connect at Power On” checkbox is selected.
 9. Leave the SCSI Controller screen to the default “LSI Logic Parallel”. On the Select a Disk screen, select **Create a new virtual disk**. Keep the default settings on the **Advanced Options** screen and the **Ready to Complete** screen. Your new virtual machine is now created. To begin loading your installation media, click the server name from the inventory list and click **Edit Virtual Machine Settings** under **Basic Tasks**.
 <!--* false-->

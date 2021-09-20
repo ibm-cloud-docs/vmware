@@ -23,9 +23,9 @@ subcollection: vmware
 
 1. Log in to the [{{site.data.keyword.cloud_notm}} catalog](https://cloud.ibm.com/catalog/){: external}.
 2. Go to **Devices > Manage > VMware&reg; licenses**. Each VMware&reg; add-on that is purchased displays the following information:
-  * License key
-  * CPUs
-  * Order date
+   * License key
+   * CPUs
+   * Order date
 
 **Ordering VMware&reg; licensing**
 1. Log in to the [{{site.data.keyword.cloud_notm}} catalog](https://cloud.ibm.com/catalog/){: external}.

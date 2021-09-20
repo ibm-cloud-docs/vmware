@@ -154,31 +154,31 @@ The IBM Spectrum Accelerate private storage option is not available on the {{sit
 * Recommended workloads: Tier 1
 * Performance: Dependent upon number of disks, SSD (optional), and amount of memory that is given to each “node” VM.
 * Scalability: Scales ~8 - 325 TB usable
-  * Minimum capacity: 3 VMs x 6 drives
-  * Maximum capacity: 15 VMs x 12 drives
-  * Scales up to 144 virtual arrays and more than 40 PB usable through IBM Hyper-Scale Manager
-  * Non-disruptive capacity expansion by adding more nodes
-  * 1 x 500 or 800 GB SSD per node supported
+   * Minimum capacity: 3 VMs x 6 drives
+   * Maximum capacity: 15 VMs x 12 drives
+   * Scales up to 144 virtual arrays and more than 40 PB usable through IBM Hyper-Scale Manager
+   * Non-disruptive capacity expansion by adding more nodes
+   * 1 x 500 or 800 GB SSD per node supported
 * Protocols: iSCSI only
 * Cost: Dependent upon pricing model and physical machines that are deployed for nodes. High CAPEX; medium to low OPEX depending on licensing.
-  * Priced per binary (TiB) of usable capacity
-  * Not tied to any specific hardware configuration. Example: 200 TiB license can be deployed various ways – one 200 TiB instance, two 100 TiB instances, or four 50 TiB instances
-  * Offered two ways: perpetual license [includes one year of subscription and service (S&S)] and monthly license (includes S&S)
+   * Priced per binary (TiB) of usable capacity
+   * Not tied to any specific hardware configuration. Example: 200 TiB license can be deployed various ways – one 200 TiB instance, two 100 TiB instances, or four 50 TiB instances
+   * Offered two ways: perpetual license [includes one year of subscription and service (S&S)] and monthly license (includes S&S)
 * HA: Clustered solution
 * Replication: Achieved by using [vRealize Automation](https://www.vmware.com/products/vrealize-automation){: external}
  or SRA, which can be used to replicate from physical IBM XIV with VMware’s Site Recovery Manager (SRM)
-  * [vSphere Replication](https://www.vmware.com/products/vsphere/replication.html){: external}
-  <!--* [VMware vCenter Site Recovery Manager version 5.x guidelines for IBM XIV Gen3 Storage System](https://www-356.ibm.com/partnerworld/wps/servlet/ContentHandler/stg_ast_sto_wp_vmware_vcenter_recovery_gen3)-->
+   * [vSphere Replication](https://www.vmware.com/products/vsphere/replication.html){: external}
+   <!--* [VMware vCenter Site Recovery Manager version 5.x guidelines for IBM XIV Gen3 Storage System](https://www-356.ibm.com/partnerworld/wps/servlet/ContentHandler/stg_ast_sto_wp_vmware_vcenter_recovery_gen3)-->
 * Reliability: High redundancy and MPIO support. Any available node can manage the cluster. The following capabilities are not supported by IBM Spectrum Accelerate over hardware-based IBM XIV:
-  * Three-site mirroring
-  * IBM Hyper-Scale Mobility (iSCSI)
-  * USG v6
-  * 6 TB disk drives
-  * Storage Management Initiative Specifications (SMI-S) 1.6
-  * Data at rest encryption
-  * vStorage for API Array Integration (VAAI) if it is aligned with Virtual Volumes (VVol)ß
-  * vCenter Operations Manager (VCop)
-  * For more information about IBM XIV Storage System, see [Platform and application integration for IBM XIV Storage System](https://www.ibm.com/support/knowledgecenter/STJTAG/css/css_kcwelcomepage_xiv.html){: external}
+   * Three-site mirroring
+   * IBM Hyper-Scale Mobility (iSCSI)
+   * USG v6
+   * 6 TB disk drives
+   * Storage Management Initiative Specifications (SMI-S) 1.6
+   * Data at rest encryption
+   * vStorage for API Array Integration (VAAI) if it is aligned with Virtual Volumes (VVol)ß
+   * vCenter Operations Manager (VCop)
+   * For more information about IBM XIV Storage System, see [Platform and application integration for IBM XIV Storage System](https://www.ibm.com/support/knowledgecenter/STJTAG/css/css_kcwelcomepage_xiv.html){: external}
 
 See the following table to see pros and cons of private storage in a single-tenant environment.
 
@@ -198,11 +198,11 @@ See the following table to see pros and cons of private storage in a single-tena
 
 Table 2 documentation links:
 * NetApp OnTap Edge: Not available on the {{site.data.keyword.cloud_notm}} catalog – bring your own solution.
-  * [Data ONTAP Installation and Administration Guide](https://library.netapp.com/ecm/ecm_download_file/ECMP1200031){: external}
-  * [Data ONTAP Express Setup Guide](https://library.netapp.com/ecm/ecm_download_file/ECMP1369085){: external}
+   * [Data ONTAP Installation and Administration Guide](https://library.netapp.com/ecm/ecm_download_file/ECMP1200031){: external}
+   * [Data ONTAP Express Setup Guide](https://library.netapp.com/ecm/ecm_download_file/ECMP1369085){: external}
 * [NetApp Private Storage for IBM Cloud](http://www.netapp.com/us/solutions/cloud/private-storage-cloud/softlayer.aspx){: external}
 * Spectrum Accelerate: Not available on the {{site.data.keyword.cloud_notm}} catalog – bring your own solution.
-  * [Working with an IBM Spectrum Accelerate system](https://www.ibm.com/support/knowledgecenter/STJTAG/com.ibm.help.xivgen3.doc/MT/UG/xiv_mt_deploying_spectrum_accelerate.html){: external}
+   * [Working with an IBM Spectrum Accelerate system](https://www.ibm.com/support/knowledgecenter/STJTAG/com.ibm.help.xivgen3.doc/MT/UG/xiv_mt_deploying_spectrum_accelerate.html){: external}
 
 
 ## Shared Storage Options
