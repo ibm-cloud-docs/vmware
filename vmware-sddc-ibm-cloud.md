@@ -28,7 +28,7 @@ Shared storage is included based on VMware Virtual Storage Area Networking (VSAN
 
 The VMware SDDC on IBM Cloud – Advanced reference architecture is the first partner architecture to be certified under the VMware Validated Design program.
 
-For more information about VMware SDDC on IBM Cloud, see [VMware SDDC on IBM Cloud](https://www.ibm.com/cloud/learn/software-defined-data-center){: external}, [NSX](https://www.vmware.com/products/nsx){:external}, and [VSAN](https://www.vmware.com/products/virtual-san){: external}.
+For more information about VMware SDDC on IBM Cloud, see [VMware SDDC on IBM Cloud](https://www.ibm.com/cloud/learn/software-defined-data-center){: external}, [NSX](https://www.vmware.com/products/nsx){: external}, and [VSAN](https://www.vmware.com/products/virtual-san){: external}.
 
 Add additional security and compliance to your workloads with a [trusted secure cloud solution with IBM, VMware, and HyTrust](http://wpc.c320.edgecastcdn.net/00C320/DeploymentGuide_IBM_Intel_HyTrust_VMware_v1%200.pdf){: external}.
 

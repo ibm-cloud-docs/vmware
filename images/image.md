@@ -16,4 +16,4 @@ subcollection: vmware
 
 # Upload an image file
 This folder contains images for the VMware subcollection
-{:shortdesc}
+{: shortdesc}

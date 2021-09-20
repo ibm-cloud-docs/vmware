@@ -54,7 +54,7 @@ To start monitoring your resources, check out [Getting started with {{site.data.
 * Ensure that bare metal servers are protected by firewall hardware
 
 <!--## Governing VMWare on {{site.data.keyword.BluSoftlayer_full}} resource configuration-->
-<!--{: #govern-service_name}-->
+<!----> {: #govern-service_name}
 
 <!--As a security or compliance focal, you can use the {{site.data.keyword.compliance_short}} to define configuration rules for the instances of *service_name* that you create.-->
 

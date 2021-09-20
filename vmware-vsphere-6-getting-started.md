@@ -73,7 +73,7 @@ Use the following steps to order a virtual server with vCenter.
 2. Click **Order devices**
 3. In the **Compute** category, click either **Bare metal servers** or **Virtual Server**. Select the **Monthly*8 billing option.
   1. For a virtual server instance to qualify for vCenter 6.0, you must deploy on at least **4 x 2.0 GHz Cores** and **4 GB of RAM**
-  2. For a listing of vCenter Deployment recommendations, see the [VMware vCenter Server 6.0 Deployment Guide](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/techpaper/vmware-vcenter-server6-deployment-guide-white-paper.pdf){:external}.
+  2. For a listing of vCenter Deployment recommendations, see the [VMware vCenter Server 6.0 Deployment Guide](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/techpaper/vmware-vcenter-server6-deployment-guide-white-paper.pdf){: external}.
 4. Enter the following information:
   * Based on the Recommended Minimum Server Configuration
     * vCPU Core Configuration: 4 x 2.0 GHz Cores
@@ -134,7 +134,7 @@ You can now log in to the vCenter server and configure the vSphere cluster.
 4. Scroll down the **Device details** screen and note the **Passwords** for both the Windows OS and vCenter software.
 5. Open a Microsoft&reg; Remote Desktop (RDP) session and connect to your vCenter server through its public IP address.
 6. Log in using the passwords that you obtained in step 4. **Note:** You need an active VPN connection to IBM Cloud needs if you use a private IP address to access vCenter. For more information about VPN access, see [Enabling SSL VPN access](/docs/iaas-vpn?topic=iaas-vpn-getting-started).
-7. Download and install the traditional [vSphere Client](https://kb.vmware.com/s/){:external} or use the vSphere web client by using following the link `https://<vCenter-Sever-Public-IP-Address>/vsphere-client/`.
+7. Download and install the traditional [vSphere Client](https://kb.vmware.com/s/){: external} or use the vSphere web client by using following the link `https://<vCenter-Sever-Public-IP-Address>/vsphere-client/`.
 8. Log in to vCenter with the IP address and passwords you obtained in steps 3 and 4.
 9. Right-click the vCenter server name in the left pane and select **New data center**.
 10. Enter an appropriate name for the data center.

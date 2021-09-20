@@ -22,7 +22,7 @@ subcollection: vmware
 {: #create-esx-vm}
 
 To create a new virtual machine, follow these steps.
-{:shortdesc}
+{: shortdesc}
 
 1. Right-Click your host node IP address in the Inventory pane of the vSphere Client.
 2. Select **Custom** in the configuration window.
@@ -41,4 +41,4 @@ To begin loading your installation media, click the server name in the inventory
 
 After you select your ISO image, you are ready to begin the installation process of your respective OS.
 
-For more information about setting up a virtual machine network, see [Setting up a Virtual Machine Network](/docs/virtualization?topic=virtualization-setting-up-a-virtual-machine-network){:new_window}.
+For more information about setting up a virtual machine network, see [Setting up a Virtual Machine Network](/docs/virtualization?topic=virtualization-setting-up-a-virtual-machine-network){: new_window}.

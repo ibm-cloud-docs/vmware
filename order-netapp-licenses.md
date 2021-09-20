@@ -24,14 +24,14 @@ subcollection: vmware
 To use NetApp ONTAP Select, you must install it on a VMWare&reg; vSphere 6.x server.
 
 NetApp ONTAP Select is only available on bare metal servers that are provisioned for monthly billing.
-{:note}
+{: note}
 
 NetApp ONTAP Select has two offerings:
 * Standard - uses SATA drives
 * Premium - uses Flash SSD drives
 
 Use the following steps to order licenses for the NetApp products.
-1. Log in to the [{{site.data.keyword.slportal_short}}](https://cloud.ibm.com/){:external}.
+1. Log in to the [{{site.data.keyword.slportal_short}}](https://cloud.ibm.com/){: external}.
 2. Click **Devices > Manage > NetApp licenses**.
 3. Click **Order NetApp licenses**.
 4. Click the drop-down list under **Add license...** to list the NetApp products and number of CPUs for the licenses that you want to order.

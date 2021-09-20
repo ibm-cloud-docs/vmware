@@ -21,7 +21,7 @@ subcollection: vmware
 {: #mount-iscsi-esxi}
 
 Mounting iSCSI into VMWare&reg; ESXi can be accomplished with a few steps and only the details of the server and storage node.
-{:shortdesc}
+{: shortdesc}
 
 1. Log in to the vSphere by using the primary private IP and user **root** and root's password.
 * From the **Welcome page**, click the **Configuration** tab.

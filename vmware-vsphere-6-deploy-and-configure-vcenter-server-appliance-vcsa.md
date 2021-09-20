@@ -18,7 +18,7 @@ subcollection: vmware
 {: #config-vcsa}
 
 Use the following steps to deploy a VMware&reg; vCenter Server Appliance.
-{:shortdesc}
+{: shortdesc}
 
 **Prerequisites**
 * Windows&reg; system with a compatible browser installed

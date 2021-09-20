@@ -21,7 +21,7 @@ subcollection: vmware
 {: #getting-started-nsx} 
 
 NSX is deployed as a license entitlement for you to apply to your infrastructure. {{site.data.keyword.BluSoftlayer_full}} supplies the licenses on a per-processor basis (pricing does not change for number of cores per CPU). An NSX license is required on every server that uses an NSX component (Management, Control, or Data Plane). NSX adds extra networking capabilities to the platform. You can create a robust overlay network for system security, tenant segmentation, and hybrid cloud environments that span providers or extends from on-premises private clouds.
-{:shortdesc}
+{: shortdesc}
 
 You can add firewalls, load balancing, VPN, NAT services, VXLAN-based micro segmentation to your environment with support for automation through a RESTful API.
 

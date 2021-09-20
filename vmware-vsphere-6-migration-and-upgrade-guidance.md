@@ -21,7 +21,7 @@ subcollection: vmware
 {: migrate-upgrade-vsphere-6}
 
 Expand or move your VMware cloud environments to any {{site.data.keyword.BluSoftlayer_full}} data center quickly and easily by using the VMware management control panel. To migrate and upgrade vSphere workloads, use the following steps as a guide.
-{:shortdesc}
+{: shortdesc}
 
 1. Gather data.
 2. Review the existing architecture:

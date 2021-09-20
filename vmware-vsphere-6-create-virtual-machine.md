@@ -37,5 +37,5 @@ subcollection: vmware
 10. With CD/DVD Drive 1 selected, select **Connect at power** under Device Status. To specify an ISO file that is located in your data store, click **Browse**.
 * The ISO files that are uploaded to the default Storage1 data store are selectable here. You also see folders that contain the configuration and log files (set up during Step 3 data store section of the Create a new Virtual Machine process) for all the server virtual machines.
 11. After you select your ISO image, you are ready to begin the installation process of your respective OS.
-* After your Guest VM is successfully up and running, if supported, install [VMWare&reg; Tools](https://kb.vmware.com/s/article/1014294){:external}.
+* After your Guest VM is successfully up and running, if supported, install [VMWare&reg; Tools](https://kb.vmware.com/s/article/1014294){: external}.
 * For more information about networking instructions, see [Setting up a virtual machine network](/docs/virtualization?topic=virtualization-setting-up-a-virtual-machine-network).

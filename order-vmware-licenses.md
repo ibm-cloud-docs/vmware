@@ -22,7 +22,7 @@ subcollection: vmware
 {: #ordering-vmware-license}
 
 VMware&reg; administrators understand that they can quickly realize the cost-effective hybrid cloud characteristics by deploying into {{site.data.keyword.BluSoftlayer_full}}. One of the characteristics is that vSphere workloads and catalogs are provisioned onto VMware vSphere environments within {{site.data.keyword.cloud_notm}} data centers without modification to VMware VMs or guests. Using a common vSphere hypervisor and management and orchestration platform makes these deployments possible.
-{:shortdesc}
+{: shortdesc}
 
 vSphere implementation also enables the use of other components. Table 1 contains a list of VMware products that are available to order through the {{site.data.keyword.cloud_notm}} catalog. Pricing information can be found under www.ibm.com/cloud/vmware.
 

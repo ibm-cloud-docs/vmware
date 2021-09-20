@@ -21,7 +21,7 @@ subcollection: vmware
 {: #install-evault-client}
 
 Installing the EVault Backup client on a VMware&reg; server can be done through a series of commands in the shell or terminal within the target ESX server. Use the following steps are to install the EVault Backup client on your VMware&reg; server.
-{:shortdesc}
+{: shortdesc}
 
 To install the Agent, download and copy the `Agent-VMware-ESX-Server-6.71.<version-info>.tar.gz` package onto the target ESX Server by using the following command:
 
@@ -33,7 +33,7 @@ To install the Agent, download and copy the `Agent-VMware-ESX-Server-6.71.<versi
 2. Go to the directory where you extracted the package.
 3. Run the installation script:<br />`# ./install.sh`<br/><br/>
   The installation script prompts you for configuration information such as web registration (address, port number, and authentication) and log file name.
-  {:note}
+  {: note}
 
 Enter the WebCC username for this server.
 

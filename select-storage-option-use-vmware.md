@@ -68,7 +68,7 @@ You can bring your own ESX license, but you need to open a ticket with Support t
 * Protocols - Not applicable
 * Cost: Low capital expenditure (CAPEX) and operating expenditure (OPEX)
 * HA - Not available
-* Replication - [vSphere Replication Virtual Appliance](https://pubs.vmware.com/srm-51/index.jsp?topic=%2Fcom.vmware.srm.install_config.doc%2FGUID-E654F2D8-7D56-4A81-9568-E85172A7022D.html){:external}
+* Replication - [vSphere Replication Virtual Appliance](https://pubs.vmware.com/srm-51/index.jsp?topic=%2Fcom.vmware.srm.install_config.doc%2FGUID-E654F2D8-7D56-4A81-9568-E85172A7022D.html){: external}
 * Reliability - Multiple single points of failure
 
 ### vSAN [1]
@@ -79,7 +79,7 @@ You can bring your own ESX license, but you need to open a ticket with Support t
 * Protocols - Proprietary
 * Cost - Medium for both CAPEX and OPEX
 * HA - Supported for both host and disk failures. Failure domains are supported from v6 of VMware.
-* Replication - [vSphere Replication Virtual Appliance](https://pubs.vmware.com/srm-51/index.jsp?topic=%2Fcom.vmware.srm.install_config.doc%2FGUID-E654F2D8-7D56-4A81-9568-E85172A7022D.html){:external}
+* Replication - [vSphere Replication Virtual Appliance](https://pubs.vmware.com/srm-51/index.jsp?topic=%2Fcom.vmware.srm.install_config.doc%2FGUID-E654F2D8-7D56-4A81-9568-E85172A7022D.html){: external}
 * Replication and disaster recovery
 * Reliability - Tolerates up to three host failures with seven or more hosts. Failure domains were introduced in v6 of VMware.   
 
@@ -133,8 +133,8 @@ For more information about how to request ONTAP Select, see [NetApp ONTAP Select
 You must purchase a NetApp device from NetApp or {{site.data.keyword.cloud}}. You need to install it in one of the colocation sites that are near your {{site.data.keyword.cloud}} data center and connect it by using Direct Link Colocation or Direct Link Cloud.
 
 For more information about connecting to VMware with NetApp, see the following links:
-* [NetApp Private Storage for {{site.data.keyword.cloud}}](http://www.netapp.com/us/solutions/cloud/private-storage-cloud/softlayer.aspx){:external}
-* [Solution brief: NetApp Private Storage for {{site.data.keyword.cloud}}](http://www.netapp.com/us/media/ds-3619_tcm10-127472.pdf){:external}
+* [NetApp Private Storage for {{site.data.keyword.cloud}}](http://www.netapp.com/us/solutions/cloud/private-storage-cloud/softlayer.aspx){: external}
+* [Solution brief: NetApp Private Storage for {{site.data.keyword.cloud}}](http://www.netapp.com/us/media/ds-3619_tcm10-127472.pdf){: external}
 
 
 * Recommended workloads - Tier 1
@@ -143,7 +143,7 @@ For more information about connecting to VMware with NetApp, see the following l
 * Protocols: - iSCSI, NFS, and SMB
 * Cost - High for both CAPEX and OPEX
 * HA - Dual heads and controllers
-* Replication - Supports SnapVault and SnapMirror, which is achieved by using [vRealize Automation](https://www.vmware.com/products/vrealize-automation.html){:external}.
+* Replication - Supports SnapVault and SnapMirror, which is achieved by using [vRealize Automation](https://www.vmware.com/products/vrealize-automation.html){: external}.
 * Reliability - High redundancy and MPIO support
 
 <a name="IBM"></a>
@@ -215,7 +215,7 @@ Table 2 documentation links:
 You can order the {{site.data.keyword.baremetal_short}} from the {{site.data.keyword.cloud_notm}} catalog with ESX. In the {{site.data.keyword.cloud_notm}} catalog, you can also provision {{site.data.keyword.filestorage_full}} in the same availability zone as your host. For more information about provisioning file storage, see [Ordering and Managing IBM File Storage for IBM Cloud](/docs/FileStorage?topic=FileStorage-orderingConsole#orderingConsole).
 
 In VMware, three predefined values are provided on **Host Device Details Storage** – Username, Password (for CHAP authentication), and Host IQN.
-{:note}
+{: note}
 
 See the following table for pros and cons of shared storage in a multi-tenant environment.
 
@@ -229,7 +229,7 @@ See the following table for pros and cons of shared storage in a multi-tenant en
 |**Use cases**|Tier 1, 2, and 3 workloads:<br><ol>0.25 IOPS per GB: Low I/O intensity. Example applications include storing mailboxes or department-level file shares.<br></ol>2 IOPS per GB: General purposes. Example applications include hosting small databases that are backing web applications or virtual machine disk images for a hypervisor.<br>4 IOPS per GB: High I/O intensity. Example applications include transactional and other performance-sensitive databases.<br>10 IOPS per GB: High I/O intensity. Example applications include analytics.|
 |**HA**|Yes, dual heads and controllers.|
 |**Configurability**|Size and IOPS only.|
-|**Disaster recovery and replication** | Snapshot and Replication provided over the {{site.data.keyword.cloud}} Private Network, also achieved by using [vRealize Automation](https://www.vmware.com/products/vrealize-automation){:external}, but no SRA.|
+|**Disaster recovery and replication** | Snapshot and Replication provided over the {{site.data.keyword.cloud}} Private Network, also achieved by using [vRealize Automation](https://www.vmware.com/products/vrealize-automation){: external}, but no SRA.|
 |**Reliability**|Highly redundant, MPIO connection, NFS-based file storage routed TCP/IP connections. Snapshots and Replication enabled.|
 |**Latency**|<10 ms|
 |**Cost**|High for both CAPEX (10x for SAN of the same size) and OPEX|
