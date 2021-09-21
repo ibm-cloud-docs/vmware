@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2021
-lastupdated: "2017-12-14"
+lastupdated: "2021-09-21"
 
 keywords: deploy vcsa, vsphere 6
 
@@ -45,16 +45,16 @@ Use the following steps to deploy a VMware&reg; vCenter Server Appliance.
 12. Select a data store and click **Next**.
 13. Select 'Use an embedded database (PostgreSQL)' and click **Next*.
 14. Set up your network configurations by entering the following information:
-   1. Network
-   * IP address family
-   * Network type
-   * Network address
-   * System name
-   * Subnet mask
-   * Network gateway
-   * Network DNS Servers
-      * For more information, see [What are Local DNS Resolvers](/docs/dns?topic=dns-dns-faq#what-are-the-local-dns-resolvers-).
-   * Configure time sync
-   * Click **Next**
+    * Network
+    * IP address family
+    * Network type
+    * Network address
+    * System name
+    * Subnet mask
+    * Network gateway
+    * Network DNS Servers
+       * For more information, see [What are Local DNS Resolvers](/docs/dns?topic=dns-dns-faq#what-are-the-local-dns-resolvers-).
+    * Configure time sync
+    * Click **Next**
 15. Review the settings, then click **Finish**. Your vCSA instance is provisioned.
 
