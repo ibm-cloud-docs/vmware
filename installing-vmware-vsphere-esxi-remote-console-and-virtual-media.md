@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2021
-lastupdated: "2021-04-20"
+lastupdated: "2021-09-21"
 
 keywords: virtual media, deploying esx, private network, remote console, install vsphere, install esxi, esxi 
 
@@ -39,7 +39,7 @@ Deploying ESX from installation media is similar across all versions and can be 
 4. Remote desktop (RDP) or Remote X into to the virtual server instance that is storing the ESXi image.
 5. Open a web browser in the RDP session and enter the IPMI address that you collected in Step 2.
 6. Log in to the IPMI console with the credentials that are also found in Step 2 (typically root).
-* Make a note of your IPMI user access level. It might be Administrator. You might experience a problem when you mount your remote storage if it is set to **Operator**. Open a support case to elevate your IPMI credentials if you cannot mount media.
+   * Make a note of your IPMI user access level. It might be Administrator. You might experience a problem when you mount your remote storage if it is set to **Operator**. Open a support case to elevate your IPMI credentials if you cannot mount media.
 7. Confirm that you are on the home login page and click **Remote Control** > **Console Redirection** > **Launch Console**.
 
 ## Attaching ISO
@@ -49,11 +49,11 @@ Deploying ESX from installation media is similar across all versions and can be 
 2. Click the **CD-ROM and ISO** tab in the Virtual Storage window. For the Logical Drive Type, select **ISO File** and click **Open Image**.
 3. Go to the ESXi ISO and click **OK**. Then, click **Plug-in**.
 4. After the ISO is plugged into the session, click **OK**.
-* Go back to the IPMI webpage and click **Remote** > **Control** > **Reset Server** > **Perform Action** to restart the server.
+   * Go back to the IPMI webpage and click **Remote** > **Control** > **Reset Server** > **Perform Action** to restart the server.
 
 ### Installing networking configuration
 1. Install ESXi.
-* After the installation is complete, make sure to **Plug Out** the ISO so that you can restart the server.
+   * After the installation is complete, make sure to **Plug Out** the ISO so that you can restart the server.
 2. Restart the server.
 3. Configure the IP address of the server after it restarts.
 4. Gather the details from the Configuration tab of the device.

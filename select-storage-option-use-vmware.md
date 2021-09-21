@@ -26,7 +26,7 @@ You have several options when it comes to storage and VMware&reg;. You can choos
 
 See the following table for storage tiers and where your workload might fall.
 
-|| Tier 1 | Tier 2 | Tier 3|
+| Tier 1 | Tier 2 | Tier 3|
 |--------|--------|-------|
 | Business use | High performance and or high availability production applications, databases, and data| Non-mission critical test and development application, databases, and data | Non-mission critical data storage, backup, and archive |
 | Performance | High (SSDs, SAS) | Medium (SAS, SATA) | Low (SATA)|
@@ -183,7 +183,7 @@ The IBM Spectrum Accelerate private storage option is not available on the {{sit
 See the following table to see pros and cons of private storage in a single-tenant environment.
 
 |Key Factors or storage options| Local | Virtual SAN | QuantStor|NetApp (_OnTap Edge_)|NetApp (_NPS_)|IBM Spectrum Accelerate|
-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|
 | **Type** |Local |SDS |SDS| SDS |Monolithic|SDS|
 | **Performance** | Based on SSD/SA-SCSI specs, further RAID 5 and 10 can be used for read and write gains. | 90 K+ IOPS per host that depends on host configuration. 100 VMs per host, 32 hosts per cluster, 3,200 VMs per cluster, only 2,048 protected (v5.5). Up to 20 K IOPS, 200 VMs per host, 64 hosts per cluster, and 6,000 protected VMs per cluster (v6.0).| Based on types and number of disks that are selected, and RAID configurations and use of iSCSI or NFS. | Based on types and number of disks that are selected and RAID configure-actions.| Depends on model. |Based on types and number of disks that are selected, RAID configurations, and optional use of SSD disk per hypervisor node.|
 |**Scalability**|Limited growth in size and in disk I/O throughput. | Virtual machine disk (VMDK) up to 2 TB with v5.5, and up to 62 TB with v6.0.|Single QS up to 128 TB (3.x). No scaling up or out.|Up to 10 TB; no scaling out.|Yes, add disk shelves for capacity and IOPS. | Scales from ~8 - 325 TB usable space. Min capacity is 3 VMs x 6 drives. Max capacity is 15 VMs x 12 drives. Scales up to 144 virtual arrays and more than 40 PB usable through IBM Hyper-Scale Manager. Non-disruptive capacity expansion by adding more nodes.|
