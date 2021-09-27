@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 
 
-{: .toc subcollection="vmware" category="compute" href="/docs/vmware?topic=vmware-vmware-getting-started" path="vmware"}
+{: .toc subcollection="vmware" version="2" category="compute" href="/docs/vmware?topic=vmware-vmware-getting-started" path="vmware"}
 VMware
 
     {: .navgroup id="learn"}
