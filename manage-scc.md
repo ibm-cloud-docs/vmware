@@ -52,20 +52,3 @@ To start monitoring your resources, check out [Getting started with {{site.data.
 * Ensure that bare metal servers do not allow remote administration over the public network
 * Ensure that bare metal servers are ordered with redundant power supplies for workload protection
 * Ensure that bare metal servers are protected by firewall hardware
-
-<!--
-## Governing VMWare on {{site.data.keyword.BluSoftlayer_full}} resource configuration
-{: #govern-service_name}-->
-
-<!--As a security or compliance focal, you can use the {{site.data.keyword.compliance_short}} to define configuration rules for the instances of *service_name* that you create.-->
-
-<!--[Config rules](#x3084914){: term} are used to enforce the configuration standards that you want to implement across your accounts. To learn more about the data that you can use to create a rule for VMWare on {{site.data.keyword.BluSoftlayer_full}}, review the following table.-->
-
-<!--| Resource kind | Property | Operator | Value | Description |-->
-<!--|---------------|----------|---------------|-------|-------------|-->
-<!--| *instance* | *private_network_only* | *is_true* <br>*is_false* |  | *Indicates whether access to a Certificate Manager instance is allowed only through a private network. |-->
-<!--| <resource_kind> | <property_name> | <operator> | <value> | <description> |-->
-
-<!--{: caption="Table 1. Rule properties for VMWare on {{site.data.keyword.BluSoftlayer_full}}" caption-side="top"}-->
-
-<!--To learn more about config rules, check out [What is a config rule?](/docs/security-compliance?topic=security-compliance-what-is-rule).-->
