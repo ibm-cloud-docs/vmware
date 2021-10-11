@@ -61,10 +61,10 @@ To start monitoring your resources, check out [Getting started with {{site.data.
 
 <!--[Config rules](#x3084914){: term} are used to enforce the configuration standards that you want to implement across your accounts. To learn more about the data that you can use to create a rule for VMWare on {{site.data.keyword.BluSoftlayer_full}}, review the following table.-->
 
-<!--| Resource kind | Property | Operator | Value | Description |
-|---------------|----------|---------------|-------|-------------|
-| *instance* | *private_network_only* | *is_true* <br>*is_false* | - | *Indicates whether access to a Certificate Manager instance is allowed only through a private network. |
-| <resource_kind> | <property_name> | <operator> | <value> | <description> |-->
+<!--| Resource kind | Property | Operator | Value | Description |-->
+<!--|---------------|----------|---------------|-------|-------------|-->
+<!--| *instance* | *private_network_only* | *is_true* <br>*is_false* |  | *Indicates whether access to a Certificate Manager instance is allowed only through a private network. |-->
+<!--| <resource_kind> | <property_name> | <operator> | <value> | <description> |-->
 
 <!--{: caption="Table 1. Rule properties for VMWare on {{site.data.keyword.BluSoftlayer_full}}" caption-side="top"}-->
 
