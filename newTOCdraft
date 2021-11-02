@@ -1,0 +1,70 @@
+---
+toc:
+  properties:
+    subcollection: vmware
+    version: 2
+    category: compute_classic
+    audience: service
+    href: /docs/vmware
+    console-page: "/classic"
+    product-page: "https://www.ibm.com/cloud/vmware"
+    path: vmware
+    label: VMware
+    
+  entries:
+  - navgroup: 
+      id: learn
+      topics:
+      - getting-started.md
+      - vmware-6-topic-description.md
+      - vmware-vsphere-6.md
+      - select-storage-option-use-vmware.md
+      - vmware-vsphere-6-nsx-overview.md
+      - vmware-sddc-ibm-cloud.md
+
+  - navgroup: 
+      id: howto
+      topics:
+      - topicgroup: 
+          label: Configuring the environment
+          topics: 
+          - vmware-vsphere-6-getting-started.md
+          - vmware-vsphere-6-nsx-getting-started.md
+          - deploy-vmwaresoftlayer.md
+          - vmware-vsphere-6-deploy-and-configure-vcenter-server-appliance-vcsa.md
+          - vmware-vsphere-6-create-virtual-machine.md
+          - installing-vmware-tools-linux.md
+          - vmware-vsphere-6-migration-and-upgrade-guidance.md
+          - installing-vmware-vsphere-esxi-remote-console-and-virtual-media.md
+          - vmware-esx-create-virtual-machine.md
+          - mounting-iscsi-vmware-esxi.md
+          - vsan-stability-lsi-3108-based-controllers.md
+
+      - topicgroup: 
+          label: Ordering and managing licenses
+          topics: 
+          - order-vmware-licenses.md
+          - manage-vmware-licenses.md
+          - order-netapp-licenses.md
+          - manage-netapp-licenses.md
+          - vmware-vsphere-6-applying-softlayer-issued-licenses.md
+
+  - navgroup: 
+      id: howto
+      topics:
+      - topicgroup: 
+          label: Configuring Quantastor storage
+          topics: 
+          - architecture-guide-quantastor-vmwaresoftlayer.md
+          - brocade-vrouter-vyatta-setup-guide-vmware-environments-quantastor.md
+          
+      - topicgroup: 
+          label: Enhancing security
+          topics: 
+          - manage-scc.md
+          
+  - navgroup:
+      id: help
+      topics: 
+      -  vmware-faq.md
+      
