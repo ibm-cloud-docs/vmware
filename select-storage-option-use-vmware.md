@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2021
-lastupdated: "2021-07-07"
+  years: 2017, 2022
+lastupdated: "2022-02-15"
 
 keywords: NetApp OnTap Select, High performance, vmware storage, QuantaStor, IBM Spectrum Accelerate, shared storage, private storage
 
@@ -26,16 +26,15 @@ You have several options when it comes to storage and VMware&reg;. You can choos
 
 See the following table for storage tiers and where your workload might fall.
 
-| Tier 1 | Tier 2 | Tier 3|
-|--------|--------|-------|
-| Business use | High performance and or high availability production applications, databases, and data| Non-mission critical test and development application, databases, and data | Non-mission critical data storage, backup, and archive |
+|   | Tier 1 | Tier 2 | Tier 3|
+|-- | --------|--------|-------|
+| Business use | High performance and or high availability production applications, databases, and data | Non-mission critical test and development application, databases, and data | Non-mission critical data storage, backup, and archive |
 | Performance | High (SSDs, SAS) | Medium (SAS, SATA) | Low (SATA)|
-|Guaranteed IOPS|Yes| No | No|
-|High availability (HA)|Yes|No|No|
-|Replication|Yes|Yes|No|
-|Snapshots|Yes|No|No|
-
-<caption>Table 1. Storage tiers</caption>
+| Guaranteed IOPS | Yes | No | No|
+| High availability (HA) | Yes| No | No|
+| Replication | Yes | Yes | No |
+| Snapshots | Yes | No | No |
+{: caption="Table 1. Storage tiers" caption-side="bottom"}
 
 
 ## VMware Private and Shared Storage Options
@@ -193,8 +192,7 @@ See the following table to see pros and cons of private storage in a single-tena
 |**Configurability (HA)**|Number and type of disks; RAID levels|Specific controllers required.|CPU, memory, cache, number and type of disks, and RAID levels.|CPU, memory, cache, number and type of disks, and RAID levels.|TBD|CPU, memory, cache, number and type of disks, SSD, caching, iSCSI port configuration. Multi-tenancy QOS.|
 |**Disaster recovery and replication**|Use vRA to replicate, no SRAs.|Use vRA to replicate.|Built-in replication; no SRAs available.|Can use vRA to replicate, SnapMirror.|Can use vRA to replicate, SnapMirror, SnapVault.|vRA or SRA supported, replication between SDS and or Physical XIV devices. Snapshots supported; application recovery through IBM FlashCopy Manager.|
 |**Reliability**|Single point of failure without HA.|Tolerates up to three host failures with seven plus hosts. Failure domains are introduced in v6.0.|Single point of failure (enclosure and RAID controller) and no HA.|Single point of failure (enclosure and RAID controller) and no HA.|Highly redundant multipath I/O (MPIO) connection.|Highly redundant iSCSI MPIO connections: any node can manage the cluster.|
-
-<caption>Table 2. Pros and cons of VMware private storage options</caption>
+{: caption="Table 2. Pros and cons of VMware private storage options" caption-side="bottom"}
 
 Table 2 documentation links:
 * NetApp OnTap Edge: Not available on the {{site.data.keyword.cloud_notm}} catalog – bring your own solution.
@@ -233,8 +231,7 @@ See the following table for pros and cons of shared storage in a multi-tenant en
 |**Reliability**|Highly redundant, MPIO connection, NFS-based file storage routed TCP/IP connections. Snapshots and Replication enabled.|
 |**Latency**|<10 ms|
 |**Cost**|High for both CAPEX (10x for SAN of the same size) and OPEX|
-
-<caption> Table 3. Pros and cons of VMware shared storage options</caption>
+{: caption="Table 3. Pros and cons of VMware shared storage options" caption-side="bottom"}
 
 Table 3 documentation links:
 * [File storage](/docs/FileStorage?topic=FileStorage-getting-started)
