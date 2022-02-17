@@ -9,7 +9,7 @@ toc:
     console-page: "/classic"
     product-page: "https://www.ibm.com/cloud/vmware"
     path: vmware
-    label: VMware
+    label: VMware for Classic
     
   entries:
   - navgroup: 
