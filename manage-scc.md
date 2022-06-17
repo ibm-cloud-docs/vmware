@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2020, 2021
-lastupdated: "2020-12-15"
+  years: 2020, 2022
+lastupdated: "2022-06-17"
 
 keywords: security and compliance for vmware, security for vmware, compliance for vmware,
 
@@ -19,12 +19,9 @@ subcollection: vmware
 # Managing security and compliance with VMWare on IBM Cloud
 {: #manage-security-compliance}
 
-<!--Name this file `manage-scc.md` and place it in the "Enhancing security" topic group.-->
 
 VMWare on {{site.data.keyword.BluSoftlayer_full}} is integrated with the {{site.data.keyword.compliance_short}} to help you manage security and compliance for your organization.
 {: shortdesc}
-
-<!--Add the following sections as your service onboards to the Security and Compliance Center. You might have only monitoring or you might also have configuration enforcement. Also, if you only have one of the options, be sure to remove the bulleted list and write the following section as a sentence.-->
 
 With the {{site.data.keyword.compliance_short}}, you can:
 
@@ -37,7 +34,7 @@ With the {{site.data.keyword.compliance_short}}, you can:
 
 As a security or compliance focal, you can use the VMWare on {{site.data.keyword.BluSoftlayer_full}} [goals](#x2117978){: term} to help make sure that your organization is adhering to the external and internal standards for your industry. By using the {{site.data.keyword.compliance_short}} to validate the resource configurations in your account against a [profile](#x2034950){: term}, you can identify potential issues as they arise.
 
-All of the goals for VMWare on {{site.data.keyword.BluSoftlayer_full}} are added to the {{site.data.keyword.cloud_notm}} Best Practices Controls 1.0 profile but can also be mapped to other profiles.
+All of the goals for VMWare on {{site.data.keyword.BluSoftlayer_full}} are added to the {{site.data.keyword.cloud_notm}} Control Library profile but can also be mapped to other profiles.
 {: note}
 
 To start monitoring your resources, check out [Getting started with {{site.data.keyword.compliance_short}}](/docs/security-compliance?topic-security-compliance-getting-started)
