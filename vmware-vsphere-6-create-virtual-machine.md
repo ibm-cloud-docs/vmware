@@ -1,42 +1,32 @@
 ---
 
 copyright:
-  years: 1994, 2021
-lastupdated: "2021-09-21"
+  years: 1994, 2022
+lastupdated: "2022-09-15"
 
-keywords: VMware vSphere 6 virtual machine
+keywords: VMware vSphere virtual machine
 
 subcollection: vmware
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:external: target="_blank" .external} 
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
-# Creating a virtual machine with VMware vSphere 6
+# Creating a virtual machine with VMware vSphere 
 {: #create-vsphere-6-virtual-machine}
 
 1. Right-click your host node IP address in the **Inventory** pane of the vSphere Client.
 2. In the configuration window, select **Custom**.
 3. Give the virtual machine an appropriate name and click **Next**.
-4. Select the Storage location for virtual machine files and click **Next**.
-   * The **Virtual Machine Version** menu gives you the option to use different cluster types. Since this cluster is new and you do not need support for older versions, select **Virtual Machine Version 8**. **Note:** If you use the Web Client to create a cluster, use version 11.
-5. Select the **Operating System** type.
-6. Set the number of virtual processors (on the CPUs page) and click **Next**
-   **Note:** You can change the number of CPUs later if the resources are available.
-7. Set the amount of memory that you want for the virtual machine. Click **Next**
-   **Note:** You can change the amount of memory later if the resources are available.
+4. Select the storage location for virtual machine files and click **Next**. The **Virtual machine version** menu gives you the option to use different cluster types.
+5. Select an **Operating system**.
+6. Set the number of virtual processors (on the CPUs page) and click **Next**. You can change the number of CPUs later if the resources are available. 
+7. Set the amount of memory that you want for the virtual machine. Click **Next**. You can change the amount of memory later if the resources are available. 
 8. In the network section, you need to connect the two NICs. NIC 1 is for the Private Network and NIC 2 is for the Public Network. The adapter type ID “Flexible”. Make sure that the “Connect at Power On” checkbox is selected.
-9. Leave the SCSI Controller screen to the default “LSI Logic Parallel”. On the Select a Disk screen, select **Create a new virtual disk**. Keep the default settings on the **Advanced Options** screen and the **Ready to Complete** screen. Your new virtual machine is now created. To begin loading your installation media, click the server name from the inventory list and click **Edit Virtual Machine Settings** under **Basic Tasks**.
-   <!--* false-->
+9. Leave the SCSI Controller screen to the default “LSI Logic Parallel”. On the Select a Disk screen, select **Create a new virtual disk**. Keep the default settings on the **Advanced options** screen and the **Ready to complete** screen. Your new virtual machine is now created. To begin loading your installation media, click the server name from the inventory list and click **Edit virtual machine settings** under **Basic tasks**.
 10. With CD/DVD Drive 1 selected, select **Connect at power** under Device Status. To specify an ISO file that is located in your data store, click **Browse**.
-    * The ISO files that are uploaded to the default Storage1 data store are selectable here. You also see folders that contain the configuration and log files (set up during Step 3 data store section of the Create a new Virtual Machine process) for all the server virtual machines.
-11. After you select your ISO image, you are ready to begin the installation process of your respective OS.
+    * The ISO files that are uploaded to the default Storage1 data store are selectable here. You also see folders that contain the configuration and log files (set up during Step 3 data store section of the Create a new virtual machine process) for all the server virtual machines.
+11. After you select your ISO image, you are ready to install the respective OS.
 
-* After your Guest VM is successfully up and running, if supported, install [VMWare&reg; Tools](https://kb.vmware.com/s/article/1014294){: external}.
+* After your Guest VM is running, if supported, install [VMWare&reg; Tools](https://kb.vmware.com/s/article/1014294){: external}.
 * For more information about networking instructions, see [Setting up a virtual machine network](/docs/virtualization?topic=virtualization-setting-up-a-virtual-machine-network).
