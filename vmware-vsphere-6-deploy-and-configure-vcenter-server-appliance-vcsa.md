@@ -1,20 +1,18 @@
 ---
 
 copyright:
-  years: 1994, 2021
-lastupdated: "2021-09-21"
+  years: 1994, 2022
+lastupdated: "2022-08-15"
 
-keywords: deploy vcsa, vsphere 6
+keywords: deploy vcsa, vsphere 
 
 subcollection: vmware
 
 ---
 
-{:shortdesc: .shortdesc}
-{:note: .note}
-{:external: target="_blank" .external} 
+{{site.data.keyword.attribute-definition-list}}
 
-# Deploying and configuring a vCenter Server Appliance (vCSA) with VMware vSphere 6
+# Deploying and configuring a vCenter Server Appliance (vCSA) with VMware vSphere
 {: #config-vcsa}
 
 Use the following steps to deploy a VMware&reg; vCenter Server Appliance.
@@ -24,7 +22,7 @@ Use the following steps to deploy a VMware&reg; vCenter Server Appliance.
 * Windows&reg; system with a compatible browser installed
    * Internet Explorer, Firefox, or Chrome
 * vSphere Hosts with adequate resources to support a VMware vCenter Server Appliance
-   * For more information about required system resources, see [Minimum requirements for the VMware vCenter Server 6.0 Appliance ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://kb.vmware.com/s/article/2106572){: new_window}.
+   * For more information about required system resources, see [Minimum requirements for the VMware vCenter Server Appliance](https://kb.vmware.com/s/article/2106572){: external}.
 * vCSA ISO Image
 * Ability to mount an ISO
 * VPN session with access to {{site.data.keyword.cloud}} Private Network
@@ -45,15 +43,14 @@ Use the following steps to deploy a VMware&reg; vCenter Server Appliance.
 12. Select a data store and click **Next**.
 13. Select 'Use an embedded database (PostgreSQL)' and click **Next*.
 14. Set up your network configurations by entering the following information:
-    * Network
+    *  Network
     * IP address family
     * Network type
     * Network address
     * System name
     * Subnet mask
     * Network gateway
-    * Network DNS Servers
-       * For more information, see [What are Local DNS Resolvers](/docs/dns?topic=dns-dns-faq#what-are-the-local-dns-resolvers-).
+    * Network DNS Servers. For more information, see [What are Local DNS Resolvers](/docs/dns?topic=dns-dns-faq#what-are-the-local-dns-resolvers-).
     * Configure time sync
     * Click **Next**
 15. Review the settings, then click **Finish**. Your vCSA instance is provisioned.
