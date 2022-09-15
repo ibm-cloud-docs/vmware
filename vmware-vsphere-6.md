@@ -1,27 +1,23 @@
 ---
 
 copyright:
-  years: 1994, 2021
-lastupdated: "2018-08-23"
+  years: 1994, 2022
+lastupdated: "2022-09-15"
 
 keywords: vmware vcenter, vmware license, vsphere, vrealize, vsan, srm, nsx
 
 subcollection: vmware
 
 ---
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank"}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
+
+{{site.data.keyword.attribute-definition-list}}
 
 # VMware licensing options 
 {: #license-options-vmware}
 
 VMware&reg; administrators can quickly realize cost-effective hybrid cloud characteristics by deploying into an {{site.data.keyword.cloud}} enterprise-grade global cloud. A key differentiator is that vSphere workloads and catalogs can be provisioned onto VMware vSphere environments within {{site.data.keyword.cloud}} data centers without modifying VMware VMs or guests. These deployments are made possible by using a common vSphere hypervisor and management or orchestration platform.
 
-In addition to offering the vSphere 6 Enterprise Plus License, {{site.data.keyword.cloud}} offers monthly licensing for vCenter, NSX, vRealize, vSAN, and Site Recovery Manager (SRM).
+In addition to offering the vSphere Enterprise Plus License, {{site.data.keyword.cloud}} offers monthly licensing for vCenter, NSX, vRealize, vSAN, and Site Recovery Manager (SRM).
 
 ## VMware vSphere
 {: #vmware-vsphere-features}
@@ -59,9 +55,9 @@ In addition to offering the vSphere 6 Enterprise Plus License, {{site.data.keywo
 ## VMware NSX
 {: #vmware-nsx-features}
 
-**Intended Use:** NSX offers Software-Defined Network (SDN) capabilities crucial to support the cloud platform operations.
+**Intended use:** NSX offers Software-Defined Network (SDN) capabilities crucial to support the cloud platform operations.
 
-**User Interface:** vCenter Clients, VMware API, VMware CLI
+**User interface:** vCenter Clients, VMware API, VMware CLI
 
 **Features:**
 * Load balancing
@@ -74,11 +70,11 @@ In addition to offering the vSphere 6 Enterprise Plus License, {{site.data.keywo
 ## VMware vRealize
 {: #vmware-vrealize-features}
 
-**Intended Use:** The VMware vRealize Suite is an enterprise-ready, cloud management platform that you can use to manage a heterogeneous, hybrid cloud.
+**Intended use:** The VMware vRealize Suite is an enterprise-ready, cloud management platform that you can use to manage a heterogeneous, hybrid cloud.
 
-**User Interface:** vCenter Clients, VMware API, VMware CLI
+**User interface:** vCenter Clients, VMware API, VMware CLI
 
-**License Model:** Per processor per month
+**License model:** Per processor per month
 
 **Features:**
 * vRealize Automation - Automated delivery of personalized infrastructure, applications, and custom IT services.
@@ -89,9 +85,9 @@ In addition to offering the vSphere 6 Enterprise Plus License, {{site.data.keywo
 ## VMware vSAN
 {: #vmware-vsan-features}
 
-**Intended Use:** VMware vSAN is a distributed storage technology that enables local storage drives on each vSphere host to be aggregated and pooled into a shared-nothing storage device that is accessible to all hosts in a vSAN cluster.
+**Intended use:** VMware vSAN is a distributed storage technology that enables local storage drives on each vSphere host to be aggregated and pooled into a shared-nothing storage device that is accessible to all hosts in a vSAN cluster.
 
-**User Interface:** vCenter Clients, VMware API, VMware CLI
+**User interface:** vCenter Clients, VMware API, VMware CLI
 
 **Features:**
 * Distributed host based storage
@@ -105,7 +101,7 @@ In addition to offering the vSphere 6 Enterprise Plus License, {{site.data.keywo
 
 **Intended Use:** VMware Site Recovery Manager (SRM) enables application availability and mobility across sites that are in private cloud environments. By taking full advantage of the encapsulation and isolation of virtual machines, Site Recovery Manager enables simplified automation of disaster recovery to meet recovery time objectives (RTOs). SRM also helps reduce costs that are associated with business continuity plans, and achieve low-risk, predictable results for recovery of a virtual environment.
 
-**User Interface:** vCenter Clients, VMware API, VMware CLI
+**User interface:** vCenter Clients, VMware API, VMware CLI
 
 **Features:**
 * Non-disruptive recovery testing
