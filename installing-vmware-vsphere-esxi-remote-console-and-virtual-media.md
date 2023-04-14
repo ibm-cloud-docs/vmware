@@ -1,37 +1,36 @@
 ---
 
 copyright:
-  years: 1994, 2021
-lastupdated: "2021-09-21"
+  years: 1994, 2023
+lastupdated: "2023-04-12"
 
-keywords: virtual media, deploying esx, private network, remote console, install vsphere, install esxi, esxi 
+keywords: virtual media, deploying esx, private network, remote console, install vsphere, install esxi, esxi
 
 subcollection: vmware
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank"}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
+{{site.data.keyword.attribute-definition-list}}
 
-# Installing VMware vSphere ESXi via remote console and virtual media
+# Installing VMware vSphere ESXi with remote console and virtual media
 {: #installing-vsphere-esxi}
 
-Deploying ESX from installation media is similar across all versions and can be used in BYOL (bring your own license) scenarios.
+Deploying ESX from installation media is similar across all versions.
 
 ## Requirements
 {: #reqs-vsphere-esxi}
-* A virtual server instance that has access to the private network [such as a cloud compute instance that is installed with Windows or Linux, with a Java enabled browser, accessible via vpn.softlayer.com or public IP]. The virtual server instance must be on the same private network that the server’s Intelligent Platform Management Interface (IPMI) addresses are located.|
 
-* A copy of VMware ESXi VIM Installer ISO.
+Make sure that the following requirements are met before you install VMware vSphere ESXi.
 
-<!--## Steps -->
+* A virtual server that has access to the private network
+* Windows or Linux operating system with a Java-enabled browser that is accessible through the {{site.data.keyword.cloud}} VPN or public IP
+* The virtual server must be on the same private network that Intelligent Platform Management Interface (IPMI) addresses are located
+* A copy of VMware ESXi VIM Installer ISO
 
 ## Connecting to IPMI
 {: #connecting-ipmi}
+
+Use the following steps to connect to IPMI.
 
 1. Upload the VMware ISO to the virtual server instance that is specified in Requirements. The virtual server instance needs public web access.
 2. Gather the IPMI address and login information from the customer portal.
@@ -39,29 +38,42 @@ Deploying ESX from installation media is similar across all versions and can be 
 4. Remote desktop (RDP) or Remote X into to the virtual server instance that is storing the ESXi image.
 5. Open a web browser in the RDP session and enter the IPMI address that you collected in Step 2.
 6. Log in to the IPMI console with the credentials that are also found in Step 2 (typically root).
-   * Make a note of your IPMI user access level. It might be Administrator. You might experience a problem when you mount your remote storage if it is set to **Operator**. Open a support case to elevate your IPMI credentials if you cannot mount media.
-7. Confirm that you are on the home login page and click **Remote Control** > **Console Redirection** > **Launch Console**.
 
-## Attaching ISO
+   Make a note of your IPMI user access level. It might be **Administrator**. You might experience a problem when you mount your remote storage if it is set to **Operator**. Open a support case to elevate your IPMI credentials if you cannot mount media.
+   {: tip}
+
+7. Confirm that you are on the home login page and click **Remote control** > **Console redirection** > **Launch console**.
+
+## Attaching an ISO
 {: #attaching-iso}
 
-1. On the kernel-based virtual machine (KVM) viewer, select **Virtual Media** > **Virtual Storage**. Your operating system and Java version might require you to allow access to start the Java-based viewer.
-2. Click the **CD-ROM and ISO** tab in the Virtual Storage window. For the Logical Drive Type, select **ISO File** and click **Open Image**.
+Use the following steps to attach an ISO.
+
+1. On the Kernel-based Virtual Machine (KVM) viewer, select **Virtual media** > **Virtual storage**. Your operating system and Java version might require you to allow access to start the Java-based viewer.
+2. Click the **CD and ISO** tab in the Virtual Storage window. For the Logical Drive Type, select **ISO file** and click **Open image**.
 3. Go to the ESXi ISO and click **OK**. Then, click **Plug-in**.
 4. After the ISO is plugged into the session, click **OK**.
-   * Go back to the IPMI webpage and click **Remote** > **Control** > **Reset Server** > **Perform Action** to restart the server.
+5. Go back to the IPMI webpage and click **Remote** > **Control** > **Reset server** > **Perform action** to restart the server.
 
-### Installing networking configuration
+### Installing network configuration
+{: #install-network-configuratio}
+
+Use the following steps to install network configuration.
+
 1. Install ESXi.
-   * After the installation is complete, make sure to **Plug Out** the ISO so that you can restart the server.
+
+   After the installation is complete, make sure to **Plug out** the ISO so that you can restart the server.
+   {: note}
+
 2. Restart the server.
 3. Configure the IP address of the server after it restarts.
-4. Gather the details from the Configuration tab of the device.
+4. Gather the details from the **Configuration** tab of the device.
 
 You can now manage the ESXi host.
 
-For more information about setting up endurance or performance block storage, see the following information:
-[Provisioning endurance storage](/docs/BlockStorage?topic=BlockStorage-About#provendurance) and 
-[Provisioning performance block storage](/docs/BlockStorage?topic=BlockStorage-About#provperformance).
+For more information about setting up endurance or performance block storage, see the following links.
 
-For more information about setting up QuantaStor, see [Architecture Guide for QuantaStor](/docs/vmware?topic=vmware-quantastor-architecture-guide).
+* [Provisioning endurance storage](/docs/BlockStorage?topic=BlockStorage-About#provendurance)
+* [Provisioning performance block storage](/docs/BlockStorage?topic=BlockStorage-About#provperformance)
+
+For more information about setting up QuantaStor, see [Architecture guide for QuantaStor](/docs/vmware?topic=vmware-quantastor-architecture-guide).
