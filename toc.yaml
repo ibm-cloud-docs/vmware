@@ -25,7 +25,6 @@ toc:
   - navgroup: 
       id: howto
       topics:
-      - /virtual-servers/virtual-servers-navigating-devices
       - topicgroup: 
           label: Configuring the environment
           topics: 
