@@ -15,8 +15,6 @@ VMware
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    /virtual-servers/virtual-servers-navigating-devices
-
     {: .topicgroup}
     Configuring the environment
         vmware-vsphere-6-getting-started.md
@@ -43,7 +41,7 @@ VMware
     Configuring Quantastor storage
         architecture-guide-quantastor-vmwaresoftlayer.md
         brocade-vrouter-vyatta-setup-guide-vmware-environments-quantastor.md
-
+        
     {: .topicgroup}
     Enhancing security
         manage-scc.md
