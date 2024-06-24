@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2022
-lastupdated: "2022-09-14"
+lastupdated: "2022-09-15"
 
 keywords: vmware, getting started, {{site.data.keyword.cloud_notm}}, {{site.data.keyword.baremetal_short}}
 

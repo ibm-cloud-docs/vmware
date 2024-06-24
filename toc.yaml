@@ -10,7 +10,6 @@ toc:
     product-page: "https://www.ibm.com/cloud/vmware"
     path: vmware
     label: VMware for Classic
-    
   entries:
   - navgroup: 
       id: learn
@@ -21,7 +20,6 @@ toc:
       - select-storage-option-use-vmware.md
       - vmware-vsphere-6-nsx-overview.md
       - vmware-sddc-ibm-cloud.md
-
   - navgroup: 
       id: howto
       topics:
@@ -39,7 +37,6 @@ toc:
           - vmware-esx-create-virtual-machine.md
           - mounting-iscsi-vmware-esxi.md
           - vsan-stability-lsi-3108-based-controllers.md
-
       - topicgroup: 
           label: Ordering and managing licenses
           topics: 
@@ -48,7 +45,6 @@ toc:
           - order-netapp-licenses.md
           - manage-netapp-licenses.md
           - vmware-vsphere-6-applying-softlayer-issued-licenses.md
-
   - navgroup: 
       id: howto
       topics:
@@ -57,14 +53,11 @@ toc:
           topics: 
           - architecture-guide-quantastor-vmwaresoftlayer.md
           - brocade-vrouter-vyatta-setup-guide-vmware-environments-quantastor.md
-          
       - topicgroup: 
           label: Enhancing security
           topics: 
           - manage-scc.md
-          
   - navgroup:
       id: help
       topics: 
       -  vmware-faq.md
-      

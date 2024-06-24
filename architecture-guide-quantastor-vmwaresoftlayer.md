@@ -98,7 +98,7 @@ For example, volume vmk3 has vmnic0 that connects to Portable Private Subnet A o
 6. Select the private adapter that is not active, but is assigned to the private network (example eth6).
 7. Right-click on the eth6 adapter and select **Modify Network Port** from the menu.
 8. Select a **Config Type** of **Static** on the **Modify Network Port** screen.
-9. Enter a primary private IP address, subnet, and gateway for the adapter. Use an address from the Storage row if you are using the VLAN worksheet from the [Advanced Single-Site VMware Reference Architecture](/docs/virtualization?topic=Virtualization-advanced-single-site-vmware-reference-architecture) cookbook.
+9. Enter a primary private IP address, subnet, and gateway for the adapter. Use an address from the Storage row if you are using the VLAN worksheet from the [Advanced Single-Site VMware Reference Architecture](/docs/virtualization?topic=virtualization-advanced-single-site-vmware-reference-architecture) cookbook.
 10. Clear the **iSCSI Enabled** check box to disable iSCSI connections to this adapter.
 11. Right-click the private adapter and select **Enable Network Port** to bring the adapter online after you configure it with an IP address.
 12. Click **OK** to enable the port upon verifying the IP address.
@@ -244,4 +244,4 @@ The delayed ACK needs to be disabled after the storage LUNs are attached to the 
 
 For more information about delayed ACK regarding VMware, see [VMware’s Knowledge Base](https://kb.vmware.com/s/article/1002598).
 
-You can now return to [Advanced Single-Site VMware Reference Architecture](/docs/virtualization?topic=Virtualization-advanced-single-site-vmware-reference-architecture) cookbook and complete the environment setup.
+You can now return to [Advanced Single-Site VMware Reference Architecture](/docs/virtualization?topic=virtualization-advanced-single-site-vmware-reference-architecture) cookbook and complete the environment setup.

@@ -29,7 +29,7 @@ subcollection: vmware
 Mounting iSCSI into VMware&reg; ESXi can be accomplished with a few steps and only the details of the server and storage node.
 {: shortdesc}
 
-In most VMware&reg; environments, NFS {{site.data.keyword.filestorage_short}} is the better choice. {{site.data.keyword.filestorage_short}} is designed to support high I/O applications that require predictable levels of performance. In a VMware&reg; deployment, a single {{site.data.keyword.filestorage_short}} volume can be mounted to up to 64 ESXi hosts as shared storage, that is much better than {{site.data.keyword.blockstorageshort}} which supports 8 hosts by default. You can also mount multiple {site.data.keyword.filestorage_short}} volumes to create a storage cluster to use vSphere Storage Distributed Resource Scheduler (DRS). For more information, see [Provisioning File Storage for use as VMware datastore](/docs/FileStorage?topic=FileStorage-architectureguide&interface=ui){: external}.
+In most VMware&reg; environments, NFS {{site.data.keyword.filestorage_short}} is the better choice. {{site.data.keyword.filestorage_short}} is designed to support high I/O applications that require predictable levels of performance. In a VMware&reg; deployment, a single {{site.data.keyword.filestorage_short}} volume can be mounted to up to 64 ESXi hosts as shared storage, that is much better than {{site.data.keyword.blockstorageshort}} which supports 8 hosts by default. You can also mount multiple {{site.data.keyword.filestorage_short}} volumes to create a storage cluster to use vSphere Storage Distributed Resource Scheduler (DRS). For more information, see [Provisioning File Storage for use as VMware datastore](/docs/FileStorage?topic=FileStorage-architectureguide&interface=ui){: external}.
 {: tip}
 
 1. Log in to the vSphere by using the primary private IP and user **root** and root's password.
@@ -55,12 +55,11 @@ In most VMware&reg; environments, NFS {{site.data.keyword.filestorage_short}} is
 
 
 
-<!-- Attaching a Data Transfer Service iSCSI device is the same process, with the exception that you need to get the IQN from the server. Complete the following steps from the ESXi console: -->
 
-<!--First, you need to get the device:-->
 
-<!-- `esxcfg-scsidevs -a | grep iSCSI` -->
 
-<!-- Then, you need to get the IQN (in this case, vmhba33 is the iSCSI device): -->
 
-<!-- `vmkiscsi-tool -I -l vmhba33` -->
+
+
+
+

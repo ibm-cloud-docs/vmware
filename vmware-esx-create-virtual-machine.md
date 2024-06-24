@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2020
-lastupdated: "2019-08-21"
+lastupdated: "2017-12-18"
 
 keywords: custom, vmware esx virtual machine, virtual machine
 
@@ -28,11 +28,11 @@ To create a new virtual machine, follow these steps.
 2. Select **Custom** in the configuration window.
 3. Give the virtual machine an appropriate name and click **Next**.
 4. Select the Storage location for virtual machine files and click **Next**.
-5. From the **Virtual Machine Version**, select **Virtual Machine Version 8**. <!-- since we are using vSphere instead of the Web Client to create it (in which case we would use version 11 instead).-->
+5. From the **Virtual Machine Version**, select **Virtual Machine Version 8**. 
 6. Select the **Operating System**.
 7. Select the number of virtual processors (**CPU page**) and the amount of **Memory** that you would like to create the virtual machine. **Note:** You can change the number of processors and memory about later if the resources are available. 
-In the network section, you need to connect two NICs, with NIC 1 being the Private Network and NIC 2 is the Public Network. The Adapter type is “Flexible”. Make sure that **Connect at Power On** is selected.
-8. Keep the **SCSI Controller** screen to the default “LSI Logic Parallel”. On the **Select a Disk** screen, select **Create a new virtual disk**. The **Advanced Options** screen and leave the **Ready to Complete** as the default. The creation of a new virtual machine is now complete. 
+In the network section, you will need to connect two NICs, with NIC 1 being the Private Network and NIC 2 is the Public Network. The Adapter type will be “Flexible”. Make sure that **Connect at Power On** is selected.
+8. Keep the **SCSI Controller** screen to the default “LSI Logic Parallel”. On the **Select a Disk** screen, select **Create a new virtual disk**. The **Advanced Options** Screen and the **Ready to Complete** screen should also be left default.The creation of a new virtual machine is now complete. 
 
 To begin loading your installation media, click the server name in the inventory list. Then, click **Edit Virtual machine Settings** under **Basic Tasks**.
 
