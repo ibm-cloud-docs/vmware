@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2023
-lastupdated: "2023-04-13"
+  years: 2017, 2024
+lastupdated: "2024-07-11"
 
 keywords: NetApp OnTap Select, High performance, vmware storage, QuantaStor, IBM Spectrum Accelerate, shared storage, private storage
 
@@ -21,7 +21,7 @@ See the following table for storage tiers and where your workload might fall.
 
 |   | Tier 1 | Tier 2 | Tier 3|
 |-----|-----|-----|-----|
-| Business use | High performance and or high availability production applications, databases, and data | Nonmission critical test and development application, databases, and data | Nonmission critical data storage, backup, and archive |
+| Business use | High performance and or high availability in production applications, databases, and data | Nonmission critical test and development application, databases, and data | Nonmission critical data storage, backup, and archive |
 | Performance | High (SSDs, SAS) | Medium (SAS, SATA) | Low (SATA)|
 | Guaranteed IOPS | Yes | No | No|
 | High availability (HA) | Yes| No | No|
@@ -59,7 +59,7 @@ You can bring your own ESX license, but you need to open a ticket with Support t
 * Protocols - Not applicable
 * Cost: Low capital expenditure (CapEx) and operating expenditure (OpEx)
 * HA - Not available
-* Replication - [vSphere Replication Virtual Appliance](https://pubs.vmware.com/srm-51/index.jsp?topic=%2Fcom.vmware.srm.install_config.doc%2FGUID-E654F2D8-7D56-4A81-9568-E85172A7022D.html){: external}
+* Replication - vSphere Replication Virtual Appliance
 * Reliability - Multiple single points of failure
 
 ### vSAN [1]
@@ -73,7 +73,7 @@ With vSAN, you have the following options.
 * Protocols - Proprietary
 * Cost - Medium for both CapEx and OpEx
 * HA - Supported for both host and disk failures. Failure domains are supported from v6 of VMware.
-* Replication - [vSphere Replication Virtual Appliance](https://pubs.vmware.com/srm-51/index.jsp?topic=%2Fcom.vmware.srm.install_config.doc%2FGUID-E654F2D8-7D56-4A81-9568-E85172A7022D.html){: external}
+* Replication - vSphere Replication Virtual Appliance
 * Replication and disaster recovery
 * Reliability - Tolerates up to three host failures with seven or more hosts. Failure domains were introduced in v6 of VMware.
 
@@ -90,7 +90,7 @@ You can use the [OSNexus Solution Design Guide](http://wiki.osnexus.com/index.ph
 * Protocols - iSCSI, NFS, and SMB
 * Cost - High for both CapEx and OpEx
 * HA - Not available
-* Replication - Built-in replication features, SRA not available. Can use vSphere Replication Appliance too
+* Replication - Built-in replication features, SRA not available that can also use vSphere Replication Appliance
 * Reliability - Single point of failure for the enclosure and RAID controller.
 
 ### NetApp Data OnTap Select
@@ -111,9 +111,7 @@ NetApp ONTAP Select on {{site.data.keyword.cloud}} helps to improve productivity
 * Efficient - Thin provisioning, cloning, deduplication, and compression
 * Cost - Available in CapEx and OpEx models and is charged on a $GB Basis
 * Replication - Supports SnapMirror; also achieved by using vRealize Automation External link icon (vRA).
-* Resiliency in a non-HA configuration single point of failure include enclosure hardware. Or, resiliency in an HA configuration, no single point of failure
-
-For more information about how to request ONTAP Select, see [NetApp ONTAP Select](/docs/vmwaresolutions?topic=vmwaresolutions-netapp).
+* Resiliency in a non-HA configuration single point of failure includes enclosure hardware. Or, resiliency in an HA configuration, no single point of failure
 
 ### NetApp private storage
 {: #netapp-private-storage-options}
@@ -122,7 +120,6 @@ You must purchase a NetApp device from NetApp or {{site.data.keyword.cloud}}. Yo
 
 For more information about connecting to VMware with NetApp, see the following links.
 
-* [NetApp Private Storage for {{site.data.keyword.cloud}}](http://www.netapp.com/us/solutions/cloud/private-storage-cloud/softlayer.aspx){: external}
 * [Solution brief: NetApp Private Storage for {{site.data.keyword.cloud}}](http://www.netapp.com/us/media/ds-3619_tcm10-127472.pdf){: external}
 
 * Recommended workloads - Tier 1
@@ -131,7 +128,7 @@ For more information about connecting to VMware with NetApp, see the following l
 * Protocols: - iSCSI, NFS, and SMB
 * Cost - High for both CapEx and OpEx
 * HA - Dual heads and controllers
-* Replication - Supports SnapVault and SnapMirror, which is achieved by using [vRealize Automation](https://www.vmware.com/products/vrealize-automation.html){: external}.
+* Replication - Supports SnapVault and SnapMirror, which is achieved by using vRealize Automation.
 * Reliability - High redundancy and MPIO support
 
 ### IBM Spectrum Accelerate
@@ -140,24 +137,24 @@ For more information about connecting to VMware with NetApp, see the following l
 The IBM Spectrum Accelerate private storage option is not available on the {{site.data.keyword.cloud_notm}} catalog.
 
 * Recommended workloads: Tier 1
-* Performance: Dependent upon number of disks, SSD (optional), and amount of memory that is given to each “node” VM.
+* Performance: Dependent upon the number of disks, SSD (optional), and amount of memory that is given to each “node” VM.
 * Scalability: Scales ~8 - 325 TB usable
 
    * Minimum capacity: 3 VMs x 6 drives
    * Maximum capacity: 15 VMs x 12 drives
-   * Scales up to 144 virtual arrays and more than 40 PB usable through IBM Hyper-Scale Manager
+   * Scales up to 144 virtual arrays and more than 40 PB are usable through IBM Hyper-Scale Manager
    * Nondisruptive capacity expansion by adding more nodes
    * 1 x 500 or 800 GB SSD per node supported
 * Protocols: iSCSI only
 * Cost: Dependent upon pricing model and physical machines that are deployed for nodes. High CapEx; medium to low OpEx depending on licensing.
    * Priced per binary (TiB) of usable capacity
-   * Not tied to any specific hardware configuration. Example: 200 TiB license can be deployed various ways – one 200 TiB instance, two 100 TiB instances, or four 50 TiB instances
+   * Not tied to any specific hardware configuration. Example: 200 TiB license can be deployed in various ways – one 200 TiB instance, two 100 TiB instances, or four 50 TiB instances
    * Offered two ways: perpetual license [includes one year of subscription and service (S&S)] and monthly license (includes S&S)
 
 * HA: Clustered solution
 * Replication: Achieved by using [vRealize Automation](https://www.vmware.com/products/vrealize-automation){: external}
  or SRA, which can be used to replicate from physical IBM XIV with VMware’s Site Recovery Manager (SRM)
-   * [vSphere Replication](https://www.vmware.com/products/vsphere/replication.html){: external}
+   * vSphere Replication
 * Reliability: High redundancy and MPIO support. Any available node can manage the cluster. The following capabilities are not supported by IBM Spectrum Accelerate over hardware-based IBM XIV.
 
    * Three-site mirroring
@@ -168,34 +165,31 @@ The IBM Spectrum Accelerate private storage option is not available on the {{sit
    * Data at rest encryption
    * vStorage for API Array Integration (VAAI) if it is aligned with Virtual Volumes (VVol)ß
    * vCenter Operations Manager (VCop)
-   * For more information about IBM XIV Storage System, see [Platform and application integration for IBM XIV Storage System](https://www.ibm.com/support/knowledgecenter/STJTAG/css/css_kcwelcomepage_xiv.html){: external}
 
 #### Private storage in a single-tentant environment
 {: #pros-cons-private-storage-single-tentant}
 
-See the following table to see pros and cons of private storage in a single-tenant environment.
+See the following table to see the pros and cons of private storage in a single-tenant environment.
 
 | Key Factors or storage options | Local | Virtual SAN | QuantStor | NetApp (_OnTap Edge_)| NetApp (_NPS_)| IBM Spectrum Accelerate |
 |-|-|-|-|-|-|-|
 | Type |Local |SDS |SDS| SDS |Monolithic|SDS|
-| Performance | based on SSD/SA-SCSI specs, further RAID 5 and 10 can be used for read and write gains. | 90 K+ IOPS per host that depends on host configuration. 100 VMs per host, 32 hosts per cluster, 3,200 VMs per cluster, only 2,048 protected (v5.5). Up to 20 K IOPS, 200 VMs per host, 64 hosts per cluster, and 6,000 protected VMs per cluster (v6.0).| based on types and number of disks that are selected, and RAID configurations and use of iSCSI or NFS. | based on types and number of disks that are selected and RAID configure-actions.| Depends on model. |based on types and number of disks that are selected, RAID configurations, and optional use of SSD disk per hypervisor node.|
-| Scalability |Limited growth in size and in disk I/O throughput. | Virtual machine disk (VMDK) up to 2 TB with v5.5, and up to 62 TB with v6.0.|Single QS up to 128 TB (3.x). No scaling up or out.|Up to 10 TB; no scaling out.|Yes, add disk shelves for capacity and IOPS. | Scales from ~8 - 325 TB usable space. Min capacity is 3 VMs x 6 drives. Max capacity is 15 VMs x 12 drives. Scales up to 144 virtual arrays and more than 40 PB usable through IBM Hyper-Scale Manager. Nondisruptive capacity expansion by adding more nodes.|
+| Performance | based on SSD/SA-SCSI specs, further RAID 5 and 10 can be used for read and write gains. | 90 K+ IOPS per host that depends on host configuration. 100 VMs per host, 32 hosts per cluster, 3,200 VMs per cluster, only 2,048 protected (v5.5). Up to 20 K IOPS, 200 VMs per host, 64 hosts per cluster, and 6,000 protected VMs per cluster (v6.0).| based on types and number of disks that are selected, and RAID configurations and use of iSCSI or NFS. | based on types and number of disks that are selected and RAID configure-actions.| Depends on the model. |based on types and number of disks that are selected, RAID configurations, and optional use of SSD disk per hypervisor node.|
+| Scalability |Limited growth in size and in disk I/O throughput. | Virtual machine disk (VMDK) up to 2 TB with v5.5, and up to 62 TB with v6.0.|Single QS up to 128 TB (3.x). No scaling up or out.|Up to 10 TB; no scaling out.|Yes, add disk shelves for capacity and IOPS. | Scales from ~8 - 325 TB usable space. Min capacity is 3 VMs x 6 drives. Max capacity is 15 VMs x 12 drives. Scales up to 144 virtual arrays and more than 40 PB are usable through IBM Hyper-Scale Manager. Nondisruptive capacity expansion by adding more nodes.|
 | Protocols | N/A |Proprietary|iSCSI/NFS/SMB|iSCSI/NFS/SMB|iSCSI/NFS/SMB|iSCSI|
 | Use cases |Tier 2 and 3 workloads|Tier 1 workloads|Tier 2 and 3 workloads|Tier 2 and 3 workloads|Tier 1 workloads|Tier 1 workloads|
 | High availability (HA) |Available with RAID|Yes; host and disk failures; failure domains (v6.0)|N/A|N/A|Yes; dual heads and controllers.|Yes; clustered solution.|
 | Configurability (HA) |Number and type of disks; RAID levels|Specific controllers required.|CPU, memory, cache, number and type of disks, and RAID levels.|CPU, memory, cache, number and type of disks, and RAID levels.|TBD|CPU, memory, cache, number, and type of disks, SSD, caching, iSCSI port configuration. Multi-tenancy QoS.|
-| Disaster recovery and replication |Use vRA to replicate, no SRAs.|Use vRA to replicate.|Built-in replication; no SRAs available.|Can use vRA to replicate, SnapMirror.|Can use vRA to replicate, SnapMirror, SnapVault.|vRA or SRA supported, replication between SDS and or Physical XIV devices. Snapshots supported; application recovery through IBM FlashCopy Manager.|
+| Disaster recovery and replication |Use vRA to replicate, no SRAs.|Use vRA to replicate.|Built in replication; no SRAs available.|Can use vRA to replicate SnapMirror.|Can use vRA to replicate, SnapMirror, SnapVault.|vRA or SRA supported replication between SDS and or Physical XIV devices. Snapshots supported; application recovery through IBM FlashCopy Manager.|
 | Reliability|Single point of failure without HA.|Tolerates up to three host failures with seven plus hosts. Failure domains are introduced in v6.0.|Single point of failure (enclosure and RAID controller) and no HA.|Single point of failure (enclosure and RAID controller) and no HA.|Highly redundant multipath I/O (MPIO) connection.|Highly redundant iSCSI MPIO connections: any node can manage the cluster.|
 {: caption="Table 2. Pros and cons of VMware private storage options" caption-side="bottom"}
 
 For more information, see the following links.
 
 * NetApp OnTap Edge: Not available on the {{site.data.keyword.cloud_notm}} catalog – bring your own solution.
-   * [Data ONTAP installation and administration guide](https://library.netapp.com/ecm/ecm_download_file/ECMP1200031){: external}
+
    * [Data ONTAP Express setup guide](https://library.netapp.com/ecm/ecm_download_file/ECMP1369085){: external}
-* [NetApp Private Storage for IBM Cloud](http://www.netapp.com/us/solutions/cloud/private-storage-cloud/softlayer.aspx){: external}
 * Spectrum Accelerate: Not available on the {{site.data.keyword.cloud_notm}} catalog – bring your own solution.
-   * [Working with an IBM Spectrum Accelerate system](https://www.ibm.com/support/knowledgecenter/STJTAG/com.ibm.help.xivgen3.doc/MT/UG/xiv_mt_deploying_spectrum_accelerate.html){: external}
 
 ## Shared storage options
 {: #vmware-shared-storage-options}
@@ -205,7 +199,7 @@ For more information, see the following links.
 ### {{site.data.keyword.filestorage_short}}
 {: #vmware-file-storage-options}
 
-You can order the {{site.data.keyword.baremetal_short}} from the {{site.data.keyword.cloud_notm}} catalog with ESX. In the {{site.data.keyword.cloud_notm}} catalog, you can also provision {{site.data.keyword.filestorage_full}} in the same availability zone as your host. For more information about provisioning file storage, see [Ordering and Managing IBM File Storage for IBM Cloud](/docs/FileStorage?topic=FileStorage-orderingConsole#orderingConsole).
+You can order the {{site.data.keyword.baremetal_short}} from the {{site.data.keyword.cloud_notm}} catalog with ESX. In the {{site.data.keyword.cloud_notm}} catalog, you can also provision {{site.data.keyword.filestorage_full}} in the same availability zone as your host.
 
 In VMware, three predefined values are provided on **Host Device Details Storage** – Username, Password (for CHAP authentication), and Host IQN.
 {: note}
@@ -219,14 +213,14 @@ See the following table for pros and cons of shared storage in a multi-tenant en
 |---|---|
 | Type | SDS |
 | Performance |Predictable storage performance parameters.  \n Endurance option is available in 0.25, 2, 4 or 10 IOPS per GB.  \n Performance option: Client provisions wanted level of performance based on workload needs or price point.  \n Multiple volumes can be striped together to achieve higher IOPS and more throughput. |
-| Scalability |Volume sizes range 20 - 12 TB.  \n File Share Capacity can be expanded to 12 TB after initial provisioning in GB increments. |
+| Scalability |Volume sizes range from 20 - 12 TB.  \n File Share Capacity can be expanded to 12 TB after initial provisioning in GB increments. |
 | Protocols | NFS|
 | Host connections |Maximum of 64 for NFS.|
 | Use cases |Tier 1, 2, and 3 workloads:  \n 0.25 IOPS per GB: Low I/O intensity. Example applications include storing mailboxes or department-level file shares.  \n 2 IOPS per GB: General purposes. Example applications include hosting small databases that are backing web applications or virtual machine disk images for a hypervisor.  \n 4 IOPS per GB: High I/O intensity. Example applications include transactional and other performance-sensitive databases.  \n 10 IOPS per GB: High I/O intensity. Example applications include analytics.|
 | HA |Yes, dual heads and controllers.|
 | Configurability |Size and IOPS only.|
-| Disaster recovery and replication | Snapshot and Replication provided over the {{site.data.keyword.cloud}} Private Network, also achieved by using [vRealize Automation](https://www.vmware.com/products/vrealize-automation){: external}, but no SRA.|
-| Reliability |Highly redundant, MPIO connection, NFS-based file storage routed TCP/IP connections. Snapshots and Replication enabled.|
+| Disaster recovery and replication | Snapshot and Replication provided over the {{site.data.keyword.cloud}} Private Network, also achieved by using vRealize Automation, but no SRA.|
+| Reliability |Highly redundant, MPIO connection, NFS-based file storage routed TCP/IP connections. Snapshots and Replication are enabled.|
 | Latency | <10 ms |
 | Cost |High for both CapEx (10x for SAN of the same size) and OpEx|
 {: caption="Table 3. Pros and cons of VMware shared storage options" caption-side="bottom"}
