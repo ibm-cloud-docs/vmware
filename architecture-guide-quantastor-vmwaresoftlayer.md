@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2024
-lastupdated: "2024-07-11"
+lastupdated: "2024-07-12"
 
 keywords: iSCSI software adapter, Select Targets, QuantaStor, VMware shared storage, iSCSI, storage volume, software defined storage
 
@@ -34,7 +34,7 @@ Make sure that you understand the capacity and I/O requirements of your VMs befo
 
 Complete the following steps to order a 24 TB usable QuantaStor hybrid system that is tuned for mid-range performance for VMware workloads:
 
-1. Log in to [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window} and click **Account > Place an Order**.
+1. Log in to [{{site.data.keyword.slportal_full}}](https://cloud.ibm.com/){: external} and click **Account > Place an Order**.
 2. Select {{site.data.keyword.baremetal_short}}, Monthly.
 3. Enter the following configuration options:
    * **Data Center:** Location of the VLANs and ESXi hosts that were previously created
@@ -50,7 +50,7 @@ Complete the following steps to order a 24 TB usable QuantaStor hybrid system th
    * **Uplink Port Speeds:** 10 Gbps Redundant Private Network Uplinks
 4. Click **Continue Your Order**.
 
-**Note:** The storage server is configured with two network interfaces that are unbonded so that two different subnets can be used to load balance traffic to the storage array.
+The storage server is configured with two network interfaces that are unbonded so that two different subnets can be used to load balance traffic to the storage array.
 
 ### Finishing Configuration
 {: #finish-quantastor-configuration}
@@ -60,7 +60,8 @@ You now have a QuantaStor appliance in your shopping cart. Assign the private VL
 1. Assign the following VLANs and create hostnames for the devices: QuantaStor host – Backend VLAN: (1102 in the environment)
 2. Select your payment method, agree to the Terms and Conditions, and click Finalize Your Order.
 
-**Note** Do not proceed to Step 3 until the server is provisioned and is accessible through VPN or virtual server.
+Do not proceed to Step 3 until the server is provisioned and is accessible through VPN or virtual server.
+{: important}
 
 ## Step 2: Enabling iSCSI Software Adapter for VMware Hosts
 {: #enabling-iSCSI}
@@ -134,8 +135,8 @@ After the QuantaStor server is configured with IP addresses and virtual interfac
 
 ** Depending on provisioning, the physical disks might not be exposed to QuantaStor. You can check by clicking the Physical Disks section and looking at the list of available hard disk drives. If you do not see the correct number of drives, follow these steps:
 
-1. Click Controllers & Enclosures and click "Create pass-through Units" in the Hardware Controller menu.
-2. Verify host and controller and click OK.
+1. In the **Hardware Controller** menu, click **Controllers & Enclosures** > **Create pass-through Units.
+2. Verify host and controller and click **OK**.
 3. After the task completes, click **Physical Disks** and verify.
 
 ### Creating a Storage Pool
@@ -157,7 +158,10 @@ Next, you must create a storage pool that is used to allocate volumes before you
 You need to create two storage volumes. One volume is used for management VMs on the management cluster and the other for VMs on the capacity cluster. Complete the following steps to create the iSCSI storage volumes:
 
 1. Right-click **Storage Volumes** and select **Create Storage Volume** on the menu.
-2. Enter the information for the storage volumes. **Note:** While your configuration might differ depending on workload and storage capacity, the example shows the values in Table 1 and Table 2 for each storage volume.
+2. Enter the information for the storage volumes.
+
+   While your configuration might differ depending on workload and storage capacity, the example shows the values in Table 1 and Table 2 for each storage volume.
+   {: note}
 
 |Field|Value|
 |---|---|
@@ -192,20 +196,20 @@ You need to configure QuantaStor to allow access from the ESXi hosts through eac
 
 Follow these steps for each host in an ESXi environment. After you add each host in the management and capacity clusters, follow these steps:
 
-1. Right-click the **Host Groups** menu and select **Create Host Group…**.
-2. Enter 'ManagementCluster' in the **Name** field and select all the hosts that are in the management cluster.
+1. Right-click the **Host Groups** menu and select **Create Host Group**.
+2. Enter `ManagementCluster in the **Name** field and select all the hosts that are in the management cluster.
 3. Click **OK**. A host group is created that we can assign to a particular volume.
 
 Repeat this process for the capacity cluster.
 
 1. Click the **Storage Volumes** menu.
 2. Right-click the **Mgmt-Lun0** volume and select **Assign or Unassign Host Access**.
-3. Confirm that **Mgmt-Lun0** is an option in the menu and select the host group that you created in the previous step. This option allows each ESXi host in the management cluster to access the Mgmt-Lun0 volume. Do the same for **Capacity-LUN0**
+3. Confirm that _Mgmt-Lun0_ is an option in the menu and select the host group that you created in the previous step. This option allows each ESXi host in the management cluster to access the Mgmt-Lun0 volume. Do the same for _Capacity-LUN0_.
 
 ## Step 4: Mounting Volumes on Management and Capacity Clusters
 {: #mount-volumes}
 
-Log in to the vSphere web Client and go to **Hosts** under the **vCenter Inventory Lists**.
+Log in to the vSphere web client and go to **Hosts** under the **vCenter Inventory Lists**.
 
 Use the following steps to mount the volume on the ESXi hosts:
 
@@ -223,7 +227,7 @@ The ESXi host is ready to rescan the iSCSI Software Adapter to discover the Mgmt
 4. Confirm that the formatting is complete and click **Storage Devices, Device Details, Edit Multipathing…**.
 5. Select **Round Robin** for the **Path Selection Policy** and click **OK**.
 
-Now that the Mgmt-Lun0 volume is attached to a single host, you must go back to the other management hosts in the cluster and repeat the process to add the volume. You do not need to format the volume as it is already formatted with VMFS-5 and is displayed as such after discovery.
+Now that the _Mgmt-Lun0_ volume is attached to a single host, you must go back to the other management hosts in the cluster and repeat the process to add the volume. You do not need to format the volume as it is already formatted with VMFS-5 and is displayed as such after discovery.
 
 ## Step 5: Disabling Delayed ACK in vSphere ESXi hosts
 {: #disabling-delayed-ACK}
