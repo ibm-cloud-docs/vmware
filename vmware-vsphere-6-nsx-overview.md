@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 1994, 2019
-lastupdated: "2022-09-14"
+  years: 1994, 2024
+lastupdated: "2024-07-15"
 
 keywords: nsx overview, VMware vSphere NSX overview
 
@@ -16,27 +16,29 @@ subcollection: vmware
 {: #nsx-overview}
 
 VMware NSX&reg; is a software networking and security virtualization platform that delivers the operational model of a virtual machine for the network. Virtual networks reproduce the Layer2 - Layer7 network model in software, allowing complex multitier network topologies to be created and provisioned programmatically in seconds, without the need for extra {{site.data.keyword.BluSoftlayer_notm}} private networks. NSX also provides a new model for network security. Security profiles are distributed to and enforced by virtual ports and move with virtual machines.
+{: shortdesc}
 
-NSX supports the VMware software-defined data center strategy. By extending the virtualization capabilities of abstraction, pooling and automation across all data center resources and services, the software-defined data center architecture simplifies and speeds the provisioning and management of compute, storage, and networking resources through policy-driven automation. By virtualizing the network, NSX delivers a new operational model for networking that breaks through current physical network barriers and enables VMware and {{site.data.keyword.BluSoftlayer_notm}} to achieve better speed and agility with reduced costs.
+NSX supports the VMware software-defined data center strategy. By extending the virtualization capabilities of abstraction, pooling and automation across all data center resources and services, the software-defined data center architecture simplifies and speeds the provisioning and management of compute, storage, and networking resources through policy-driven automation. By virtualizing the network, NSX delivers a new operational model for networking that breaks through current physical network barriers. The new model enables VMware and {{site.data.keyword.BluSoftlayer_notm}} to achieve better speed and agility with reduced costs.
 
 NSX includes a library of logical networking services - logical switches, logical routers, logical firewalls, logical load balancers, logical VPN, and distributed security. You can create custom combinations of these services in isolated software-based virtual networks that support existing applications without modification, or deliver unique requirements for new application workloads. Virtual networks are programmatically provisioned and managed independent of {{site.data.keyword.BluSoftlayer_notm}} networking constructs. This decoupling from hardware introduces agility, speed, and operational efficiency that can transform data center operations. Benefits of NSX include the following features:
+
 * Data center automation
 * Self-service networking services
 * Rapid application deployment with automated network and service provisioning
 * Isolation of development, test, and production environments on the same bare metal infrastructure
 * Single Account multi-tenant clouds
 
-NSX can be configured through the vSphere Web Client, a command line interface (CLI), and REST API. The core network services that are offered by NSX are:
+You can configure NSX through the vSphere Web Client, a command line interface (CLI), and REST API. The core network services that are offered by NSX are:
 
 ## Logical switches
 {: #logicval-switches}
 
-A cloud deployment or a virtual data center might have various applications across multiple tenants. These applications and tenants require isolation from each other for security, fault isolation, and avoiding overlapping IP addressing issues. The NSX logical switch creates logical broadcast domains or segments (VXLAN vWires) to which an application or tenant virtual machine can be logically wired. This feature allows for flexibility and speed of deployment while still providing all the characteristics of a physical network's broadcast domains (VLANs) without physical Layer 2 sprawl. Logical switches allow for thousands of tenant networks to be provisioned onto a single {{site.data.keyword.BluSoftlayer_notm}} private network (VLAN). A logical switch is distributed and can span arbitrarily large compute clusters, even across pods within the same data center. This distribution allows for virtual machine mobility within the data center without limitations of physical Layer 2 (VLAN) boundaries across pods.
+A cloud deployment or a virtual data center might have various applications across multiple tenants. These applications and tenants require isolation from each other for security, fault isolation, and avoiding overlapping IP addressing issues. The NSX logical switch creates logical broadcast domains or segments (VXLAN vWires) to which an application or tenant virtual machine can be logically wired. This feature allows for flexibility and speed of deployment while still providing all the characteristics of a physical network's broadcast domains (VLANs) without physical Layer 2 sprawl. Logical switches allow for thousands of tenant networks to be provisioned onto a single {{site.data.keyword.BluSoftlayer_notm}} private network (VLAN). A logical switch is distributed and can span arbitrarily large compute clusters, even across pods within the same data center. This distribution allows for virtual machine mobility within the data center without the limitations of physical Layer 2 (VLAN) boundaries across pods.
 
 ## Logical routers
 {: #logical-routers}
 
-Dynamic routing provides the necessary forwarding information between Layer 2 broadcast domains (VXLAN, vWires, Logical Switches). This routing decreases Layer 2 broadcast domains and improve network efficiency and scale. NSX extends this intelligence where the workloads reside for providing East-West routing functions. This extension allows more direct virtual machine to virtual machine communication without the costly or timely need to extend hops. NSX also provides North-South connectivity inbound and outbound of {{site.data.keyword.BluSoftlayer_notm}} data centers, thus enabling tenants to access public networks securely and efficiently.
+Dynamic routing provides the necessary forwarding information between Layer 2 broadcast domains (VXLAN, vWires, Logical Switches). This routing decreases Layer 2 broadcast domains and improve network efficiency and scale. NSX extends this intelligence where the workloads are for providing East-West routing functions. This extension allows more direct virtual machine to virtual machine communication without the costly or timely need to extend hops. NSX also provides North-South connectivity inbound and outbound of {{site.data.keyword.BluSoftlayer_notm}} data centers, thus enabling tenants to access public networks securely and efficiently.
 
 ## Logical firewall
 {: #logical-firewall}
@@ -61,7 +63,7 @@ Service composer helps you provision and assign network and security services to
 ## NSX extensibility
 {: #nsx-extensibility}
 
-VMware partners can integrate their network service solutions with the NSX platform, which enables customers to have an integrated experience across VMware products. Data center operators can provision complex, multi-tier virtual networks in seconds, independent of the underlying network topology or components from {{site.data.keyword.BluSoftlayer_notm}}.
+VMware partners can integrate their network service solutions with the NSX platform, which enables customers to have an integrated experience across VMware products. Data center operators can provision complex, multitier virtual networks in seconds, independent of the underlying network topology or components from {{site.data.keyword.BluSoftlayer_notm}}.
 
 ## NSX core components
 {: #nsx-core-components}
@@ -81,9 +83,9 @@ NSX vSwitch is the software that operates on {{site.data.keyword.BluSoftlayer_no
 ## NSX controller
 {: #nsx-controller}
 
-NSX controller is an advanced distributed state management system that controls virtual networks and VXLAN overlay transport tunnels. NSX controller is the central control point for all logical switches within a network and maintains information of all virtual machines, hosts, logical switches, and VXLANs. The controller supports three logical switch control plane modes, Multicast, Unicast, and Hybrid. These modes decouple NSX from the physical network. {{site.data.keyword.BluSoftlayer_notm}} requires Unicast mode as {{site.data.keyword.BluSoftlayer_notm}} Private Networks (VLANs) do not offer IGMP services for Multicast or Hybrid mode. The NSX Controller uses Unicast mode with virtual tunnel endpoints (VTEPS) to provide MAC learning and other functions to allow VXLAN Broadcast, Unknown unicast, and Multicast (BUM) traffic within a logical switch. The unicast mode replicates all the BUM traffic locally on the host and requires no physical network configuration outside of Layer 3 connectivity between VTEPS. NSX Controllers are deployed by the NSX Manager as a minimum set of three controller nodes, and various other nodes to support (distributed) Layer 3 routing services. All of the nodes are deployed as virtual machines and are managed by the NSX Manager on an ESX Management Cluster at {{site.data.keyword.BluSoftlayer_notm}}.
+NSX controller is an advanced distributed state management system that controls virtual networks and VXLAN overlay transport tunnels. The NSX controller is the central control point for all logical switches within a network and maintains information of all virtual machines, hosts, logical switches, and VXLANs. The controller supports three logical switch control plane modes, Multicast, Unicast, and Hybrid. These modes decouple NSX from the physical network. {{site.data.keyword.BluSoftlayer_notm}} requires Unicast mode as {{site.data.keyword.BluSoftlayer_notm}} Private Networks (VLANs) do not offer IGMP services for Multicast or Hybrid mode. The NSX Controller uses Unicast mode with virtual tunnel endpoints (VTEPS) to provide MAC learning and other functions to allow VXLAN Broadcast, Unknown unicast, and Multicast (BUM) traffic within a logical switch. The unicast mode replicates all the BUM traffic locally on the host and requires no physical network configuration outside of Layer 3 connectivity between VTEPS. NSX Controllers are deployed by the NSX Manager as a minimum set of three controller nodes, and various other nodes to support (distributed) Layer 3 routing services. All of the nodes are deployed as virtual machines and are managed by the NSX Manager on an ESX Management Cluster at {{site.data.keyword.BluSoftlayer_notm}}.
 
 ## NSX Edge
 {: #nsx-edge}
 
-NSX Edge provides network edge security and gateway services to isolate a virtualized network. You can install an NSX Edge either as a logical (distributed) router or as a services gateway. The NSX Edge logical (distributed) router provides East-West distributed routing with tenant IP address space and data path isolation. Virtual machines or workloads that reside on the same host on different subnets can communicate with one another without having to traverse a traditional routing interface. The NSX Edge Gateway connects isolated stub networks to shared (uplink) networks by providing common gateway services such as DHCP, VPN, NAT, dynamic routing, and Load Balancing. Common deployments of NSX Edge include in the DMZ, VPN extranets, and multi-tenant cloud environments where the NSX Edge creates virtual boundaries for each tenant.
+NSX Edge provides network edge security and gateway services to isolate a virtualized network. You can install an NSX Edge either as a logical (distributed) router or as a services gateway. The NSX Edge logical (distributed) router provides East-West distributed routing with tenant IP address space and data path isolation. Virtual machines or workloads that reside on the same host on different subnets can communicate with one another without having to traverse a traditional routing interface. The NSX Edge Gateway connects isolated stub networks to shared (uplink) networks by providing common gateway services such as DHCP, VPN, NAT, dynamic routing, and load balancing. Common deployments of NSX Edge include in the DMZ, VPN extranets, and multi-tenant cloud environments where the NSX Edge creates virtual boundaries for each tenant.
