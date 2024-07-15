@@ -7,11 +7,11 @@ toc:
     audience: service
     href: /docs/vmware
     console-page: "/classic"
-    product-page: "https://www.ibm.com/cloud/vmware"
+    product-page: "https://cloud.ibm.com/vmware"
     path: vmware
     label: VMware for Classic
   entries:
-  - navgroup: 
+  - navgroup:
       id: learn
       topics:
       - getting-started.md
@@ -20,12 +20,12 @@ toc:
       - select-storage-option-use-vmware.md
       - vmware-vsphere-6-nsx-overview.md
       - vmware-sddc-ibm-cloud.md
-  - navgroup: 
+  - navgroup:
       id: howto
       topics:
-      - topicgroup: 
+      - topicgroup:
           label: Configuring the environment
-          topics: 
+          topics:
           - vmware-vsphere-6-getting-started.md
           - vmware-vsphere-6-nsx-getting-started.md
           - deploy-vmwaresoftlayer.md
@@ -37,27 +37,27 @@ toc:
           - vmware-esx-create-virtual-machine.md
           - mounting-iscsi-vmware-esxi.md
           - vsan-stability-lsi-3108-based-controllers.md
-      - topicgroup: 
+      - topicgroup:
           label: Ordering and managing licenses
-          topics: 
+          topics:
           - order-vmware-licenses.md
           - manage-vmware-licenses.md
           - order-netapp-licenses.md
           - manage-netapp-licenses.md
           - vmware-vsphere-6-applying-softlayer-issued-licenses.md
-  - navgroup: 
+  - navgroup:
       id: howto
       topics:
-      - topicgroup: 
+      - topicgroup:
           label: Configuring Quantastor storage
-          topics: 
+          topics:
           - architecture-guide-quantastor-vmwaresoftlayer.md
           - brocade-vrouter-vyatta-setup-guide-vmware-environments-quantastor.md
-      - topicgroup: 
+      - topicgroup:
           label: Enhancing security
-          topics: 
+          topics:
           - manage-scc.md
   - navgroup:
       id: help
-      topics: 
+      topics:
       -  vmware-faq.md
