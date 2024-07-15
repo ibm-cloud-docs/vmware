@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 1994, 2022
-lastupdated: "2022-09-15"
+  years: 1994, 2024
+lastupdated: "2024-07-15"
 
-keywords: IBM Issued Licenses VMware vSphere 
+keywords: IBM Issued Licenses VMware vSphere
 
 subcollection: vmware
 
@@ -19,13 +19,12 @@ Many VMware&reg; Add-on licenses can be purchased directly and stored on the {{s
 {: shortdesc}
 
 1. Log in to the [{{site.data.keyword.cloud_notm}} catalog](https://cloud.ibm.com/catalog/){: external}.
-2. Go to **Devices > Manage > VMware licenses**.
-3. Note the VMware **License key**.
-4. Log in to your vCenter Instances.
-5. Go to **Administration > Licensing > Licenses**.
-   * From here, you can see what licenses that are applied and apply new licenses.
-6. To apply a new license, click the green plus **[+]**.
-7. Enter your license keys, one per line.
-8. Click **Next**.
-9. Enter an appropriate **License name**.
-10. Click **Finish**.
+1. Go to **Devices > Manage > VMware licenses**.
+1. Note the VMware **License key**.
+1. Log in to your vCenter Instances.
+1. Go to **Administration > Licensing > Licenses**.
+   * From here, you can see what licenses that are applied and apply new licenses to your account.
+1. To apply a new license to your account, click the green plus **[+]**.
+1. Enter your license keys, one per line and click **Next**.
+1. Enter an appropriate **License name**.
+1. Click **Finish**.

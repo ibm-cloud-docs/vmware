@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 1994, 2019
-lastupdated: "2019-05-16"
+  years: 1994, 2024
+lastupdated: "2024-07-15"
 
 keywords: NetApp licenses, license key, netapp
 
@@ -10,20 +10,20 @@ subcollection: vmware
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank"}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
+{{{site.data.keyword.attribute-definition-list}}
 
-# Managing NetApp Licenses
+# Managing NetApp licenses
 {: #manage-netapp-licenses}
 
-1. Log in to the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window}.
-2. Go to **Devices > Manage > NetApp Licenses**. Each NetApp add-on that is purchased displays the following information:
+You can manage your NetApp licenses.
+{: shortdesc}
+
+Use the following information to manage your NetApp licenses.
+
+1. Log in to [{{site.data.keyword.slportal_full}}](https://cloud.ibm.com/){: external}.
+2. Go to **Devices > Manage > NetApp licenses**. Each NetApp add-on that is purchased displays the following information:
    * License key
    * CPUs
    * Order date.
-  
+
 From the NetApp licenses page, you can download license keys, cancel licenses, and order more licenses.
