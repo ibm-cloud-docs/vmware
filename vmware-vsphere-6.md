@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 1994, 2023
-lastupdated: "2023-04-13"
+  years: 1994, 2024
+lastupdated: "2024-07-15"
 
 keywords: vmware vcenter, vmware license, vsphere, vrealize, vsan, srm, nsx
 
@@ -16,6 +16,7 @@ subcollection: vmware
 {: #license-options-vmware}
 
 VMware&reg; administrators can quickly realize cost-effective hybrid cloud characteristics by deploying into an {{site.data.keyword.cloud}} enterprise-grade global cloud. A key differentiator is that vSphere workloads and catalogs can be provisioned onto VMware vSphere environments within {{site.data.keyword.cloud}} data centers without modifying VMware VMs or guests. These deployments are made possible by using a common vSphere hypervisor and management or orchestration platform.
+{: shortdesc}
 
 In addition to offering the vSphere Enterprise Plus license, {{site.data.keyword.cloud}} offers monthly licensing for vCenter, NSX, vRealize, vSAN, and Site Recovery Manager (SRM).
 
@@ -60,7 +61,7 @@ The following user interfaces are available for VMware vCenter.
 ### VMware vCenter features
 {: #vmware-vcenter-features}
 
-VMware vCenter offers the folliwing features.
+VMware vCenter offers the following features.
 
 * Centralized control and visibility for all aspects within managed vSphere hosts and guest virtual machines.
 * Provides a window interface view through the vCenter web client for compute network and storage management.
