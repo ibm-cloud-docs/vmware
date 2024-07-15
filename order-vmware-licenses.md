@@ -1,7 +1,8 @@
 ---
 
 copyright:
-  years: 1994, {{site.data.keyword.attribute-definition-list}}
+  years: 1994, 2024
+lastupdated: "2024-07-15"
 
 keywords: order vmware license
 
@@ -49,6 +50,7 @@ vSphere implementation also enables the use of other components. Table 1 contain
 
 ## Before you begin
 {: #before-you-begin-vmware-order}
+
 * Go to your console's device menu. For more information, see [Navigating to devices](/docs/bare-metal?topic=virtual-servers-navigating-devices).
 * Make sure that you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
