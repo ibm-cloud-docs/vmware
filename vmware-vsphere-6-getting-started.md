@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2017, 2022
-lastupdated: "2022-09-14"
+  years: 2017, 2024
+lastupdated: "2024-07-11"
 
-keywords: Getting Started VMware vSphere 
+keywords: Getting Started VMware vSphere
 
 subcollection: vmware
 
@@ -12,29 +12,27 @@ subcollection: vmware
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting started with VMware vSphere 
+# Getting started with VMware vSphere
 {: #get-started-vsphere-6}
 
-Use the following to get started with VMware&reg; vSphere.
+Use the following information to get started with VMware&reg; vSphere.
 {: shortdesc}
 
 ## Understanding the environment and configuration
 {: #vsphere-environment-config}
 
-To optimize your VMware solution it is recommended that you use a private network VLAN for your VMware vSphere environment. You can use the provisioning profile for the following Layer 2 segment traffic boundaries:
+To optimize your VMware solution, it is recommended that you use a private network VLAN for your VMware vSphere environment. You can use the provisioning profile for the following Layer 2 segment traffic boundaries:
 
-|Example VLAN ID|Description|Type|Additional detail|
+|Example VLAN ID|Description|Type|Extra detail|
 |---|---|---|---|
-|VLAN1 - **1101**|Management, VxLAN|Private BCR|Native untagged VLAN, original native VLAN that the VMware hosts are deployed into at the time of ordering|
-|VLAN4 - **2200**|Public internet access DMZ|Public FCR|Native untagged VLAN, original native VLAN that the VMware hosts are deployed into at the time of ordering|
+|VLAN1 - **1101**|Management, VxLAN|Private BCR|Native untagged VLAN, the original native VLAN that the VMware hosts are deployed into at the time of ordering|
+|VLAN4 - **2200**|Public internet access DMZ|Public FCR|Native untagged VLAN, the original native VLAN that the VMware hosts are deployed into at the time of ordering|
 {: caption="Table 1. Private and public VLAN examples" caption-side="top"}
 
 ## Before you begin
 {: #before-you-begin-vmware-vsphere}
-* Go to your console's device menu. For more information, see [Navigating to devices](/docs/bare-metal?topic=virtual-servers-navigating-devices).
-* Make sure that you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
-For more information about permissions, see [Classic infrastructure permissions](/docs/account?topic=account-infrapermission#infrapermission) and [Managing device access](/docs/virtual-servers?topic=virtual-servers-managing-device-access).
+Make sure that you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
 ## Ordering vSphere servers
 {: #order-vsphere-servers}
@@ -74,7 +72,7 @@ Use the following steps to order a virtual server with vCenter.
       * vCPU Core Configuration: 4 x 2.0 GHz Cores
       * RAM Configuration: 12 GB RAM
       * Software - OS = Windows&reg; Server 2012 R2 Standard Edition (64 Bit)
-      * OS-Specific Addon: vCenter 
+      * OS-Specific Addon: vCenter
       * First Disk - 1 x 100 GB (SAN)
       * Second Disk - 1 x 50 GB (SAN)
       * Uplink Port Speeds: 1 Gbps Public and Private Network Uplinks
@@ -101,7 +99,7 @@ The subnets are used for addressing VMware Guest virtual machine (VM) and VMware
 9. Follow this process for each applicable VLAN (Ex. 1101, 2200)
    1. For more information about VLANs, see [Getting started with VLANs](/docs/vlans?topic=vlans-getting-started).
 
-|Subnet Type|subnet size|Bound Vlan|vSphere host usage|
+|Subnet Type|Subnet size|Bound VLAN|vSphere host usage|
 |---|---|---|---|
 |Portable - Private|/27 32 Address|**1101**|Management VMs|
 |Portable - Private|/27 32 Address|**1101**|VM kernel ports for iSCSI and vMotion|
@@ -129,7 +127,7 @@ You can now log in to the vCenter server and configure the vSphere cluster.
 4. Scroll down the **Device details** screen and note the **Passwords** for both the Windows OS and vCenter software.
 5. Open a Microsoft&reg; Remote Desktop (RDP) session and connect to your vCenter server through its public IP address.
 6. Log in by using the passwords that you obtained in step 4. **Note:** You need an active VPN connection to {{site.data.keyword.cloud}} needs if you use a private IP address to access vCenter. For more information about VPN access, see [Enabling SSL VPN access](/docs/iaas-vpn?topic=iaas-vpn-getting-started).
-7. Download and install the traditional [vSphere client](https://kb.vmware.com/s/){: external} or use the vSphere web client by using following the link `https://<vCenter-Sever-Public-IP-Address>/vsphere-client/`.
+7. Download and install the traditional vSphere client or use the vSphere web client by using following the link `https://<vCenter-Sever-Public-IP-Address>/vsphere-client/`.
 8. Log in to vCenter with the IP address and passwords that you obtained in steps 3 and 4.
 9. Right-click the vCenter server name in the left pane and select **New data center**.
 10. Enter an appropriate name for the data center.
@@ -142,14 +140,14 @@ You can now log in to the vCenter server and configure the vSphere cluster.
 17. Right-click the newly created cluster and select **Add Host**.
 18. Enter the IP address or hostname of one of the vSphere hosts and enter **Root** in the **Username** field and the password for the host in the **Password** field.
 19. Click **Next** through the Host Summary, Assign License, Lockdown Mode screen, and click **Finish** to complete adding your host to the Cluster
-20. Repeat steps 18 and 19 for each other vSphere hosts in your cluster. You see each vSphere hosts under the new cluster after you are done.
+20. Repeat steps 18 and 19 for each other vSphere hosts in your cluster. You can see each vSphere hosts under the new cluster after you are done.
 
 ### Configuring the basic network construct for the vSphere hosts
 
 Use the following steps to configure the basic construct for the vSphere hosts in your cluster.
 
 1. Select the first vSphere host and click the **Configuration** tab.
-2. Under **Hardware** section, select **Networking** and click **Properties** next to vSwitch0.
+2. Under the **Hardware** section, select **Networking** and click **Properties** next to vSwitch0.
 3. Select **Network adapters** on the **vSwitch properties** window and click **Add**.
 4. Select vmnic2 to add to vSwitch0 and click **Next**.
 5. Make sure that both vmnics are **Active adapters** and click **Next**.
@@ -159,7 +157,7 @@ Use the following steps to configure the basic construct for the vSphere hosts i
 9. Click the **NIC teaming** tab and change the load balancing to **Route based on IP** hash and click **OK**.
 10. Use steps 1 - 8 to configure the vmnics for the other vSphere hosts in your cluster.
 
-Now, you need to add a port group for vMotion. You can create the group a Virtual Standard Switch (VSS) or Virtual Distributed Switch (VDS). Use the following steps to create a VSS switch.
+Now, you need to add a port group for vMotion. You can create the group with a Virtual Standard Switch (VSS) or Virtual Distributed Switch (VDS). Use the following steps to create a VSS switch.
 
 1. Select the **Configuration** tab and select **Networking**.
 2. Click **Properties...** for vSwitch0.
@@ -178,7 +176,7 @@ Use the following steps to create a port group for VM data traffic.
 1. Click **Properties...** for vSwitch0 and select **Add virtual machine**.
 2. Complete the **Port group properties** with the following information:
    * **Network label:** Enter the name of the port group, such as `VM Data`.
-   * **VLAN ID (Optional):** Enter a VLAN ID; 1101 was used for the example. The VLAN ID givess access to VMware to tag the traffic for the VLAN.
+   * **VLAN ID (Optional):** Enter a VLAN ID; 1101 was used for the example. The VLAN ID gives access to VMware to tag the traffic for the VLAN.
 
 ### Optional - Installing add-on VMware licenses (NSX, vRealize, vSAN)
 
@@ -189,4 +187,4 @@ Now that the VMware environment is up you are ready to continue with the deploym
 
 You now have a basic single-site VMware environment that is running in an {{site.data.keyword.cloud}} data center. The basic configuration has only a local data store, making it a simplified configuration that does not contain features such as VMware DRS, HA, Storage DRS, and a firewall.
 
-For more information, see [FAQs: VMware](/docs/vmware?topic=vmware-vmware-faq#vmware-faq).
+For more information, see the [FAQs: VMware](/docs/vmware?topic=vmware-vmware-faq#vmware-faq).

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 1994, 2023
-lastupdated: "2023-04-12"
+  years: 1994, {CURRENT_YEAR}]
+lastupdated: "2024-07-15"
 
 keywords: virtual media, deploying esx, private network, remote console, install vsphere, install esxi, esxi
 
@@ -32,14 +32,14 @@ Make sure that the following requirements are met before you install VMware vSph
 
 Use the following steps to connect to IPMI.
 
-1. Upload the VMware ISO to the virtual server instance that is specified in Requirements. The virtual server instance needs public web access.
+1. Upload the VMware ISO to the virtual server instance that is specified in the Requirements. The virtual server instance needs public web access.
 2. Gather the IPMI address and login information from the customer portal.
-3. Select **Devices** > **Device List** > **[Server]** > and **Remote Management** tab.
+3. Select **Devices** > **Device List** > **[Server]** > and the **Remote Management** tab.
 4. Remote desktop (RDP) or Remote X into to the virtual server instance that is storing the ESXi image.
 5. Open a web browser in the RDP session and enter the IPMI address that you collected in Step 2.
 6. Log in to the IPMI console with the credentials that are also found in Step 2 (typically root).
 
-   Make a note of your IPMI user access level. It might be **Administrator**. You might experience a problem when you mount your remote storage if it is set to **Operator**. Open a support case to elevate your IPMI credentials if you cannot mount media.
+   Make a note of your IPMI user access level. If your access level isn't **Administrator**, then you might experience a problem when you mount your remote storage. Open a support case to elevate your IPMI credentials if you cannot mount media.
    {: tip}
 
 7. Confirm that you are on the home login page and click **Remote control** > **Console redirection** > **Launch console**.
@@ -49,16 +49,16 @@ Use the following steps to connect to IPMI.
 
 Use the following steps to attach an ISO.
 
-1. On the Kernel-based Virtual Machine (KVM) viewer, select **Virtual media** > **Virtual storage**. Your operating system and Java version might require you to allow access to start the Java-based viewer.
-2. Click the **CD and ISO** tab in the Virtual Storage window. For the Logical Drive Type, select **ISO file** and click **Open image**.
+1. On the Kernel-based Virtual Machine (KVM) viewer, click **Virtual media** > **Virtual storage**. Your operating system and Java version might require you to allow access to start the Java-based viewer.
+2. Click the **CD and ISO** tab in the Virtual Storage window. For the Logical Drive Type, click **ISO file** > **Open image**.
 3. Go to the ESXi ISO and click **OK**. Then, click **Plug-in**.
-4. After the ISO is plugged into the session, click **OK**.
+4. After the ISO plugs into the session, click **OK**.
 5. Go back to the IPMI webpage and click **Remote** > **Control** > **Reset server** > **Perform action** to restart the server.
 
 ### Installing network configuration
 {: #install-network-configuratio}
 
-Use the following steps to install network configuration.
+Use the following steps to install the network configuration.
 
 1. Install ESXi.
 
@@ -71,9 +71,4 @@ Use the following steps to install network configuration.
 
 You can now manage the ESXi host.
 
-For more information about setting up endurance or performance block storage, see the following links.
-
-* [Provisioning endurance storage](/docs/BlockStorage?topic=BlockStorage-About#provendurance)
-* [Provisioning performance block storage](/docs/BlockStorage?topic=BlockStorage-About#provperformance)
-
-For more information about setting up QuantaStor, see [Architecture guide for QuantaStor](/docs/vmware?topic=vmware-quantastor-architecture-guide).
+For more information about setting up QuantaStor, see the [Architecture guide for QuantaStor](/docs/vmware?topic=vmware-quantastor-architecture-guide).
