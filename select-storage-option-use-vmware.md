@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-07-11"
+lastupdated: "2024-07-17"
 
 keywords: NetApp OnTap Select, High performance, vmware storage, QuantaStor, IBM Spectrum Accelerate, shared storage, private storage
 
@@ -152,7 +152,7 @@ The IBM Spectrum Accelerate private storage option is not available on the {{sit
    * Offered two ways: perpetual license [includes one year of subscription and service (S&S)] and monthly license (includes S&S)
 
 * HA: Clustered solution
-* Replication: Achieved by using [vRealize Automation](https://www.vmware.com/products/vrealize-automation){: external}
+* Replication: Achieved by using vRealize Automation.
  or SRA, which can be used to replicate from physical IBM XIV with VMware’s Site Recovery Manager (SRM)
    * vSphere Replication
 * Reliability: High redundancy and MPIO support. Any available node can manage the cluster. The following capabilities are not supported by IBM Spectrum Accelerate over hardware-based IBM XIV.

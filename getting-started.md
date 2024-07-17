@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2024
-lastupdated: "2024-07-11"
+lastupdated: "2024-07-17"
 
 keywords: vmware, getting started, {{site.data.keyword.cloud_notm}}, {{site.data.keyword.baremetal_short}}
 
@@ -30,5 +30,3 @@ VMware for {{site.data.keyword.cloud}} Classic infrastructure provides an indust
 {: #vmware-what-next}
 
 After you configured a basic environment, you can [manage licenses](/docs/vmware?topic=vmware-manage-vmware-licenses).
-
-For more information about the advanced reference architecture that outlines a hybrid cloud configuration, see [VMware software-defined data center (SDDC)](/docs/vmware?topic=vmware-vmware-sddc-on-ibm-cloud).

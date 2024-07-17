@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2024
-lastupdated: "2024-07-15"
+lastupdated: "2024-07-17"
 
 keywords: order vmware license
 
@@ -18,7 +18,7 @@ subcollection: vmware
 VMware&reg; administrators understand that they can quickly realize the cost-effective hybrid cloud characteristics by deploying into {{site.data.keyword.BluSoftlayer_full}}. One of the characteristics is that vSphere workloads and catalogs are provisioned onto VMware vSphere environments within {{site.data.keyword.cloud_notm}} data centers without modification to VMware VMs or guests. Using a common vSphere hypervisor and management and orchestration platform makes these deployments possible.
 {: shortdesc}
 
-vSphere implementation also enables the use of other components. Table 1 contains a list of VMware products that are available to order through the {{site.data.keyword.cloud_notm}} catalog. For more information about pricing, see [IBM Cloud for VMware Solutions](https://www.ibm.com/cloud/vmware).
+vSphere implementation also enables the use of other components. Table 1 contains a list of VMware products that are available to order through the {{site.data.keyword.cloud_notm}} catalog. For more information about pricing, see [IBM Cloud for VMware Solutions](https://cloud.ibm.com/vmware){: external}.
 
 |Product name| Version |
 |---|---|
@@ -51,10 +51,10 @@ vSphere implementation also enables the use of other components. Table 1 contain
 ## Before you begin
 {: #before-you-begin-vmware-order}
 
-* Go to your console's device menu. For more information, see [Navigating to devices](/docs/bare-metal?topic=virtual-servers-navigating-devices).
+* Go to your console's device menu.
 * Make sure that you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
-For more information about permissions, see [Classic infrastructure permissions](/docs/account?topic=account-infrapermission#infrapermission) and [Managing device access](/docs/virtual-servers?topic=virtual-servers-managing-device-access).
+For more information about permissions, [Managing device access](/docs/virtual-servers?topic=virtual-servers-managing-device-access).
 
 ## Ordering VMWare licenses
 {: #order-vmware-licenses}
