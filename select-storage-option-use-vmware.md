@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-07-17"
+lastupdated: "2024-07-22"
 
 keywords: NetApp OnTap Select, High performance, vmware storage, QuantaStor, IBM Spectrum Accelerate, shared storage, private storage
 
@@ -117,10 +117,6 @@ NetApp ONTAP Select on {{site.data.keyword.cloud}} helps to improve productivity
 {: #netapp-private-storage-options}
 
 You must purchase a NetApp device from NetApp or {{site.data.keyword.cloud}}. You need to install it in one of the colocation sites that are near your {{site.data.keyword.cloud}} data center and connect it by using Direct-Link Colocation or Direct-Link Cloud.
-
-For more information about connecting to VMware with NetApp, see the following links.
-
-* [Solution brief: NetApp Private Storage for {{site.data.keyword.cloud}}](http://www.netapp.com/us/media/ds-3619_tcm10-127472.pdf){: external}
 
 * Recommended workloads - Tier 1
 * Performance - Dependent on NetApp model
