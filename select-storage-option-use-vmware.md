@@ -96,7 +96,7 @@ You can use the [OSNexus Solution Design Guide](http://wiki.osnexus.com/index.ph
 ### NetApp Data OnTap Select
 {: #netapp-data-ontap-select-options}
 
-NetApp® ONTAP® Select on {{site.data.keyword.cloud}}, a software-defined storage virtual appliance, extends existing data management capabilities by implementing NetApp ONTAP software as a service on {{site.data.keyword.cloud}} dedicated bare metal servers. You can provision storage resources with agility and flexibility while your data is protected by using NetApp’s advanced data management functions. Such as the fast and efficient NetApp Snapshot® copies, FlexClone® copies, and SnapMirror® replication. NetApp ONTAP Select accelerates application DevOps and reduces the complexity and increased processor usage that are associated with physical storage systems.
+NetApp® ONTAP® Select on {{site.data.keyword.cloud}}, a software-defined storage virtual appliance, extends existing data management capabilities by implementing NetApp ONTAP software as a service on {{site.data.keyword.cloud}} dedicated bare metal servers. You can provision storage resources with agility and flexibility while your data is protected by using NetApp’s advanced data management functions. Such as the fast and efficient NetApp Snapshot® copies, FlexClone® copies, and SnapMirror® replication. NetApp ONTAP Select accelerates application DevOps and reduces the complexity and increased processor usage that are associated with physical Storage Systems.
 
 NetApp ONTAP Select on {{site.data.keyword.cloud}} is offered in both high performance (all SSD) and high capacity (all SATA) configurations, which can meet the range of use cases you demand today. You can use the tools that are provided by NetApp ONTAP Select for addressing your hybrid cloud needs, such as addressing disaster recovery scenarios, providing file services, and managing rapid transactional data workloads.
 
@@ -116,7 +116,7 @@ NetApp ONTAP Select on {{site.data.keyword.cloud}} helps to improve productivity
 ### NetApp private storage
 {: #netapp-private-storage-options}
 
-You must purchase a NetApp device from NetApp or {{site.data.keyword.cloud}}. You need to install it in one of the colocation sites that are near your {{site.data.keyword.cloud}} data center and connect it by using Direct-Link Colocation or Direct-Link Cloud.
+You must purchase a NetApp device from NetApp or {{site.data.keyword.cloud}}. You need to install it in one of the colocation sites that are near your {{site.data.keyword.cloud}} data center and connect it by using Direct-Link colocation or Direct-Link Cloud.
 
 * Recommended workloads - Tier 1
 * Performance - Dependent on NetApp model
@@ -176,7 +176,7 @@ See the following table to see the pros and cons of private storage in a single-
 | Use cases |Tier 2 and 3 workloads|Tier 1 workloads|Tier 2 and 3 workloads|Tier 2 and 3 workloads|Tier 1 workloads|Tier 1 workloads|
 | High availability (HA) |Available with RAID|Yes; host and disk failures; failure domains (v6.0)|N/A|N/A|Yes; dual heads and controllers.|Yes; clustered solution.|
 | Configurability (HA) |Number and type of disks; RAID levels|Specific controllers required.|CPU, memory, cache, number and type of disks, and RAID levels.|CPU, memory, cache, number and type of disks, and RAID levels.|TBD|CPU, memory, cache, number, and type of disks, SSD, caching, iSCSI port configuration. Multi-tenancy QoS.|
-| Disaster recovery and replication |Use vRA to replicate, no SRAs.|Use vRA to replicate.|Built in replication; no SRAs available.|Can use vRA to replicate SnapMirror.|Can use vRA to replicate, SnapMirror, SnapVault.|vRA or SRA supported replication between SDS and or Physical XIV devices. Snapshots supported; application recovery through IBM FlashCopy Manager.|
+| Disaster recovery and replication |Use vRA to replicate, no SRAs.|Use vRA to replicate.|Built-in replication; no SRAs available.|Can use vRA to replicate SnapMirror.|Can use vRA to replicate, SnapMirror, SnapVault.|vRA or SRA supported replication between SDS and or Physical XIV devices. Snapshots supported; application recovery through IBM FlashCopy Manager.|
 | Reliability|Single point of failure without HA.|Tolerates up to three host failures with seven plus hosts. Failure domains are introduced in v6.0.|Single point of failure (enclosure and RAID controller) and no HA.|Single point of failure (enclosure and RAID controller) and no HA.|Highly redundant multipath I/O (MPIO) connection.|Highly redundant iSCSI MPIO connections: any node can manage the cluster.|
 {: caption="Table 2. Pros and cons of VMware private storage options" caption-side="bottom"}
 
