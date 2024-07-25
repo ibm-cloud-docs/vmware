@@ -26,5 +26,5 @@ The following guides are intended for experienced vSphere administrators. Some t
 
 * [Build a Single Site VMware&reg; Environment](/docs/virtualization?topic=virtualization-advanced-single-site-vmware-reference-architecture) You, as the vSphere administrator, are guided through the steps of building your environment, including the use of either Endurance or Performance Block Storage or QuantaStor.
 * [vSphere Migration](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.update_manager.doc/GUID-F7191592-048B-40C7-A610-CFEE6A790AB0.html){: external} Scenarios are presented to help you migrate workloads into VMware&reg; after your vSphere implementation is deployed in an IBM Cloud data center.
-* [VMware&reg; backup](https://www.vmware.com/pdf/vi3_30_20_vm_backup.pdf){: external} describes alternative approaches to backing up, recovering, and archiving VMware-based workloads that are running in a VMware deployment.
+* [VMware&reg; backup](https://docs.vmware.com/){: external} describes alternative approaches to backing up, recovering, and archiving VMware-based workloads that are running in a VMware deployment.
 * [VMware&reg; disaster recovery guide](https://docs.vmware.com/en/Site-Recovery-Manager/index.html){: external} Documentation for VMware&reg; Site Recovery Manager.
