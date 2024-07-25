@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-07-15"
+lastupdated: "2024-07-25"
 
 keywords: upgrade vsphere
 
@@ -33,15 +33,11 @@ Expand or move your VMware cloud environments to any {{site.data.keyword.cloud}}
 1. Design the vSphere servers:
    * Review the current IBM Cloud server catalog. Intel Xeon v3 Servers are recommended along with redundant uplinks, redundant power supplies, and RAID-1 for local (boot) disks.
    * Most customers with VMWare follow an N+1 hard capacity ceiling (all VMs can be comfortably allocated to servers with a single node removed (for maintenance/failure/etc).
-   * Many customers want a higher "soft ceiling" of ~80% (80% capacity on the 'n' server configuration) compared to the more standard 60-75% due to the short turn around of compute.
+   * Many customers want a higher "soft ceiling" of ~80% (80% capacity on the 'n' server configuration). As compared to the more standard 60-75% due to the short turn around of compute.
    * External OS Licensing (such as Microsoft, Red Hat) might be needed for vSphere guests from an external vendor.
-   * Review [Performance best practices for VMware vSphere](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/techpaper/vmware-perfbest-practices-vsphere6-0-white-paper.pdf){: external}
 1. Design the vCenter Server:
    * Typically, a midsized virtual server instance is the entry point for small environments (8 vCPU + 16 GB RAM). While bare metal is used for larger environments.
    * vCenter can be deployed on a stand-alone virtual server instance Windows virtual machine as an OS add-on or as an appliance.
-      * Reference Links:
-         * [VMware vCenter Server performance and best practices](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/techpaper/vmware-vcenter6-performance-white-paper.pdf){: external}
-         * [Deploying and Configuring a vCenter Server Appliance (vCSA) with VMware vSphere](/docs/vmware?topic=vmware-config-vcsa)
 1. Non-VMWare servers. Identify and plan for any non-VMWare servers (virtual or Bare Metal) that are needed.
 1. Storage
    * Develop a storage plan for the environment. Endurance 2 IOPS/GB with snapshot space for virtualization is a good starting storage plan. If virtual databases or other high-performance applications are used, then the 4 IOPS/GB tier is a better fit. NFS storage is typically recommended.
@@ -52,7 +48,7 @@ Expand or move your VMware cloud environments to any {{site.data.keyword.cloud}}
 1. Develop a migration strategy:
    * Review the existing DNS and IP configurations and shorten the TTL as needed.
    * Develop a plan for VMs to include Source host, destination host, source IPs, destination IPs, and associated DNS entries.
-   * In most scenarios, it is best to migrate VM-by-VM and then update the public and private network configurations. When you move from older versions to newer versions, it is best to "rip and ship" the VM by shutting it down and performing a _detach/attach_ between the environments. If you are moving between locations, a long-distance vMotion is possible.
+   * In most scenarios, it is best to migrate VM-by-VM and then update the public and private network configurations. When you move from older versions to newer versions, it is best to `rip and ship` the VM by shutting it down and performing a `detach/attach` between the environments. If you are moving between locations, a long-distance vMotion is possible.
    * Develop testing plans for verification of the environment.
    * Coordinate a change and maintenance window with users. Individual VM maintenance windows can account for transfer of data, configuration of the VM, changing, and propagation of DNS, and time for troubleshooting.
 1. Deploy the new environment:
