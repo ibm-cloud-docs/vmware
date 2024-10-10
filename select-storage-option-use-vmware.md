@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-07-22"
+lastupdated: "2024-10-10"
 
 keywords: NetApp OnTap Select, High performance, vmware storage, QuantaStor, IBM Spectrum Accelerate, shared storage, private storage
 
@@ -27,7 +27,7 @@ See the following table for storage tiers and where your workload might fall.
 | High availability (HA) | Yes| No | No|
 | Replication | Yes | Yes | No |
 | Snapshots | Yes | No | No |
-{: caption="Table 1. Storage tiers" caption-side="bottom"}
+{: caption="Storage tiers" caption-side="bottom"}
 
 ## Private and shared storage
 {: #vmware-private-shared-storage}
@@ -178,7 +178,7 @@ See the following table to see the pros and cons of private storage in a single-
 | Configurability (HA) |Number and type of disks; RAID levels|Specific controllers required.|CPU, memory, cache, number and type of disks, and RAID levels.|CPU, memory, cache, number and type of disks, and RAID levels.|TBD|CPU, memory, cache, number, and type of disks, SSD, caching, iSCSI port configuration. Multi-tenancy QoS.|
 | Disaster recovery and replication |Use vRA to replicate, no SRAs.|Use vRA to replicate.|Built-in replication; no SRAs available.|Can use vRA to replicate SnapMirror.|Can use vRA to replicate, SnapMirror, SnapVault.|vRA or SRA supported replication between SDS and or Physical XIV devices. Snapshots supported; application recovery through IBM FlashCopy Manager.|
 | Reliability|Single point of failure without HA.|Tolerates up to three host failures with seven plus hosts. Failure domains are introduced in v6.0.|Single point of failure (enclosure and RAID controller) and no HA.|Single point of failure (enclosure and RAID controller) and no HA.|Highly redundant multipath I/O (MPIO) connection.|Highly redundant iSCSI MPIO connections: any node can manage the cluster.|
-{: caption="Table 2. Pros and cons of VMware private storage options" caption-side="bottom"}
+{: caption="Pros and cons of VMware private storage options" caption-side="bottom"}
 
 For more information, see the following links.
 
@@ -219,7 +219,7 @@ See the following table for pros and cons of shared storage in a multi-tenant en
 | Reliability |Highly redundant, MPIO connection, NFS-based file storage routed TCP/IP connections. Snapshots and Replication are enabled.|
 | Latency | <10 ms |
 | Cost |High for both CapEx (10x for SAN of the same size) and OpEx|
-{: caption="Table 3. Pros and cons of VMware shared storage options" caption-side="bottom"}
+{: caption="Pros and cons of VMware shared storage options" caption-side="bottom"}
 
 For more information, see the following links.
 

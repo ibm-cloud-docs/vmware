@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-07-11"
+lastupdated: "2024-10-10"
 
 keywords: Getting Started VMware vSphere
 
@@ -27,7 +27,7 @@ To optimize your VMware solution, it is recommended that you use a private netwo
 |---|---|---|---|
 |VLAN1 - **1101**|Management, VxLAN|Private BCR|Native untagged VLAN, the original native VLAN that the VMware hosts are deployed into at the time of ordering|
 |VLAN4 - **2200**|Public internet access DMZ|Public FCR|Native untagged VLAN, the original native VLAN that the VMware hosts are deployed into at the time of ordering|
-{: caption="Table 1. Private and public VLAN examples" caption-side="top"}
+{: caption="Private and public VLAN examples" caption-side="top"}
 
 ## Before you begin
 {: #before-you-begin-vmware-vsphere}
@@ -105,7 +105,7 @@ The subnets are used for addressing VMware Guest virtual machine (VM) and VMware
 |Portable - Private|/27 32 Address|**1101**|VM kernel ports for iSCSI and vMotion|
 |Portable - Private|/27 32 Address|**1101**|Private IPs for Guest VM|
 |Portable - Public |/27 32 Address|**2200**|Public IPs for Guest VMs (Optional)|
-{: caption="Table 2. Subnets" caption-side="top"}
+{: caption="Subnets" caption-side="top"}
 
 ### Optional – Disabling the public interface on the vSphere host
 
