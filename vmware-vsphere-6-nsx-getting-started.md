@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2024
-lastupdated: "2024-07-15"
+lastupdated: "2024-10-10"
 
 keywords: getting started nsx, nsx license
 
@@ -58,7 +58,7 @@ IBM Informix Virtual Appliance on Management Cluster has a 1:1 relationship with
 |6.2 Small|4|12 GB|60 GB|
 |6.2 Default|4|16 GB|60 GB|
 |6.2 Large Scale|4|24 GB|60 GB|
-{: caption="Table 1. NSX Manager typical VM sizing" caption-side="top"}
+{: caption="NSX Manager typical VM sizing" caption-side="top"}
 
 **NSX controller nodes**
 {: #nsx-controller-nodes}
@@ -68,7 +68,7 @@ NSX controller nodes are deployed as virtual appliances from the NSX Manager UI.
 |Controller VMs|vCPU|Reservation|Memory|OS Disk|
 |---|---|---|---|---|
 |3|4|2048 Mhz|4 GB|20 GB|
-{: caption="Table 2. NSX controller typical VM sizing" caption-side="top"}
+{: caption="NSX controller typical VM sizing" caption-side="top"}
 
 **NSX switch**
 {: #nsx-switch}
@@ -86,4 +86,4 @@ Deployed as multi-function VM appliances as needed in the environment. For routi
 |Quad-Large|4|1 GB|Suitable for high performance ECMP and FW deployment|
 |Large|2|1 GB|Small DC and Single Service|
 |Compact|1|512 MB|Small deployments or single service use or PoC|
-{: caption="Table 3. NSX Edge services" caption-side="top"}
+{: caption="NSX Edge services" caption-side="top"}

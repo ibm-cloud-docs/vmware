@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2024
-lastupdated: "2024-07-17"
+lastupdated: "2024-10-10"
 
 keywords: order vmware license
 
@@ -46,7 +46,7 @@ vSphere implementation also enables the use of other components. Table 1 contain
 |  | Enterprise Tier 1 |
 |  | Enterprise Tier 2 |
 |  | Enterprise Tier 3 |
-{: caption="Table 1. VMware products that are available in the {{site.data.keyword.cloud}} catalog" caption-side="top"}
+{: caption="VMware products that are available in the {{site.data.keyword.cloud}} catalog" caption-side="top"}
 
 ## Before you begin
 {: #before-you-begin-vmware-order}

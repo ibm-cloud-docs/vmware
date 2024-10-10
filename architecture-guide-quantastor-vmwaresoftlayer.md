@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2024
-lastupdated: "2024-07-12"
+lastupdated: "2024-10-10"
 
 keywords: iSCSI software adapter, Select Targets, QuantaStor, VMware shared storage, iSCSI, storage volume, software defined storage
 
@@ -170,7 +170,7 @@ You need to create two storage volumes. One volume is used for management VMs on
 |Size|1 TB|
 |% Reserved|0-100|
 |Compression|Enabled|
-{: caption="Table 1. iSCSI Management Volume" caption-side="top"}
+{: caption="iSCSI Management Volume" caption-side="top"}
 
 |Field|Value|
 |---|---|
@@ -179,7 +179,7 @@ You need to create two storage volumes. One volume is used for management VMs on
 |Size|40 TB|
 |% Reserved|0-100|
 |Compression|Enabled|
-{: caption="Table 2. iSCSI Capacity Volume" caption-side="top"}
+{: caption="iSCSI Capacity Volume" caption-side="top"}
 
 ### Assigning Host Access to Volumes
 {: #assigning-host-access}
