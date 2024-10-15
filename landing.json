@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "title": "VMware for Classic",
+  "introduction": "VMware for IBM Cloud® Classic infrastructure provides an industry-leading virtualization platform that abstracts processor, memory, storage, and networking resources to create multiple Virtual Servers on a single physical server. Multiple physical servers can be clustered together to create a private cloud.",
+  "product_page": "https://cloud.ibm.com/vmware",
+  "console_page": "/classic",
+  "section_topics": {
+    "links": [
+      {
+        "title": "Getting started with VMware vSphere",
+        "href": "/docs/vmware?topic=vmware-get-started-vsphere-6"
+      },
+      {
+        "title": "Getting Started with VMware vSphere NSX",
+        "href": "/docs/vmware?topic=vmware-getting-started-nsx"
+      },
+      {
+        "title": "VMware Systems storage options",
+        "href": "/docs/vmware?topic=vmware-vmware-storage"
+      },
+      {
+        "title": "FAQs: VMware",
+        "href": "/docs/vmware?topic=vmware-vmware-faq"
+      }
+    ]
+  }
+}
+
