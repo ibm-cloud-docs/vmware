@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2024
-lastupdated: "2024-12-10"
+lastupdated: "2024-12-11"
 
 keywords: iSCSI, VMWare ESXi, mount iscsi, mount esxi,
 
@@ -28,7 +28,7 @@ In most VMware&reg; environments, NFS {{site.data.keyword.filestorage_short}} is
 1. From the **Properties Window**, click **Configure** and set the **Name** to the IQN for the server (found on the storage device page under authorized hosts). 
    - Alternatively, you can set the IQN by running the following command from the ESXi shell: `esxcli iscsi adapter set -A $(esxcli iscsi adapter list | grep vmh | awk '{print$1}') -n $IQNFROMAUTHORIZEDHOSTSECTION`.
 1. Click the **Dynamic discovery** tab then click **Add...**.
-1. The iSCSI server is the target IP of the storage device, then click **CHAP**.
+1. The iSCSI server is the target IP of the storage device. Click **CHAP**.
 1. Select **Use CHAP** and clear **Inherit from parent**. Enter the **username** (found on the storage device page under authorized hosts) and password.
 1. Select **Do not use CHAP** under the **Mutual CHAP** section then click **OK**. Now you can see the device in the **Dynamic discovery** window and click **Close**.
 1. Confirm the rescan of the storage devices. You now see the device turn gray and 'unmounted.'
