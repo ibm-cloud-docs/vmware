@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 1994, 2024
-lastupdated: "2024-07-15"
+  years: 1994, 2025
+lastupdated: "2025-03-24"
 
 keywords: faq
 
@@ -12,7 +12,7 @@ subcollection: vmware
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQs: VMware
+# FAQ: VMware
 {: #vmware-faq}
 
 ## How is VMware licensed?
