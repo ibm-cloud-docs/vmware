@@ -2,7 +2,7 @@
 
 copyright:
   years: 1994, 2025
-lastupdated: "2025-02-19"
+lastupdated: "2025-04-23"
 
 keywords: iSCSI, VMWare ESXi, mount iscsi, mount esxi,
 
@@ -43,3 +43,30 @@ You can now use the iSCSI as needed by the host and the VMs you create.
 
 For a more stable connection, mount the network storage on the hypervisor first as described. Then create the VMs, and mount the attached storage volume from the virtual server's OS with a multipath connection. For more information, see [Understanding Multipathing and Failover in the ESXi Environment](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-storage-8-0/understanding-multipathing-and-failover-in-the-esxi-environment.html#GUID-DD2FFAA7-796E-414C-84CE-1FCC14474D5B-en){: external}, and [Setting Up Network for iSCSI and iSER with ESXi](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-storage-8-0/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/setting-up-network-for-iscsi-and-iser-with-esxi.html#GUID-0D31125F-DC9D-475B-BC3D-A3E131251642-en){: external}.
 {: tip}
+
+## Verifying the MPIO configuration
+{: #verifyMPIOconfigESXI}
+
+Complete the following steps to view which multipathing policies the host uses for a specific storage device and the status of all available paths for the storage device. If MPIO is configured correctly, then each storage volume has a single group, with the number of paths equal to the number of iSCSI sessions.
+
+1. In the vSphere Client, go to the ESXi host.
+1. Click the Configure tab.
+1. Under Storage, click **Storage Devices**.
+1. Select the storage device whose paths you want to view.
+1. Click the Properties tab.
+
+   Under Multipathing Policies, you can also see the Path Selection Policy and, if applicable, the Storage Array Type Policy assigned to the device.
+   {: note}
+
+1. Click the Paths tab to review all paths that are available for the storage device and the status of each path.
+   |Status        | Description |
+   |--------------|-------------|
+   | Active (I/O)	| Working path or multiple paths that currently transfer data. |
+   | Standby      |	These paths are inactive. If the active path fails, they can become operational and start transferring I/O.|
+   | Disabled     | These paths are deactivated by the administrator. |
+   | Dead         |	Paths that are no longer available for processing I/O. A physical medium failure or array misconfiguration can cause this status. |
+   {: caption="Possible status values for the device paths." caption-side="bottom"}
+   
+For more information, see [Viewing and Managing Storage Paths on ESXi Hosts](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-storage-8-0/understanding-multipathing-and-failover-in-the-esxi-environment/viewing-and-managing-storage-paths-on-esxi-hosts.html){: external}.
+
+If MPIO isn't configured correctly, your storage device might disconnect and appear offline when a network outage occurs or when {{site.data.keyword.cloud}} teams perform maintenance. MPIO provides an extra level of connectivity during those events, and keeps an established session to the volume with active read/write operations.
