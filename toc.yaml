@@ -24,6 +24,7 @@ toc:
       id: howto
       topics:
       - topicgroup:
+          id: configuring-the-environment
           label: Configuring the environment
           topics:
           - vmware-vsphere-6-getting-started.md
@@ -38,6 +39,7 @@ toc:
           - mounting-iscsi-vmware-esxi.md
           - vsan-stability-lsi-3108-based-controllers.md
       - topicgroup:
+          id: ordering-and-managing-licenses
           label: Ordering and managing licenses
           topics:
           - order-vmware-licenses.md
@@ -49,11 +51,13 @@ toc:
       id: howto
       topics:
       - topicgroup:
+          id: configuring-quantastor-storage
           label: Configuring Quantastor storage
           topics:
           - architecture-guide-quantastor-vmwaresoftlayer.md
           - brocade-vrouter-vyatta-setup-guide-vmware-environments-quantastor.md
       - topicgroup:
+          id: enhancing-security
           label: Enhancing security
           topics:
           - manage-scc.md
