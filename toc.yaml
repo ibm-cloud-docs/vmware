@@ -1,4 +1,3 @@
----
 toc:
   properties:
     subcollection: vmware
@@ -64,4 +63,4 @@ toc:
   - navgroup:
       id: help
       topics:
-      -  vmware-faq.md
+      - vmware-faq.md
