@@ -61,6 +61,10 @@ toc:
           topics:
           - manage-scc.md
   - navgroup:
+      id: reference
+      topics:
+      - service-dependency.md
+  - navgroup:
       id: help
       topics:
       - vmware-faq.md

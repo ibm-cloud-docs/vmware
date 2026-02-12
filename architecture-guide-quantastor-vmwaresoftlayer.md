@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 1994, 2024
-lastupdated: "2024-10-10"
+  years: 1994, 2026
+lastupdated: "2026-02-12"
 
 keywords: iSCSI software adapter, Select Targets, QuantaStor, VMware shared storage, iSCSI, storage volume, software defined storage
 
@@ -197,7 +197,7 @@ You need to configure QuantaStor to allow access from the ESXi hosts through eac
 Follow these steps for each host in an ESXi environment. After you add each host in the management and capacity clusters, follow these steps:
 
 1. Right-click the **Host Groups** menu and select **Create Host Group**.
-2. Enter `ManagementCluster in the **Name** field and select all the hosts that are in the management cluster.
+2. Enter `ManagementCluster` in the **Name** field and select all the hosts that are in the management cluster.
 3. Click **OK**. A host group is created that we can assign to a particular volume.
 
 Repeat this process for the capacity cluster.

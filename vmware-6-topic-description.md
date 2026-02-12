@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2024
-lastupdated: "2024-07-25"
+  years: 2017, 2026
+lastupdated: "2026-02-12"
 
 keywords: vmware, vSphere, hypervisor,{{site.data.keyword.BluSoftlayer_full}}, {{site.data.keyword.cloud_notm}}, {{site.data.keyword.baremetal_short}},
 
@@ -15,7 +15,7 @@ subcollection: vmware
 # About VMware and {{site.data.keyword.cloud_notm}}
 {: #about-vmware}
 
-{{site.data.keyword.BluSoftlayer_full}} provides the capability for you to provision dedicated {{site.data.keyword.baremetal_short}} upon which you can deploy your own VMware based private cloud. For example, you can create a hybrid cloud where on-premises VMware-based servers, tools, and processes can be extended into the public cloud.
+YOu can use {{site.data.keyword.BluSoftlayer_full}} to provision dedicated {{site.data.keyword.baremetal_short}} upon which you can deploy your own VMware based private cloud. For example, you can create a hybrid cloud where on-premises VMware-based servers, tools, and processes can be extended into the public cloud.
 {: shortdesc}
 
 vSphere workloads and catalogs can be provisioned onto VMware vSphere environments within {{site.data.keyword.cloud_notm}} data centers without modification to VMware VMs or guests. The use of a common vSphere hypervisor and management or orchestration platform makes these deployments possible. vSphere implementations also enable the use of other components of the VMware vCloud Suite – vSphere, vRealize, vSAN, Site Recovery Manager (SRM), and NSX.
