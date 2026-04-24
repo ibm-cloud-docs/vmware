@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2024
-lastupdated: "2024-07-25"
+  years: 2017, 2026
+lastupdated: "2026-04-24"
 
 keywords: vmware sddc
 
@@ -10,7 +10,7 @@ subcollection: vmware
 
 ---
 
-{{site.data.keyword.cloud}}
+{{site.data.keyword.attribute-definition-list}}
 
 # VMware SDDC on {{site.data.keyword.cloud}}
 {: vmware-sddc}
