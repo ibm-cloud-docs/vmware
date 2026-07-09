@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-02-12"
+lastupdated: "2026-07-09"
 
 keywords:
 
@@ -44,8 +44,8 @@ The following dependencies apply to the following deployment locations: Chennai 
 
 |Dependencies|Dependency impacts|Customer provided|Control or data plane|Location of dependency|
 |:---|:---|:---|:---|:---|
-| {{site.data.keyword.BluVirtServers}} | Availability, Change management, Disaster recovery, Instance control | No | Both |  Same region  |
-| {{site.data.keyword.cos_full}} | Availability, Change management, Disaster recovery, Instance control | No | Both |  Same region  |
+| {{site.data.keyword.BluVirtServers}} | Availability, Change management, Disaster recovery | No | Both |  Same region  |
+| {{site.data.keyword.cos_full}} | Availability, Change management, Disaster recovery | No | Both |  Same region  |
 {: row-headers}
 {: caption="IBM Cloud for VMware as a Service - Data and Control plane deployment service dependency information - Critical dependencies" caption-side="top"}
 {: tab-title="Critical dependencies"}
@@ -56,8 +56,12 @@ The following dependencies apply to the following deployment locations: Chennai 
 
 |Dependencies|Dependency impacts|Customer provided|Control or data plane|Location of dependency|
 |:---|:---|:---|:---|:---|
+| {{site.data.keyword.keymanagementservicefull}} | Availability, Change management, Disaster recovery, Security compliance | No | Both |  Same region  |
+| {{site.data.keyword.vpc_full}} | Availability, Change management, Disaster recovery, Security compliance | No | Both |  Same region  |
+| {{site.data.keyword.secrets-manager_full}} | Availability, Change management, Disaster recovery, Security compliance | No | Both |  Same region  |
 | Akamai | Availability, Security compliance | No | Both |  Same region  |
-| {{site.data.keyword.iamlong}} | Access management, Availability, Instance control | No | Both |  Same region  |
+| {{site.data.keyword.iamlong}} | Access management, Availability, Instance control, Security compliance | No | Both |  Same region  |
+| {{site.data.keyword.cis_full}} | Availability, Security compliance | No | Both |  Same region  |
 {: row-headers}
 {: caption="IBM Cloud for VMware as a Service - Data and Control plane deployment service dependency information - Significant dependencies" caption-side="top"}
 {: tab-title="Significant dependencies"}
@@ -71,6 +75,8 @@ The following dependencies apply to the following deployment locations: Chennai 
 | {{site.data.keyword.logs_full}}| Access management, Operations, Security compliance | No | Both |  Same region  |
 | {{site.data.keyword.SendGrid}}| Operations | No | Both |  Same region  |
 | {{site.data.keyword.atracker_full}}| Security compliance | No | Both |  Same region  |
+| corporate-uptycs| Operations | No | Both |  Same region  |
+| corporate-qradar| Operations | No | Both |  Same region  |
 {: row-headers}
 {: caption="IBM Cloud for VMware as a Service - Data and Control plane deployment service dependency information - Minimal dependencies" caption-side="top"}
 {: tab-title="Minimal dependencies"}
