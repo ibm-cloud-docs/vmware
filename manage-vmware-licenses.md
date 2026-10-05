@@ -28,11 +28,11 @@ For more information about managing VMware licenses, see [Licensing for ESXi Hos
 {: #ordering-vmware-licenses}
 
 1. Log in to the [{{site.data.keyword.cloud_notm}} catalog](https://cloud.ibm.com/catalog/){: external}.
-1. Go to **Devices > Manage > VMware&reg; licenses** and click **Order VMware&reg; licenses**.
+1. Go to **Devices > Manage > VMware licenses** and click **Order VMware licenses**.
 1. Select the appropriate licenses and click **Continue**.
 1. Review charges and the MSA and click **Place order**.
 
-## Removing VMware
+## Removing VMware licenses
 {: #removing-vmware-licenses}
 
 1. Log in to the [{{site.data.keyword.cloud_notm}} catalog](https://cloud.ibm.com/catalog/){: external}.
